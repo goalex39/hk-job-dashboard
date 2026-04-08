@@ -177,6 +177,13 @@
       renderJobs(btn.dataset.source);
     });
   });
+  // Inject last-updated timestamp from data.js
+(function () {
+  const el = document.getElementById('last-updated-display');
+  if (el && typeof LAST_UPDATED !== 'undefined') {
+    el.textContent = 'Last refreshed: ' + LAST_UPDATED;
+  }
+})();
 
   renderJobs('all');
 
