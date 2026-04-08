@@ -1,0 +1,22 @@
+name: Daily Data Refresh
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 00:00 UTC = 08:00 HKT
+  workflow_dispatch:        # allows manual trigger
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update last-refreshed timestamp in data file
+        run: |
+          DATE=$(TZ="Asia/Hong_Kong" date +"%Y-%m-%d %H:%M HKT")
+          sed -i "s/LAST_UPDATED = \".*\"/LAST_UPDATED = \"$DATE\"/" data-2.js
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data-2.js
+          git commit -m "Daily refresh $DATE" || echo "No changes"
+          git push
