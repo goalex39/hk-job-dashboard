@@ -2,7 +2,7 @@
 // HK Job Market Terminal — Data Layer
 // ============================================
 
-const LAST_UPDATED = "2026-04-08";
+const LAST_UPDATED = "2026-04-08 23:12 HKT";
 const NEWS_DATA = [
   {
     headline: "Hong Kong 2026-27 Budget Doubles Down on Talent Attraction with HK$50M AI Up-Skilling Fund",
