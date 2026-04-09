@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK Job Market Terminal</title>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=jetbrains-mono@400,500,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="terminal">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <svg class="logo" viewBox="0 0 28 28" width="22" height="22" fill="none" aria-label="HK Job Market Terminal">
+          <rect x="2" y="2" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+          <path d="M8 8v12M20 8v12M8 14h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="topbar-title">HK:JOB_MKT</span>
+        <span class="topbar-ver">v2026.04</span>
+      </div>
+      <div class="topbar-status">
+        <span class="status-dot"></span>
+        <span class="status-text">LIVE &middot; Updated 08 Apr 2026 11:08 HKT</span>
+      </div>
+    </header>
+
+    <!-- Tab Bar -->
+    <nav class="tabbar" role="tablist">
+      <button class="tab active" role="tab" aria-selected="true" data-tab="overview">
+        <span class="tab-icon">◈</span> Overview
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="hk-macro">
+        <span class="tab-icon">▤</span> HK Macro
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="global">
+        <span class="tab-icon">◎</span> Global
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="news">
+        <span class="tab-icon">▧</span> News Feed
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="jobs">
+        <span class="tab-icon">▦</span> Job Openings
+      </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- OVERVIEW TAB -->
+      <section class="tab-panel active" id="panel-overview">
+        <div class="section-header">
+          <h2>Market Pulse</h2>
+          <span class="section-sub">Key indicators at a glance</span>
+        </div>
+        <div class="kpi-grid">
+          <a class="kpi-card kpi-link" href="https://www.info.gov.hk/gia/general/202601/30/P2026013000262.htm" target="_blank" rel="noopener">
+            <div class="kpi-label">GDP Growth</div>
+            <div class="kpi-value">3.5%</div>
+            <div class="kpi-delta positive">▲ +1.0pp YoY</div>
+            <div class="kpi-period">Full-year 2025 · C&SD ↗</div>
+          </a>
+          <a class="kpi-card kpi-link" href="https://www.censtatd.gov.hk/en/scode210.html" target="_blank" rel="noopener">
+            <div class="kpi-label">Unemployment</div>
+            <div class="kpi-value">3.8%</div>
+            <div class="kpi-delta positive">▼ -0.1pp</div>
+            <div class="kpi-period">Dec 25 – Feb 26 · C&SD ↗</div>
+          </a>
+          <a class="kpi-card kpi-link" href="https://www.markiteconomics.com" target="_blank" rel="noopener">
+            <div class="kpi-label">PMI (Mar 26)</div>
+            <div class="kpi-value caution">49.3</div>
+            <div class="kpi-delta negative">▼ -4.0 from Feb</div>
+            <div class="kpi-period">Contraction zone · S&P Global ↗</div>
+          </a>
+          <a class="kpi-card kpi-link" href="https://www.hsi.com.hk" target="_blank" rel="noopener">
+            <div class="kpi-label">Hang Seng</div>
+            <div class="kpi-value">25,848</div>
+            <div class="kpi-delta positive">▲ +2.91% today</div>
+            <div class="kpi-period">8 Apr 2026 · HSI ↗</div>
+          </a>
+          <a class="kpi-card kpi-link" href="https://www.hkeconomy.gov.hk/en/situation/development/index.htm" target="_blank" rel="noopener">
+            <div class="kpi-label">CPI Inflation</div>
+            <div class="kpi-value">1.7%</div>
+            <div class="kpi-delta neutral">▲ +0.6pp from Jan</div>
+            <div class="kpi-period">Feb 2026 · HKSAR Govt ↗</div>
+          </a>
+          <a class="kpi-card kpi-link" href="https://www.censtatd.gov.hk/en/scode210.html" target="_blank" rel="noopener">
+            <div class="kpi-label">Job Vacancies</div>
+            <div class="kpi-value caution">46,000</div>
+            <div class="kpi-delta negative">▼ -21% YoY</div>
+            <div class="kpi-period">Dec 2025 · C&SD ↗</div>
+          </a>
+          <a class="kpi-card kpi-link" href="https://www.austcham.com.hk/member-news/future-hiring-hong-kong-2026" target="_blank" rel="noopener">
+            <div class="kpi-label">Median Wage</div>
+            <div class="kpi-value">HK$21,200</div>
+            <div class="kpi-delta positive">▲ +3.5% YoY</div>
+            <div class="kpi-period">2025 median monthly · Ambition ↗</div>
+          </a>
+          <a class="kpi-card kpi-link" href="https://www.federalreserve.gov" target="_blank" rel="noopener">
+            <div class="kpi-label">US Fed Rate</div>
+            <div class="kpi-value">3.50%</div>
+            <div class="kpi-delta neutral">— held Mar 26</div>
+            <div class="kpi-period">1 cut projected 2026 · Fed ↗</div>
+          </a>
+        </div>
+
+        <div class="section-header" style="margin-top: var(--space-8);">
+          <h2>Signal Board</h2>
+          <span class="section-sub">What the data tells a job seeker</span>
+        </div>
+        <div class="signal-grid">
+          <div class="signal-card signal-positive">
+            <div class="signal-icon">▲</div>
+            <div class="signal-body">
+              <div class="signal-title">Financial Services Hiring +10-15%</div>
+              <div class="signal-desc">IPO boom (HK$103B+ in Q1 alone, #1 globally) and fintech VC surging 2.3x to US$638M are driving strong demand for compliance, risk, and data professionals in banking.</div>
+              <a class="signal-source" href="https://www.linkedin.com/posts/peggy-sito-06165126_hiring-outlook-improves-for-hong-kongs-financial-activity-7396758655511126016-xtIw" target="_blank" rel="noopener">SCMP via LinkedIn ↗</a>
+            </div>
+          </div>
+          <div class="signal-card signal-positive">
+            <div class="signal-icon">▲</div>
+            <div class="signal-body">
+              <div class="signal-title">AI/Data Specialists: 15-25% Salary Premium</div>
+              <div class="signal-desc">1 in 4 companies can't fill AI roles. Data governance, ML engineering, and cybersecurity professionals command premium compensation while generalist roles face oversupply.</div>
+              <a class="signal-source" href="https://www.kos-intl.com/insight/the-ai-talent-gap-in-hong-kong-is-real-heres-what-smart-employers-are-doing-about-it/" target="_blank" rel="noopener">KOS International ↗</a>
+            </div>
+          </div>
+          <div class="signal-card signal-caution">
+            <div class="signal-icon">◆</div>
+            <div class="signal-body">
+              <div class="signal-title">PMI Shock: Mar 2026 Contraction at 49.3</div>
+              <div class="signal-desc">After a 35-month high in Feb (53.3), March PMI dropped sharply into contraction territory. Geopolitical shocks and tariff uncertainty are weighing on business confidence.</div>
+              <a class="signal-source" href="https://www.info.gov.hk/gia/general/202601/30/P2026013000262.htm" target="_blank" rel="noopener">C&SD / HKSAR Govt ↗</a>
+            </div>
+          </div>
+          <div class="signal-card signal-negative">
+            <div class="signal-icon">▼</div>
+            <div class="signal-body">
+              <div class="signal-title">Job Vacancies Down 21% — Structural Paradox</div>
+              <div class="signal-desc">46,000 vacancies vs 134,700 unemployed. Only finance/insurance vacancies grew (+16% YoY). The market is bifurcating: high-skill roles thrive while routine positions vanish.</div>
+              <a class="signal-source" href="https://www.hkeconomy.gov.hk/en/situation/development/index.htm" target="_blank" rel="noopener">HK Economy ↗</a>
+            </div>
+          </div>
+          <div class="signal-card signal-positive">
+            <div class="signal-icon">▲</div>
+            <div class="signal-body">
+              <div class="signal-title">Data Governance Regulation Expanding</div>
+              <div class="signal-desc">Critical Infrastructure cybersecurity law in force since Jan 2026. PDPO mandatory breach notification incoming. AI governance legislation under review. All drive demand for DPO/governance roles.</div>
+              <a class="signal-source" href="https://www.scmp.com/news/hong-kong/society/article/3342754/hong-kong-plans-revive-privacy-law-mandating-firms-report-data-breaches" target="_blank" rel="noopener">SCMP ↗</a>
+            </div>
+          </div>
+          <div class="signal-card signal-caution">
+            <div class="signal-icon">◆</div>
+            <div class="signal-body">
+              <div class="signal-title">US Tariff Regime Remains Unpredictable</div>
+              <div class="signal-desc">SCOTUS struck down IEEPA tariffs but 10% Section 122 remains. Trump-Xi Beijing meeting occurred Apr 2026 but trade truce is fragile. Section 301 investigation now covers HK.</div>
+              <a class="signal-source" href="https://news.bloomberglaw.com/international-trade/china-stocks-in-hong-kong-jump-as-us-court-strikes-down-tariffs" target="_blank" rel="noopener">Bloomberg Law ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HK MACRO TAB -->
+      <section class="tab-panel" id="panel-hk-macro">
+        <div class="section-header">
+          <h2>Hong Kong Domestic Indicators</h2>
+          <span class="section-sub">Latest macroeconomic data for the local market</span>
+        </div>
+        <div class="macro-table-wrap">
+          <table class="macro-table">
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th>Current</th>
+                <th>Previous</th>
+                <th>Trend</th>
+                <th>Job Market Implication</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="indicator-name">GDP Growth</td>
+                <td class="mono">3.5% (2025)</td>
+                <td class="mono">2.5% (2024)</td>
+                <td><span class="badge badge-positive">▲ UP</span></td>
+                <td>12th consecutive quarter of expansion. Strongest annual growth since 2017 (ex-rebound). Driven by AI electronics exports and financial services. Government forecasts 2.5-3.5% for 2026.</td>
+                <td><a href="https://www.info.gov.hk/gia/general/202601/30/P2026013000262.htm" target="_blank">C&SD ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">Unemployment Rate</td>
+                <td class="mono">3.8%</td>
+                <td class="mono">3.9% (Nov-Jan)</td>
+                <td><span class="badge badge-positive">▼ DOWN</span></td>
+                <td>Near full employment. 134,700 persons unemployed with 46,000 vacancies. Finance/insurance sector strongest with vacancies growing +16% YoY.</td>
+                <td><a href="https://www.censtatd.gov.hk/en/scode210.html" target="_blank">C&SD ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">CPI Inflation</td>
+                <td class="mono">1.7% (Feb 26)</td>
+                <td class="mono">1.1% (Jan 26)</td>
+                <td><span class="badge badge-neutral">▲ MILD</span></td>
+                <td>Benign inflation supports real wage growth. Well below global averages. Government forecasts underlying CPI at 1.7% for 2026, keeping cost of hiring talent relatively stable.</td>
+                <td><a href="https://www.hkeconomy.gov.hk/en/situation/development/index.htm" target="_blank">HKSAR ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">PMI (Mar 2026)</td>
+                <td class="mono caution">49.3</td>
+                <td class="mono">53.3 (Feb, 35-mo high)</td>
+                <td><span class="badge badge-negative">▼ CONTRACTION</span></td>
+                <td>Sharp reversal from expansion. Geopolitical shock signal. New orders and export orders likely contracted. Businesses may freeze hiring decisions in the near term pending clarity on tariff policy.</td>
+                <td><a href="https://www.markiteconomics.com" target="_blank">S&P Global ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">Hang Seng Index</td>
+                <td class="mono">25,848</td>
+                <td class="mono">28,056 (Jan peak)</td>
+                <td><span class="badge badge-neutral">~ MIXED</span></td>
+                <td>-2% YTD after Jan peak, but +2.91% on Apr 8. Market sentiment volatile. Financial sector hiring remains positive thanks to IPO pipeline with 500+ applications in 2025.</td>
+                <td><a href="https://www.hsi.com.hk" target="_blank">HSI ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">Office Vacancy (Central)</td>
+                <td class="mono">9.9%</td>
+                <td class="mono">~10%+ (Jan 26)</td>
+                <td><span class="badge badge-positive">▼ DOWN</span></td>
+                <td>26-month low. IPO-linked financial firms taking prime Central space. Lower costs give businesses room to invest in headcount. "Flight to quality" trend benefits talent attraction.</td>
+                <td><a href="https://realestateasia.com/commercial-office/news/hong-kong-grade-office-rents-decline-5-in-2026" target="_blank">JLL ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">Median Monthly Wage</td>
+                <td class="mono">HK$21,200</td>
+                <td class="mono">HK$20,500 (2024)</td>
+                <td><span class="badge badge-positive">▲ UP</span></td>
+                <td>+3.5% YoY real wage growth. Job movers earn 10-15% premiums. High-demand AI/data specialists command 15-25%+ premiums. Salary budget growth projected at ~4% for 2026.</td>
+                <td><a href="https://www.austcham.com.hk/member-news/future-hiring-hong-kong-2026" target="_blank">Ambition ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">Job Vacancies</td>
+                <td class="mono caution">46,000</td>
+                <td class="mono">58,410 (Dec 2024)</td>
+                <td><span class="badge badge-negative">▼ DOWN</span></td>
+                <td>-21% YoY decline. Only finance/insurance showed growth (+16%). Retail, accommodation, and food services saw largest drops. Structural mismatch between job seeker skills and available roles.</td>
+                <td><a href="https://www.censtatd.gov.hk/en/scode210.html" target="_blank">C&SD ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">Population</td>
+                <td class="mono">7.51M</td>
+                <td class="mono">7.50M (mid-2024)</td>
+                <td><span class="badge badge-neutral">~ STABLE</span></td>
+                <td>+0.1% growth. Net inflow 29,100 offset by natural decline of 18,900. Talent schemes (TTPS, QMAS) bringing in skilled workers. Emigration wave has stabilized.</td>
+                <td><a href="https://www.censtatd.gov.hk" target="_blank">C&SD ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">IPO Market</td>
+                <td class="mono">HK$103B+ (Q1 26)</td>
+                <td class="mono">HK$286B (FY2025)</td>
+                <td><span class="badge badge-positive">▲ STRONG</span></td>
+                <td>#1 globally in Q1 2026. 500+ listing applications in 2025. Drives hiring across investment banking, compliance, legal, accounting, and corporate governance.</td>
+                <td><a href="https://www.hkex.com.hk" target="_blank">HKEX ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">Bank Capital Ratio</td>
+                <td class="mono">25.1%</td>
+                <td class="mono">Well above 8% min</td>
+                <td><span class="badge badge-positive">— STABLE</span></td>
+                <td>Banking sector well-capitalized. However, NPL ratio elevated at 2.01% (20-yr avg: 0.93%), requiring robust credit risk and compliance teams.</td>
+                <td><a href="https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/03/20260330-4/" target="_blank">HKMA ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">Fintech VC</td>
+                <td class="mono">US$638M (2025)</td>
+                <td class="mono">US$274M (2024)</td>
+                <td><span class="badge badge-positive">▲ +2.3x</span></td>
+                <td>Fintech investment surged 2.3x. HKMA Fintech 2030 Blueprint pushes AI, DLT, data excellence. 95% of banks already using fintech. Creates sustained demand for specialist tech roles.</td>
+                <td><a href="https://www.hkma.gov.hk/media/eng/doc/key-information/press-release/2026/20260203e3a1.pdf" target="_blank">HKMA ↗</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- GLOBAL TAB -->
+      <section class="tab-panel" id="panel-global">
+        <div class="section-header">
+          <h2>Global Indicators Affecting HK</h2>
+          <span class="section-sub">International macro factors that shape the local job market</span>
+        </div>
+        <div class="macro-table-wrap">
+          <table class="macro-table">
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th>Current</th>
+                <th>Previous / Context</th>
+                <th>Trend</th>
+                <th>HK Job Market Impact</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="indicator-name">US Federal Funds Rate</td>
+                <td class="mono">3.50-3.75%</td>
+                <td class="mono">Held Mar 2026</td>
+                <td><span class="badge badge-neutral">— HOLD</span></td>
+                <td>HKD pegged to USD, so HK rates follow the Fed. 1 cut projected for 2026. Lower rates would ease borrowing costs, supporting business expansion and hiring. Current rate maintains tight financial conditions.</td>
+                <td><a href="https://www.federalreserve.gov" target="_blank">Federal Reserve ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">China GDP Growth</td>
+                <td class="mono">5.0% (FY2025)</td>
+                <td class="mono">4.5% (Q4 2025 QoQ)</td>
+                <td><span class="badge badge-neutral">~ SOFTENING</span></td>
+                <td>China hit its official target but Q4 decelerated. Mainland firms expanding into HK provide a demand channel for compliance, legal, and finance talent. Property sector drag is a downside risk.</td>
+                <td><a href="https://www.stats.gov.cn" target="_blank">NBS China ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">China PMI (Mar 2026)</td>
+                <td class="mono">50.4</td>
+                <td class="mono">Back in expansion</td>
+                <td><span class="badge badge-positive">▲ UP</span></td>
+                <td>Official NBS PMI returned to expansion at 50.4 in March. Supports cross-border trade and GBA economic integration. Positive for HK logistics, trade finance, and professional services roles.</td>
+                <td><a href="https://www.stats.gov.cn" target="_blank">NBS China ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">USD/HKD Exchange</td>
+                <td class="mono">7.837</td>
+                <td class="mono">Peg band: 7.75-7.85</td>
+                <td><span class="badge badge-positive">— STABLE</span></td>
+                <td>HKD peg intact within the band. No pressure on the Linked Exchange Rate System. Stability supports foreign business confidence and international talent attraction.</td>
+                <td><a href="https://www.hkma.gov.hk" target="_blank">HKMA ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">US-China Tariffs</td>
+                <td class="mono caution">10% (Section 122)</td>
+                <td class="mono">IEEPA voided by SCOTUS</td>
+                <td><span class="badge badge-negative">⚠ ELEVATED</span></td>
+                <td>SCOTUS struck down IEEPA tariffs (Feb 2026) but 10% Section 122 tariff remains for 150 days. Section 301 forced labor investigation now covers HK. Trade uncertainty keeps hiring cautious in export-dependent sectors.</td>
+                <td><a href="https://news.bloomberglaw.com/international-trade/china-stocks-in-hong-kong-jump-as-us-court-strikes-down-tariffs" target="_blank">Bloomberg ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">US-China Diplomacy</td>
+                <td class="mono">Trump-Xi Apr 2026</td>
+                <td class="mono">KL Joint Arrangement Nov 25</td>
+                <td><span class="badge badge-neutral">~ FRAGILE</span></td>
+                <td>US-China Kuala Lumpur Joint Arrangement set 10% reciprocal tariff, suspended 100% escalation until Nov 2026. Trump visited Beijing Mar 31-Apr 2. Progress would ease supply chain uncertainty and accelerate HK hiring.</td>
+                <td><a href="https://www.thestandard.com.hk/china/article/324913/Trump-to-travel-to-China-next-month-with-US-tariffs-in-focus" target="_blank">The Standard ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">Global AI Capex 2026</td>
+                <td class="mono">US$527B</td>
+                <td class="mono">US$2.9T infra through 2028</td>
+                <td><span class="badge badge-positive">▲ SURGING</span></td>
+                <td>Hyperscaler AI capital expenditure consensus at US$527B for 2026. HK positioned as Asia's AI finance and governance hub. Drives demand for AI governance, risk management, and data science professionals.</td>
+                <td><a href="https://www.hkstp.org/en/park-life/news-and-events/news/hkstp-career-fair-2026-reimagine-ai-plus" target="_blank">HKSTP ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">GBA Integration</td>
+                <td class="mono">Accelerating</td>
+                <td class="mono">15th 5-Year Plan launched</td>
+                <td><span class="badge badge-positive">▲ DEEPENING</span></td>
+                <td>China's 15th Five-Year Plan endorses HK as "super connector." MTR Shenzhen expansion by 2035. Cross-border private car scheme launched. Creates new career pathways for bilingual professionals with GBA exposure.</td>
+                <td><a href="https://www.bjreview.com/China/202603/t20260316_800433003.html" target="_blank">Beijing Review ↗</a></td>
+              </tr>
+              <tr>
+                <td class="indicator-name">HK Talent Schemes</td>
+                <td class="mono">TTPS expanded to 200 unis</td>
+                <td class="mono">184 previously</td>
+                <td><span class="badge badge-positive">▲ EXPANDING</span></td>
+                <td>TTPS Category A stay extended to 3 years. 90-day visa renewal window for 6 schemes. Digital verification cutting processing to 9-14 days. Broadens talent pipeline, especially in AI, fintech, ESG.</td>
+                <td><a href="https://leapscholar.com/digest/news-hong-kong-top-talent-pass-scheme-2026-2027" target="_blank">LeapScholar ↗</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- NEWS TAB -->
+      <section class="tab-panel" id="panel-news">
+        <div class="section-header">
+          <h2>News & Intelligence Feed</h2>
+          <span class="section-sub">Events affecting the Hong Kong job market</span>
+        </div>
+        <div class="news-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="POLICY & REGULATION">Policy</button>
+          <button class="filter-btn" data-filter="CORPORATE">Corporate</button>
+          <button class="filter-btn" data-filter="TECHNOLOGY & AI">Tech & AI</button>
+          <button class="filter-btn" data-filter="FINANCIAL SECTOR">Financial</button>
+          <button class="filter-btn" data-filter="TRADE & GEOPOLITICS">Trade</button>
+          <button class="filter-btn" data-filter="US TARIFFS">Tariffs</button>
+          <button class="filter-btn" data-filter="DATA GOVERNANCE & PRIVACY">Data Gov</button>
+          <button class="filter-btn" data-filter="CHINA MAINLAND">China/GBA</button>
+          <button class="filter-btn" data-filter="REAL ESTATE & COST">Real Estate</button>
+          <button class="filter-btn" data-filter="GLOBAL">Global</button>
+          <button class="filter-btn" data-filter="LOCAL EMPLOYMENT">本地就業</button>
+          <button class="filter-btn" data-filter="FINTECH">Fintech</button>
+        </div>
+        <div class="news-list" id="news-list">
+          <!-- populated by JS -->
+        </div>
+      </section>
+
+      <!-- JOBS TAB -->
+      <section class="tab-panel" id="panel-jobs">
+        <div class="section-header">
+          <h2>Data / AI Governance Openings</h2>
+          <span class="section-sub">Live listings from JobsDB, LinkedIn, eFinancialCareers, Indeed</span>
+        </div>
+        <div class="jobs-filters">
+          <button class="filter-btn active" data-source="all">All Sources</button>
+          <button class="filter-btn" data-source="JobsDB">JobsDB</button>
+          <button class="filter-btn" data-source="LinkedIn">LinkedIn</button>
+          <button class="filter-btn" data-source="eFinancialCareers">eFinancialCareers</button>
+          <button class="filter-btn" data-source="Indeed">Indeed</button>
+        </div>
+        <div class="jobs-stats" id="jobs-stats"></div>
+        <div class="jobs-list" id="jobs-list">
+          <!-- populated by JS -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
