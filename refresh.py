@@ -366,7 +366,7 @@ def llm_analyze_news(news_items):
         return [assign_sentiment_keyword(categorize_keyword(item)) for item in news_items]
 
     print("  Analyzing news with Perplexity Sonar...")
-    system_prompt = """You are an expert Hong Kong job market analyst. For each news headline, provide:
+    system_prompt = """You are an professional expert with years of experience of Hong Kong job market analyst. For each news headline, provide:
 1. category: one of POLICY & REGULATION, CORPORATE, TECHNOLOGY & AI, FINANCIAL SECTOR, TRADE & GEOPOLITICS, US TARIFFS, DATA GOVERNANCE & PRIVACY, CHINA MAINLAND, REAL ESTATE & COST, LOCAL EMPLOYMENT, FINTECH, GLOBAL
 2. sentiment: positive, negative, or neutral (from a Hong Kong job seeker's perspective)
 3. impact: 1-2 sentences explaining how this news affects the Hong Kong job market specifically
@@ -430,7 +430,7 @@ def llm_update_implications(hk_macro, global_data, kpis):
             f"{i}. {row['indicator']}: current={row['current']}, previous={row['previous']}, trend={row['trend']}"
             for i, row in enumerate(table_data)
         )
-        system_prompt = """You are a senior Hong Kong job market analyst and career coach.
+        system_prompt = """You are a professional and years of experience of Hong Kong job market analyst and career coach.
 Given macroeconomic indicators with their current and previous values, write a concise 1-2 sentence
 job market implication for each. Focus on what this means for job seekers, hiring trends, and specific
 sectors affected in Hong Kong.
