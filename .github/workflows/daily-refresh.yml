@@ -1,13 +1,10 @@
-name: Daily Dashboard Refresh (8AM HKT)
+name: Daily Dashboard Refresh
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # 00:00 UTC = 08:00 HKT
-  workflow_dispatch:
-
-concurrency:
-  group: daily-refresh
-  cancel-in-progress: false
+    # 00:00 UTC = 08:00 HKT
+    - cron: "0 0 * * *"
+  workflow_dispatch: # allow manual trigger from GitHub UI
 
 permissions:
   contents: write
@@ -15,48 +12,35 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.12"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          else
-            pip install openai requests
-          fi
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-      - name: Run data update script
-        env:
-          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
-          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-        run: |
-          echo "Running update_data.py at $(TZ='Asia/Hong_Kong' date '+%Y-%m-%d %H:%M:%S HKT')"
-          python update_data.py
-          echo "Finished update_data.py"
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
 
-      - name: Show changed files
-        run: |
-          echo "Changed files after script run:"
-          git status --short
+      - name: Run refresh script
+        run: python refresh.py
 
-      - name: Commit and push
+      - name: Commit and push updated data
         run: |
-          DATE=$(TZ="Asia/Hong_Kong" date +"%Y-%m-%d %H:%M HKT")
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.js
-          git diff --staged --quiet && echo "No changes to commit" && exit 0
-          git commit -m "🔄 Daily refresh $DATE"
-          git pull --rebase origin main
-          git push
+          # Only commit if data.js actually changed
+          if git diff --cached --quiet; then
+            echo "No changes to data.js — skipping commit."
+          else
+            git commit -m "chore: refresh dashboard data $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
