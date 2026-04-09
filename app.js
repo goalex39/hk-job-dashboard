@@ -252,7 +252,7 @@
           </div>
           <div class="job-right">
             <span class="job-source ${srcClass}">${j.source}</span>
-            <span class="job-posted">${j.posted}</span>
+            <span class="job-posted">Posted: ${j.posted}</span>
           </div>
         </div>
       `;
