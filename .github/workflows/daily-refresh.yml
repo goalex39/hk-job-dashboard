@@ -43,14 +43,12 @@ jobs:
           echo "Changed files after script run:"
           git status --short
 
-      - name: Commit and push updated data
+            - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.js
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "🔄 Daily refresh $(TZ='Asia/Hong_Kong' date '+%Y-%m-%d %H:%M HKT')"
-            git push
-          fi
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "🔄 Daily refresh $DATE"
+          git pull --rebase origin main    # ← ADD THIS LINE
+          git push
