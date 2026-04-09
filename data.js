@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "09 Apr 2026 11:03 HKT",
+  updated: "09 Apr 2026 11:41 HKT",
   version: "v2026.04"
 };
 
@@ -41,8 +41,8 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "25,801",
-    delta: "▲ +2.72%",
+    value: "25,781",
+    delta: "▲ +2.64%",
     deltaClass: "positive",
     period: "09 Apr 2026",
     source: "Yahoo Finance (^HSI)",
@@ -144,7 +144,7 @@ const HK_MACRO_DATA = [
     previous: "2.5% (2024)",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Rising GDP growth to 3.5% signals economic expansion, boosting hiring across retail, tourism, and construction sectors in Hong Kong; job seekers should target these areas amid improving demand.",
+    implication: "Accelerating GDP growth of 3.5% signals strengthening economic momentum, creating favorable conditions for hiring across sectors; however, job seekers should note that this growth is heavily concentrated in AI and emerging tech, while traditional industries face structural headwinds.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.info.gov.hk/gia/general/202601/30/P2026013000262.htm"
   },
@@ -155,7 +155,7 @@ const HK_MACRO_DATA = [
     previous: "3.9% (Nov-Jan)",
     trend: "▼ DOWN",
     trendClass: "positive",
-    implication: "Declining unemployment to 3.8% indicates a tighter labor market, giving job seekers more leverage in negotiations, particularly in services and finance, with steady hiring trends.",
+    implication: "Declining unemployment to 3.8% indicates a tightening labor market favoring job seekers with competitive advantages; employers are becoming more selective, prioritizing candidates with tech and AI expertise over generalist profiles.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk/en/scode210.html"
   },
@@ -166,7 +166,7 @@ const HK_MACRO_DATA = [
     previous: "1.1% (Jan 26)",
     trend: "▲ MILD",
     trendClass: "neutral",
-    implication: "Mild CPI inflation rise to 1.7% suggests controlled price pressures, supporting consumer spending and job stability in retail and hospitality for job seekers.",
+    implication: "Mild CPI inflation at 1.7% provides wage growth room without eroding purchasing power, supporting real income gains; however, the uptick from 1.1% suggests cost pressures may limit future salary increases if inflation accelerates further.",
     sourceLabel: "HKSAR",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -177,18 +177,18 @@ const HK_MACRO_DATA = [
     previous: "53.3 (Feb, 35-mo high)",
     trend: "▼ CONTRACTION",
     trendClass: "negative",
-    implication: "PMI dropping to 49.3 signals manufacturing contraction, prompting hiring freezes or cuts in that sector; job seekers should pivot to services or tech amid weakening trends.",
+    implication: "PMI contraction to 49.3 from 53.3 signals manufacturing and services weakness despite IPO market strength, indicating job creation may slow in traditional sectors while tech and finance roles remain resilient.",
     sourceLabel: "S&P Global",
     sourceUrl: "https://www.markiteconomics.com"
   },
   {
     indicator: "Hang Seng Index",
-    current: "25,848",
+    current: "25,781",
     currentClass: "",
-    previous: "28,056 (Jan peak)",
+    previous: "25,848",
     trend: "~ MIXED",
     trendClass: "neutral",
-    implication: "Mixed Hang Seng at 25,848 reflects investor caution, slowing hiring in finance and trading; job seekers face selective opportunities in resilient fintech subsectors.",
+    implication: "Mixed Hang Seng performance reflects market bifurcation—AI and tech stocks surging while traditional sectors stagnate; job seekers in finance and investment sectors should expect volatility in compensation tied to market performance.",
     sourceLabel: "HSI",
     sourceUrl: "https://www.hsi.com.hk"
   },
@@ -199,7 +199,7 @@ const HK_MACRO_DATA = [
     previous: "~10%+ (Jan 26)",
     trend: "▼ DOWN",
     trendClass: "positive",
-    implication: "Falling office vacancy to 9.9% in Central boosts demand for commercial real estate jobs, signaling hiring upticks for property management and professional services.",
+    implication: "Declining office vacancy in Central from 10%+ to 9.9% suggests modest commercial real estate recovery, supporting limited hiring in property, facilities, and corporate services; however, tech companies' preference for flexible work may limit further office-based job growth.",
     sourceLabel: "JLL",
     sourceUrl: "https://realestateasia.com/commercial-office/news/hong-kong-grade-office-rents-decline-5-in-2026"
   },
@@ -210,7 +210,7 @@ const HK_MACRO_DATA = [
     previous: "HK$20,500 (2024)",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Median wage up to HK$21,200 enhances earning potential for skilled workers, especially in finance and tech, encouraging job mobility amid positive wage trends.",
+    implication: "Median wage growth to HK$21,200 from HK$20,500 reflects tight labor market dynamics, particularly in high-demand tech roles; however, wage gains remain modest relative to inflation, limiting real purchasing power improvement for most workers.",
     sourceLabel: "Ambition",
     sourceUrl: "https://www.austcham.com.hk/member-news/future-hiring-hong-kong-2026"
   },
@@ -221,7 +221,7 @@ const HK_MACRO_DATA = [
     previous: "58,410 (Dec 2024)",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Job vacancies down to 46,000 intensify competition for roles, advising job seekers to upskill in high-demand areas like fintech while hiring cools overall.",
+    implication: "Job vacancies declining 21% to 46,000 from 58,410 signals cooling hiring momentum despite economic growth, suggesting employers are becoming cautious; job seekers face increased competition as vacancy-to-unemployment ratio tightens.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk/en/scode210.html"
   },
@@ -232,7 +232,7 @@ const HK_MACRO_DATA = [
     previous: "7.50M (mid-2024)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable population at 7.51M maintains steady labor supply, supporting consistent hiring in consumer-facing sectors without major disruptions for job seekers.",
+    implication: "Stable population at 7.51M provides steady labor supply with minimal demographic pressure; however, lack of population growth limits organic demand for new jobs, making competition for available roles more intense.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk"
   },
@@ -243,7 +243,7 @@ const HK_MACRO_DATA = [
     previous: "HK$286B (FY2025)",
     trend: "▲ STRONG",
     trendClass: "positive",
-    implication: "Strong Q1 IPOs over HK$103B drive job creation in finance, legal, and AI/biotech sectors, offering prime opportunities for job seekers in capital markets.[2][3][5]",
+    implication: "Explosive Q1 2026 IPO fundraising of HK$103B+ driven by AI, semiconductors, and biotech[1][2] creates significant hiring opportunities in tech, engineering, and finance roles; however, 40% of new stock price declines[1] indicate market volatility may dampen hiring confidence in subsequent quarters.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkex.com.hk"
   },
@@ -254,7 +254,7 @@ const HK_MACRO_DATA = [
     previous: "Well above 8% min",
     trend: "— STABLE",
     trendClass: "positive",
-    implication: "Stable bank capital ratio at 25.1% ensures financial sector resilience, sustaining hiring in banking with low risk of layoffs for job seekers.",
+    implication: "Stable bank capital ratio at 25.1% well above regulatory minimums ensures financial system stability and supports continued lending to businesses; this provides steady hiring in banking and fintech sectors without credit-driven disruptions.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/03/20260330-4/"
   },
@@ -265,7 +265,7 @@ const HK_MACRO_DATA = [
     previous: "US$274M (2024)",
     trend: "▲ +2.3x",
     trendClass: "positive",
-    implication: "Fintech VC surging 2.3x to US$638M fuels startup growth and hiring in technology and innovation, ideal for tech-savvy job seekers targeting high-growth roles.",
+    implication: "Fintech VC funding surging 2.3x to US$638M in 2025 signals strong investor appetite for financial innovation, creating robust job growth in fintech, blockchain, and digital payment sectors; this trend is likely to accelerate given Hong Kong's IPO market leadership in Q1 2026.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk/media/eng/doc/key-information/press-release/2026/20260203e3a1.pdf"
   }
@@ -279,7 +279,7 @@ const GLOBAL_DATA = [
     previous: "Held Mar 2026",
     trend: "— HOLD",
     trendClass: "neutral",
-    implication: "The US Federal Funds Rate hold at 3.50-3.75% maintains stable borrowing costs in Hong Kong due to the currency peg, supporting moderate hiring in finance and real estate sectors while job seekers should expect steady but not accelerated opportunities amid low unemployment[1].",
+    implication: "The US Federal Funds Rate hold at 3.50-3.75% maintains stable borrowing costs in Hong Kong due to the currency peg, supporting moderate hiring in finance and real estate sectors while job seekers face steady but not accelerating opportunities.[1]",
     sourceLabel: "Federal Reserve",
     sourceUrl: "https://www.federalreserve.gov"
   },
@@ -290,7 +290,7 @@ const GLOBAL_DATA = [
     previous: "4.5% (Q4 2025 QoQ)",
     trend: "~ SOFTENING",
     trendClass: "neutral",
-    implication: "China's GDP growth softening to 5.0% from 4.5% QoQ signals cautious expansion, potentially reducing hiring in Hong Kong's trade and logistics sectors linked to the mainland, advising job seekers to target resilient domestic areas like services[1].",
+    implication: "China's GDP growth softening to 5.0% from 4.5% QoQ signals cautious expansion, potentially curbing hiring in Hong Kong's trade and logistics sectors linked to the mainland, advising job seekers to target resilient domestic industries.[1]",
     sourceLabel: "NBS China",
     sourceUrl: "https://www.stats.gov.cn"
   },
@@ -301,18 +301,18 @@ const GLOBAL_DATA = [
     previous: "Back in expansion",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "China PMI rising to 50.4 indicates manufacturing expansion, boosting demand for supply chain and export roles in Hong Kong, where job seekers in logistics can benefit from improved trade momentum[1].",
+    implication: "China PMI rising to 50.4 and back in expansion territory boosts manufacturing and supply chain activity, fostering hiring trends in Hong Kong's export-oriented sectors and opportunities for job seekers in logistics and trade.[1]",
     sourceLabel: "NBS China",
     sourceUrl: "https://www.stats.gov.cn"
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.837",
+    current: "7.834",
     currentClass: "",
-    previous: "Peg band: 7.75-7.85",
+    previous: "7.837",
     trend: "— STABLE",
     trendClass: "positive",
-    implication: "Stable USD/HKD at 7.837 within the peg band ensures predictable financial conditions, fostering consistent hiring in banking and trade finance while minimizing currency risks for job seekers[2].",
+    implication: "Stable USD/HKD at 7.834 preserves currency predictability, enabling consistent hiring in international finance and trade without exchange volatility, benefiting job seekers in export services.[1]",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk"
   },
@@ -323,7 +323,7 @@ const GLOBAL_DATA = [
     previous: "IEEPA voided by SCOTUS",
     trend: "⚠ ELEVATED",
     trendClass: "negative",
-    implication: "Elevated US-China tariffs at 10% heighten trade uncertainties, pressuring hiring in Hong Kong's export-oriented sectors like electronics and garments, urging job seekers to pivot to GBA-integrated or domestic services[1].",
+    implication: "Elevated US-China tariffs at 10% under Section 122 heighten trade frictions, likely slowing hiring in Hong Kong's export and logistics sectors while creating defensive opportunities in compliance and diversification roles for job seekers.[1]",
     sourceLabel: "Bloomberg",
     sourceUrl: "https://news.bloomberglaw.com/international-trade/china-stocks-in-hong-kong-jump-as-us-court-strikes-down-tariffs"
   },
@@ -334,7 +334,7 @@ const GLOBAL_DATA = [
     previous: "KL Joint Arrangement Nov 25",
     trend: "~ FRAGILE",
     trendClass: "neutral",
-    implication: "Fragile US-China diplomacy post-Trump-Xi talks introduces policy volatility, potentially slowing investment-led hiring in Hong Kong's international trade and finance, with job seekers advised to monitor geopolitical developments closely[1].",
+    implication: "Fragile US-China diplomacy post-Trump-Xi Apr 2026 meeting introduces policy uncertainty, prompting cautious hiring in trade-dependent sectors and advising job seekers to focus on stable GBA-integrated industries.[1]",
     sourceLabel: "The Standard",
     sourceUrl: "https://www.thestandard.com.hk/china/article/324913/Trump-to-travel-to-China-next-month-with-US-tariffs-in-focus"
   },
@@ -345,7 +345,7 @@ const GLOBAL_DATA = [
     previous: "US$2.9T infra through 2028",
     trend: "▲ SURGING",
     trendClass: "positive",
-    implication: "Surging global AI capex to US$527B drives demand for tech talent in Hong Kong's innovation hubs, accelerating hiring in AI, fintech, and data sectors amid expanding talent schemes[7].",
+    implication: "Surging global AI capex to US$527B drives demand for tech talent in Hong Kong, accelerating hiring in AI, data centers, and fintech sectors with strong opportunities for skilled job seekers.[1]",
     sourceLabel: "HKSTP",
     sourceUrl: "https://www.hkstp.org/en/park-life/news-and-events/news/hkstp-career-fair-2026-reimagine-ai-plus"
   },
@@ -356,7 +356,7 @@ const GLOBAL_DATA = [
     previous: "15th 5-Year Plan launched",
     trend: "▲ DEEPENING",
     trendClass: "positive",
-    implication: "Deepening GBA integration accelerates cross-border opportunities, boosting hiring in professional services, logistics, and tech within the Greater Bay Area, benefiting job seekers with bilingual skills via expanded TTPS[8].",
+    implication: "Accelerating GBA integration deepens cross-border opportunities, boosting hiring in logistics, professional services, and tech within the Greater Bay Area, urging job seekers to leverage mobility schemes.[1]",
     sourceLabel: "Beijing Review",
     sourceUrl: "https://www.bjreview.com/China/202603/t20260316_800433003.html"
   },
@@ -367,13 +367,22 @@ const GLOBAL_DATA = [
     previous: "184 previously",
     trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "TTPS expansion to 200 universities eases talent inflows, intensifying competition for mid-level roles but creating supervisory jobs in HR and tech, encouraging local job seekers to upskill in high-demand areas like AI and finance[7].",
+    implication: "TTPS expansion to 200 universities enhances talent inflow, intensifying competition for mid-level roles but spurring hiring in high-skill sectors like finance and innovation for qualified local job seekers.[1]",
     sourceLabel: "LeapScholar",
     sourceUrl: "https://leapscholar.com/digest/news-hong-kong-top-talent-pass-scheme-2026-2027"
   }
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Security stepped up at hospitals in wake of data leak",
+    date: "2026-04-09",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1850413-20260409.htm",
+    category: "DATA GOVERNANCE & PRIVACY",
+    impact: "The hospital data leak prompts heightened security measures, potentially increasing demand for cybersecurity and compliance roles in healthcare. However, it underscores ongoing data protection vulnerabilities, raising concerns for job applicants whose personal data may be at risk.",
+    sentiment: "negative"
+  },
   {
     headline: "Chain collision on San Tin Highway leaves one dead",
     date: "2026-04-09",
@@ -589,6 +598,15 @@ const NEWS_DATA = [
     category: "TECHNOLOGY & AI",
     impact: "HSBC weighs deep job cuts as AI overhaul unfolds, Bloomberg News reports",
     sentiment: "negative"
+  },
+  {
+    headline: "Hong Kong more attractive to talent amid Middle East tensions, labour chief says",
+    date: "2026-03-18",
+    source: "South China Morning Post",
+    url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPRHpNQmdrenFzRU54UGMxeEJHWUdFNVdJaFFFS0xUTEd6U2FkaW5KYmN1UTNjcmNYblB0d19mOTliSXJ5Z2NvcTQtQjkwa0szNWhrOU5wWW5NeXVFU1k3SEFlbU9kLXZYTkE0d1FlMEM1TlZhSzdEWlk4T09mQjVkRDVzbTN2MEZEa0trOTJXLW1WcUVvaEVUNHBtRGVxU2k5ckJHalNIdGIxcWFqZ2JzYVhITFViakt5U3AybEFsYXUtdmFUVzNnNUZhREVlcVdiZTg2SjJiVXAxdnp1WU1V0gHfAUFVX3lxTE5OWktJLWhVYlJyeEpWYlhzYXI5M1RONkx3WWlIVktLQ241dE9Vdzgyc2tneW9rNkJodVFUMDNELUNldF82d0E5UlJzeFZyZU05VlFrcXVrbzQybzV3WWl0ZnZHZjVHT3JRYy1xSko2T001Mm53MHBxNE1mb0hUUTRMaVoyNG1CTDJnczVDNDBORE83bVNTUU95VG5kdjNFdGpxeGhYcmtySkFRbmhKenBGVExIcjJac1V3dHdzdDhiSVNIZzhvbzdRZFYxMnJZYWZWUjBFRnFlNEg5X0VYbEU?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Hong Kong is becoming more attractive to global talent amid Middle East tensions, potentially increasing competition but also signaling employer demand and economic resilience for skilled job seekers.[6] Labour chief's statement may boost inflows in high-demand sectors.",
+    sentiment: "positive"
   },
   {
     headline: "人行減息0.25厘 刺激大灣區經濟 [PBoC Cuts Rates 0.25% to Stimulate GBA Economy]",
@@ -843,6 +861,15 @@ const NEWS_DATA = [
     sentiment: "neutral"
   },
   {
+    headline: "The Year Ahead 2026",
+    date: "2026-02-20",
+    source: "| Asian Legal Business",
+    url: "https://news.google.com/rss/articles/CBMia0FVX3lxTE55eG1RT2FnMGdmZGZxZXc3YmNETnFDMzYybmkyNmJQUkVQdkFxTGlzMm5kcGluUUpFLUViWjBRWTZlcVJHN0cwdGcwTlV5aDkxdXRPNUEwYWRmMlBVajRPMHFzelZxZW1saW13?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "The Year Ahead 2026 outlook from Asian Legal Business likely covers broad legal and business trends, offering insights into hiring in law and related fields.[7] Neutral impact as it provides forward-looking analysis without specific job commitments.",
+    sentiment: "neutral"
+  },
+  {
     headline: "SCOTUS Strikes Down IEEPA Tariffs; 10% Section 122 Remains",
     date: "2026-02-20",
     source: "Bloomberg Law",
@@ -1066,33 +1093,6 @@ const NEWS_DATA = [
     category: "FINTECH",
     impact: "Hong Kong's fintech strategy focused on AI and tokenization signals government commitment to developing high-value sectors, creating sustained demand for specialized fintech professionals and positioning the city as a regional innovation hub with strong employment prospects in emerging technologies.",
     sentiment: "positive"
-  },
-  {
-    headline: "Watch Hong Kong's Hui on FinTech, AI and Start-Ups",
-    date: "2025-11-03",
-    source: "Bloomberg.com",
-    url: "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRWJ1WHJMa2NKVmNQTDg4Tk1xaFVESGlCbFcybzlOZjVHSlJtc1ctTVBqdmEzLWh6MWFrR0FjTkp6WjJZOFRNV2lkaUtzaU1rQUR4RGkzaTMtLVFsMkx3QjlQWGM2ckprc3lYNUxlSVhfcWxzcGVwMjRDOGZlWmdGaDh5VlFHYjZPTVctT2J1cXgxWmJxNXB3VmtZQ3JaT0k?oc=5",
-    category: "TECHNOLOGY & AI",
-    impact: "Watch Hong Kong's Hui on FinTech, AI and Start-Ups",
-    sentiment: "neutral"
-  },
-  {
-    headline: "HSBC Vows No Layoffs After Hang Seng Deal, HK Finance Chief Says",
-    date: "2025-10-16",
-    source: "Bloomberg.com",
-    url: "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWmF5QmlSNFM5UHl4aDVOZ1hkLV9pNW9aczVrR2dxWk5xVFB0anJ5QWtnQlNZdVJIdDRtYmltRl9Vb1R1UFpYWks2LW1JbVYyTU9qRG5UVVFpZDRPYU1HM3ZEeXM5dHJ3VGMwQUdxWkRfLXFRUmxvVl8xYm5ZZEo2RW14YVdZMlI2WDN4S2Q4YnRKaTc0eENUN3M2ZVpuRy1IYzJnT2dVQVRXcFU2eFBaUF9YVQ?oc=5",
-    category: "LOCAL EMPLOYMENT",
-    impact: "HSBC Vows No Layoffs After Hang Seng Deal, HK Finance Chief Says",
-    sentiment: "negative"
-  },
-  {
-    headline: "AI Governance: Practical Guidance from Hong Kong Privacy Commissioner for Personal Data",
-    date: "2025-10-02",
-    source: "Mayer Brown",
-    url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNXhCa1dBcHVxYXRvSGpna3F0NVlhdGQ4X00tNVpXZld6MVhJNkcyc1Y4bnNuZzE3dW9IRVUxZnhObFFBbDljOVlaVUE2bl93Qy1WTl9RZHViYTczV2ZXZWFFYVZVbndSSUpTWUVFaHc3XzJJMDBLV19iMGptaE1lVk1sMWxxNnBsZWs0NnVCX1ZQZXppWXlSdUZObHhyZVJ3SU1wSmswOHNLM1o2TlVpTm55cjZ2YmxJVU1tOWNTbE95YTBSQ1J0NV9NUGdid1lXUHBtS2pLb0NONk5GSTBn?oc=5",
-    category: "TECHNOLOGY & AI",
-    impact: "AI Governance: Practical Guidance from Hong Kong Privacy Commissioner for Personal Data",
-    sentiment: "neutral"
   }
 ];
 
