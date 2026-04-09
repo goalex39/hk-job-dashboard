@@ -257,9 +257,9 @@ JOBS_PROMPT = (
     "Prioritise roles valuing: CIPP/E, CIPM, CDMP, CRISC, DAMA, FIP, banking experience."
 )
 
-jobs_data = []
+JOBS_DATA = []
 try:
-    jobs_data = extract_json(ask_perplexity(JOBS_PROMPT))
+    JOBS_DATA = extract_json(ask_perplexity(JOBS_PROMPT))
     print("  Job listings:", len(jobs_data))
 except Exception as e:
     print("  ERROR parsing jobs:", e)
@@ -296,3 +296,113 @@ print("\n✅  data.js written at", NOW)
 print("    KPI indicators:", n_kpi)
 print("    News items:    ", n_news)
 print("    Job listings:  ", n_jobs)
+
+#!/usr/bin/env python3
+"""
+update_data.py
+Rewrites NEWS_DATA and JOBS_DATA in data.js (or data-2.js).
+
+Usage:
+  python update_data.py
+
+Input files (place in same folder):
+  news_items.json   →  array of news objects
+  jobs_items.json   →  array of job objects
+
+If a JSON file is missing, that section is left unchanged.
+"""
+
+import json, re, os
+from datetime import datetime
+
+# ── CONFIG — change DATA_JS_PATH if your file is named differently ─────────
+DATA_JS_PATH   = "data.js"        # rename to "data-2.js" if needed
+NEWS_JSON_PATH = "news_items.json"
+JOBS_JSON_PATH = "jobs_items.json"
+# ───────────────────────────────────────────────────────────────────────────
+
+
+def list_to_js_array(items: list, indent: int = 2) -> str:
+    """Convert Python list of dicts → JS array literal with unquoted keys."""
+    pad = " " * indent
+    rows = []
+    for item in items:
+        fields = []
+        for k, v in item.items():
+            if isinstance(v, str):
+                escaped = v.replace("\\", "\\\\").replace('"', '\\"')
+                fields.append(f'{pad}  {k}: "{escaped}"')
+            elif isinstance(v, bool):
+                fields.append(f'{pad}  {k}: {"true" if v else "false"}')
+            elif isinstance(v, (int, float)):
+                fields.append(f'{pad}  {k}: {v}')
+            else:
+                fields.append(f'{pad}  {k}: {json.dumps(v)}')
+        rows.append("{\n" + ",\n".join(fields) + "\n" + pad + "}")
+    return "[\n" + pad + (",\n" + pad).join(rows) + "\n]"
+
+
+def replace_js_array(js_content: str, var_name: str, new_items: list) -> str:
+    """
+    Finds `const VAR_NAME = [ ... ];` and replaces the whole array.
+    KEY FIX: uses re.DOTALL so it crosses newlines,
+    and a non-greedy match so it stops at the first `];`
+    """
+    pattern = re.compile(
+        r'(const\s+' + re.escape(var_name) + r'\s*=\s*)\[.*?\](;)',
+        re.DOTALL
+    )
+    new_array = list_to_js_array(new_items)
+    updated, n = pattern.subn(
+        lambda m: m.group(1) + new_array + m.group(2),
+        js_content,
+        count=1
+    )
+    if n == 0:
+        raise ValueError(
+            f"Could not find `const {var_name} = [...]` in {DATA_JS_PATH}.\n"
+            f"Check the variable name matches exactly (it is case-sensitive)."
+        )
+    print(f"  OK  {var_name}: replaced with {len(new_items)} items")
+    return updated
+
+
+def load_json(path):
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+# ── MAIN ────────────────────────────────────────────────────────────────────
+print(f"\nReading {DATA_JS_PATH}...")
+with open(DATA_JS_PATH, encoding="utf-8") as f:
+    content = f.read()
+
+new_news = load_json(NEWS_JSON_PATH)
+new_jobs = load_json(JOBS_JSON_PATH)
+
+if new_news is not None:
+    content = replace_js_array(content, "NEWS_DATA", new_news)
+else:
+    print(f"  --  {NEWS_JSON_PATH} not found, NEWS_DATA unchanged")
+
+if new_jobs is not None:
+    content = replace_js_array(content, "JOBS_DATA", new_jobs)
+else:
+    print(f"  --  {JOBS_JSON_PATH} not found, JOBS_DATA unchanged")
+
+# Update LAST_UPDATED timestamp
+hkt_now = datetime.now().strftime("%Y-%m-%d %H:%M HKT")
+content, n = re.subn(
+    r'(const\s+LAST_UPDATED\s*=\s*")[^"]*(")',
+    lambda m: m.group(1) + hkt_now + m.group(2),
+    content
+)
+if n:
+    print(f"  OK  LAST_UPDATED -> {hkt_now}")
+
+with open(DATA_JS_PATH, "w", encoding="utf-8") as f:
+    f.write(content)
+
+print(f"\nDone. {DATA_JS_PATH} saved successfully.\n")
