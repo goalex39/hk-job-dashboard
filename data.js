@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "09 Apr 2026 10:28 HKT",
+  updated: "09 Apr 2026 10:41 HKT",
   version: "v2026.04"
 };
 
@@ -41,12 +41,12 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "24,751",
-    delta: "— latest available",
-    deltaClass: "neutral",
-    period: "30 Mar 2026",
-    source: "Trading Economics (HK50)",
-    sourceUrl: "https://tradingeconomics.com/hong-kong/stock-market",
+    value: "25,740",
+    delta: "▲ +2.48%",
+    deltaClass: "positive",
+    period: "09 Apr 2026",
+    source: "Yahoo Finance (^HSI)",
+    sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
     valueClass: ""
   },
   {
@@ -375,6 +375,60 @@ const GLOBAL_DATA = [
 
 const NEWS_DATA = [
   {
+    headline: "Chain collision on San Tin Highway leaves one dead",
+    date: "2026-04-09",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1850406-20260409.htm",
+    category: "GLOBAL",
+    impact: "Chain collision on San Tin Highway leaves one dead",
+    sentiment: "neutral"
+  },
+  {
+    headline: "KPMG: Hong Kong organisations focus recruitment on revenue-linked roles as AI adoption advances",
+    date: "2026-04-08",
+    source: "KPMG",
+    url: "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQVkNjNzRNeDFHa2RLQzg4UVVwYmVya1FZUzYxa0s1SFlGZXZVSGVKRGJsb3pkVm5xd0R5MVdhekx5Ri1WY3hXSWVtc3c5aUtfbG5nV1JTc3B4Sm5ScklraExLMXR2RTluMDBaYmFXekNVbk5jZC1Jd1FGMm1QZHBwdDJBRTVZclFQY3Jfa2htc2lXSTBWLVNnSzd2eHhTdmd4ZW11dTY0c1VDaG5OcWMteDUxNVdsMjhCQnpmek5LTGNvRUFHTXdUa0ZYMUIxcGdsckNfcEM1b2hDR2dQ?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "KPMG: Hong Kong organisations focus recruitment on revenue-linked roles as AI adoption advances",
+    sentiment: "neutral"
+  },
+  {
+    headline: "24% of Hong Kong firms to widely adopt AI, with smaller headcounts expected: KPMG",
+    date: "2026-04-08",
+    source: "South China Morning Post",
+    url: "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPQlVfSmR4QUQyVENTZ0lTek1reTJOcXVhaGdiWTdTcmtLTEF5NWxOZ2tNeG5zdXdDeFNRSUQtVDBUWTVaMjhyc29EVEgxaEtXU2FwU3h4ZTFadVZRTHBKUFBlNGdlOV9rNEo3YURWcXVhWlNFZ1ZYdUxUV3dFcjh5NGl0VHFVbGpsZjk4T1U2YUlleWlueVRMZFQ3QlZQdEI2OS0ydmhiWFJkYTVtS3JTZktfZU9wRC1KZUlNTXBuNVdpeXVMTnQyTTRtSFFfd1pyUk400gHTAUFVX3lxTE03N0NNMHhFOXpwT1YwcUFlbi1OSHFMNmdXQURabWR5UmJ1YmR3amFkYm5ZMXpObGxMZHRFWGVWUkJlWXpwUDU2Z0NaWVlxWVBTaVVfMkdFVnRxREV3T1lDaERDVGpkWEFQNkFTMXZFdkxLOVlpRE44OXJrbk1vU0ZxOUFtaE1CT25BVjV6V1dOTVZEVEhUZVVrUTB2VEtvRDNCUkVqdFdXdV82VEhweGhQUE9GNzdMZ1RaSHFQYTU3ZmktclVYMm9KUGsxeU1wWm1vTFU?oc=5",
+    category: "GLOBAL",
+    impact: "24% of Hong Kong firms to widely adopt AI, with smaller headcounts expected: KPMG",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Man arrested over stolen patient personal data",
+    date: "2026-04-08",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1850354-20260408.htm",
+    category: "GLOBAL",
+    impact: "Man arrested over stolen patient personal data",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Law Society to help mainland firms go global",
+    date: "2026-04-08",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1850315-20260408.htm",
+    category: "GLOBAL",
+    impact: "Law Society to help mainland firms go global",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Tai Po blaze: no fire safety system checks before firm sent 85 shutdown notices",
+    date: "2026-04-08",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/society/article/3349426/tai-po-blaze-no-fire-safety-system-checks-firm-sent-85-shutdown-notices?utm_source=rss_feed",
+    category: "GLOBAL",
+    impact: "Tai Po blaze: no fire safety system checks before firm sent 85 shutdown notices",
+    sentiment: "neutral"
+  },
+  {
     headline: "FTAHK制定港2030目標：助金融業AI應用率達90% 吸引逾百億投資 [FTAHK Sets 2030 Target: 90% AI Adoption Rate Across All HK Financial Institutions, Attracting HK$8-12B Investment]",
     date: "2026-04-03",
     source: "FTAHK / 金融科技協會",
@@ -483,6 +537,15 @@ const NEWS_DATA = [
     sentiment: "positive"
   },
   {
+    headline: "AI isn't killing jobs, it's 'unbundling' them into lower-paid chunks",
+    date: "2026-03-24",
+    source: "theregister.com",
+    url: "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAyZkdzWlY1anVsaGlpejZKeGhUSnpBLWU0OVF1QS1YVHRmQUxYUnNBVmx6dnpWWlE1RmRFdUxQV3o0d0FEU29OSGRuNXVMNDlubWkyM01aUlc1dUswQXRveEVLUHNlOXJt?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "AI isn't killing jobs, it's 'unbundling' them into lower-paid chunks",
+    sentiment: "neutral"
+  },
+  {
     headline: "HKMA Fintech 2030 Blueprint: AI, DLT, Data Excellence to Transform Banking",
     date: "2026-03-22",
     source: "HKMA",
@@ -519,6 +582,15 @@ const NEWS_DATA = [
     sentiment: "positive"
   },
   {
+    headline: "HSBC weighs deep job cuts as AI overhaul unfolds, Bloomberg News reports",
+    date: "2026-03-19",
+    source: "The Standard (HK)",
+    url: "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWW5VV0pMWmNhMmM0MVFhU2owTURSMzhvbG9NNjZ3Wm82a3JmU3JqVWpHWWJ3QjZTMnJJX2RtMGE2U3JqVktYVWNuNnhVX0VaT05tYUgxR3hJVkViN2lEM1pjcFRZMmNUbnNhTUtnQWg1YlR2eXBoTkVYZzJTd2p1NGV0enNjR3FvbUF0b3BILVEtNDJxcldva09oTlZ2dTdhN0U2bERSN3VfN0VYcmZjNUl5bjZPXzBPUGVrbnd4WGw3RU0?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "HSBC weighs deep job cuts as AI overhaul unfolds, Bloomberg News reports",
+    sentiment: "negative"
+  },
+  {
     headline: "人行減息0.25厘 刺激大灣區經濟 [PBoC Cuts Rates 0.25% to Stimulate GBA Economy]",
     date: "2026-03-18",
     source: "文匯報 / 央行",
@@ -544,6 +616,24 @@ const NEWS_DATA = [
     category: "POLICY & REGULATION",
     impact: "Seasonally adjusted rate fell from 3.9% (Nov-Jan) to 3.8% (Dec-Feb). Financial services unemployment at historic low of 1.2%. But retail/accommodation/F&B unemployment elevated at 5.5-6.2%. Stark bifurcation between knowledge-economy and service-sector employment.",
     sentiment: "positive"
+  },
+  {
+    headline: "Cyberport Career Fair 2026 to offer more than 2,000 I&T positions",
+    date: "2026-03-17",
+    source: "South China Morning Post",
+    url: "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWEhsYTVfdEk2V3NDREhXUE9uWGxMSzcyLWdnNXc2cGlNUG9yMW14MFp2WVAyUUNIUzI1WVFnclc2U1o3aUxyM25RdTd4OGo1OEFwTTR1azNyN1JtU09fanJhMDNaOVR0d1RWUE5jM290d3JjdktMUThjZWs3dUtsUGpMUVFYRUNGdEFLX3M0RHQzemtJbHRUcUlnRFpHZVhlTkdURjdveFZUOERUU2N3dTN3XzNVTmNjZHptZmszQlU3Wmwxckx0cUF2dmhCYjNyQWdnYQ?oc=5",
+    category: "GLOBAL",
+    impact: "Cyberport Career Fair 2026 to offer more than 2,000 I&T positions",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Regulating the freelancer economy in Hong Kong: HR considerations amidst gig worker proposals",
+    date: "2026-03-17",
+    source: "Human Resources Online",
+    url: "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeEJpaFhoSkZoN01OUmhiMHV5WVlWcl9USHRWb3VQWDV3NGtGNHVlM3NhMVhqUHhGSVJNX0tmdkVvd2F6UVJFY2phaWlEREFQbUtKa1pPM0Q0ZXJ6WWdzOUdGSUhsSndMRnRkekJCcDhqUzZWUGR1LV92Z0ktZkpNbjRpX0R4NmtZd19Sb1hIRi1vSUFoZGcweUlZSUlrdjdQRUk5ekpzRjdOU1ZQamIxY2NuSkJfUGxLUHF1cFU1Zmg3czlnR0NHUA?oc=5",
+    category: "GLOBAL",
+    impact: "Regulating the freelancer economy in Hong Kong: HR considerations amidst gig worker proposals",
+    sentiment: "neutral"
   },
   {
     headline: "勞工處4月起加強餐飲、零售、建造業招聘及就業服務",
@@ -573,6 +663,24 @@ const NEWS_DATA = [
     sentiment: "positive"
   },
   {
+    headline: "Exclusive | Hong Kong job openings hit 6-year low in 69% of sectors amid AI’s ascent",
+    date: "2026-03-13",
+    source: "South China Morning Post",
+    url: "https://news.google.com/rss/articles/CBMizwFBVV95cUxNemlrQ2oyTElwd0g2ckdXUURoSnU4TFR0XzJTdG1CX3ozT3dtWVNwNV82X3ZnanZSczlLNWFZNmdDM0o2Wkl6cVphTjZCRWZPZ3IwanZjWGNneWEzZU5zTjRlZUFWcV9SZjllLXhXWUpEVlRoelVMOWlWdEZkNzBkM1hUS1lreVlabjZILW80aEVqVUFsb2Z6dm0xVWlCNEpxc0w3NVhGMm00T0lSeUdRbmxIbWxMeDZjUXNnQWVvUm5ybDdHbW5YVGRKVEY4VmPSAc8BQVVfeXFMT1dVdFU5U202ZFhaZDY3VWJaWGJMY1RVTFp3RDBHTzNlcEhTQThXSkxRMzZYdk5NZVlXOHBEYWJsQXktTVlnT0d2NXlEbzR6NXIyampta0R1RWl1MW5jYV9CTWdIbkF4Skp1STI5d3VGaUR2MXJrLXQtQmh0WTRFanVLalNGME9ZTTdtakdudWV5RDdnQlplUVFWWEJrd0lZMTlHMnNSTFRRZlFpbkloMmdmQ18zVlozODdqaXd3eEh0Z0VYUUIxR2R5NC16SXJB?oc=5",
+    category: "GLOBAL",
+    impact: "Exclusive | Hong Kong job openings hit 6-year low in 69% of sectors amid AI’s ascent",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Hong Kong salary guide 2026: Pay trends, hot skills, and hiring priorities across key sectors",
+    date: "2026-03-10",
+    source: "Human Resources Online",
+    url: "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdjE0cHJ4N0k5UmpleURZWXlsRmRXX1BMN2NfdkFYTUFqZWdxTE9hNG55VVdyV0gwM3phaGY0WkpTMGlpV2xQTFBtSXg1Q25SVWRidm1QQk5YUHB2SjdxYXVIUG5VU0prVzlpbHJLeG03eE9ZcUtqWmNjVEZ1amFpaTJ2SS1jemk2MEZ6bGRkOER6QkJSSzVWU1IzNGdWX3lJZ1pLLWtKcXgzaXdMazVqNEhxYmNJdUVjY3hKaXJ6c2xUbHEtd3c?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Hong Kong salary guide 2026: Pay trends, hot skills, and hiring priorities across key sectors",
+    sentiment: "neutral"
+  },
+  {
     headline: "逾2900個優質職位空缺將於『職場新視野招聘會』提供",
     date: "2026-03-10",
     source: "政府新聞公報 (info.gov.hk)",
@@ -597,6 +705,15 @@ const NEWS_DATA = [
     url: "https://ustr.gov/issue-areas/enforcement/section-301-investigations",
     category: "US TARIFFS",
     impact: "USTR expanded the Section 301 forced labour investigation scope to include Hong Kong-origin goods and re-exports. This could lead to targeted tariffs or import bans on specific HK-re-exported products. Increases compliance burden on logistics and trade companies, driving demand for trade compliance specialists.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Part 2: Employee or independent contractor? Worker classification and immigration risk in Hong Kong’s gig economy",
+    date: "2026-03-09",
+    source: "Lewis Silkin LLP",
+    url: "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdk9HOEQ5TERYSlB4TlZYZkh5b1dEYTVEbVRiVWFsRGFaWlY1eVRwVE5Nd0NIbUk4R3dkYU9IeWdtWGU5cWJWNHZjRmFaVzVoQ3RoeXpFME51aW9QRHlYTkNHd2hpM19wMDd5cHdxaXlVRlBxTERPd3FucVVSWU9TMHc4WjJKUVpaZlRBakNQMFBFMGZVTEdQdHNOV29WeXY0cTJ3Z1puMVFnQTRXMzQtZUFPM2FJX1VOb182aUxUSHU3Y2hIdkMzMUtaWlo?oc=5",
+    category: "GLOBAL",
+    impact: "Part 2: Employee or independent contractor? Worker classification and immigration risk in Hong Kong’s gig economy",
     sentiment: "negative"
   },
   {
@@ -645,6 +762,15 @@ const NEWS_DATA = [
     sentiment: "positive"
   },
   {
+    headline: "Research: How AI Is Changing the Labor Market",
+    date: "2026-03-04",
+    source: "Harvard Business Review",
+    url: "https://news.google.com/rss/articles/CBMid0FVX3lxTE13akk5eDVQM1phc3BhYnpCYkY3dW1SWThKck1HbjZvc3Z3VVQyRGpxQmpKZ3dTQzY0aFV1S0RZR0xXVkFJZXJFOXdQa2xnUjBITFZ1a0JIb3V2WUJjYUJzZXQweC1QclFjdjF5VVo4TW56aDhFVkpZ?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "Research: How AI Is Changing the Labor Market",
+    sentiment: "neutral"
+  },
+  {
     headline: "HK Budget 2026-27: Government Freezes Civil Service Headcount, Invests in Digital Economy",
     date: "2026-03-02",
     source: "HKSAR Budget / GIS",
@@ -672,6 +798,24 @@ const NEWS_DATA = [
     sentiment: "positive"
   },
   {
+    headline: "Why are Hong Kong’s fresh graduates struggling to find a job?",
+    date: "2026-02-27",
+    source: "South China Morning Post",
+    url: "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaTEzSGsyajFLYV9uVzBuRmJGREd1SDFjS1RTUV9heFN4bVVZRk1EUnpMMTY5WnpmSWhBcWNqQVFzOGdDbkRSVE1VdkFaVkQ3QU02YTFfOEwyOHhEaS0tck1oX0tJOTNNXzhRZTctUF93SjR5Y0E4clZQY0ZVV3J2NFlvcmduQlNtbWJLdjZPQjZibC1XZUR2aXhkbktiT3lp?oc=5",
+    category: "GLOBAL",
+    impact: "Why are Hong Kong’s fresh graduates struggling to find a job?",
+    sentiment: "neutral"
+  },
+  {
+    headline: "How much are HK marketers making in 2026?",
+    date: "2026-02-27",
+    source: "Marketing-Interactive",
+    url: "https://news.google.com/rss/articles/CBMigwFBVV95cUxPblZuODRmby1mR20yc2dsQi00QVRZaTZJdl9YOW1UVUU4ZGVNRTB3dGc5dTlHTWlXQTd1alc4TFhOVGRjYlhGcmhDQXNSTC1kRnJrRTM2TDQzVjBaVkM4Q0pZdkl3WHdXQV9UVlV0cHVodENOb0VpWHktQUg5eDdCcW1SMA?oc=5",
+    category: "GLOBAL",
+    impact: "How much are HK marketers making in 2026?",
+    sentiment: "neutral"
+  },
+  {
     headline: "Mainland Chinese Tech Listings on HKEX Surge 153% in 2025",
     date: "2026-02-25",
     source: "HKEX / SCMP",
@@ -679,6 +823,24 @@ const NEWS_DATA = [
     category: "CHINA MAINLAND",
     impact: "76 mainland tech companies listed on HKEX in 2025 (vs 30 in 2024), driven by US/EU geopolitical barriers. Each listing requires HK-based compliance, legal, investor relations, and data governance teams. Structural demand driver for professional services talent.",
     sentiment: "positive"
+  },
+  {
+    headline: "HSBC's pre-bonus equities job cuts are fine news for the survivors",
+    date: "2026-02-24",
+    source: "eFinancialCareers",
+    url: "https://news.google.com/rss/articles/CBMifkFVX3lxTFBpNDdMd3VtZF9rUEVzYmxBZWVmVzc1emtCX1ZWRHJ0MXYzWFNXTDJjVzFvajAwallNMDdMUTNMR1ZraTFPUjJEX0J3WElFcmdqUnE1clFyTUtxQ0lwUDVneXVuSzBpYzNaNlc4S3FoTlE1VDlaUWpCcFR1NzhTUQ?oc=5",
+    category: "GLOBAL",
+    impact: "HSBC's pre-bonus equities job cuts are fine news for the survivors",
+    sentiment: "negative"
+  },
+  {
+    headline: "Hong Kong labour market softens slightly as unemployment rate climbs to 3.9%",
+    date: "2026-02-23",
+    source: "People Matters SEA",
+    url: "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOVHlhY19zSVJFUUVVRXdnYS1JUzR3OXBqaUlZblBBWWhoNHQtNUxtN2NZN3lhUzJuaGRlZTdTMENtUHBGQnVaV3Y1ZEY5WGQ3dXBBbFNQTnlNOTFvU1RRRFNCaHhaLXp2c2dNdnRwc3B1ejYtNk85bm1vLUgyV2thY08tNUlyLW1GYW9ZMllwanBxQ21LMHZGMnhwbmdQSjlZaVlUT0dhR1JKYXg3eTl1dE5zdlJSZk8yeUoxRVpIMjlnSTNxOE9JRGdpWldjNDRBMF82M1dwdHVLWFE?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Hong Kong labour market softens slightly as unemployment rate climbs to 3.9%",
+    sentiment: "neutral"
   },
   {
     headline: "SCOTUS Strikes Down IEEPA Tariffs; 10% Section 122 Remains",
@@ -717,6 +879,15 @@ const NEWS_DATA = [
     sentiment: "positive"
   },
   {
+    headline: "Hong Kong’s $8B Wealth Fund Targets Fintech, AI For Strategic Growth",
+    date: "2026-02-06",
+    source: "Crowdfund Insider",
+    url: "https://news.google.com/rss/articles/CBMitAFBVV95cUxOS0lIU2FxcWNaQkZvZ3VYU0dXUExhVDFOTXR1U3ZnOE5Cd2VUVlVDdDdVRVB4V181dFozRE1nZGdjWl82NmhGcXVxRXNjeWNnQ2tYek05enFtQklHVWxOZnNYemFTanNvMWIwS25oQmwyQXZTZ1JhNWtUS0dtaEdYY3owZ25PMWlzWGZMRkpYUHNnejgxSlRnemF1SU5BQWdjWXUzZDhmOEU2MmNqTWpBN21wcm8?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "Hong Kong’s $8B Wealth Fund Targets Fintech, AI For Strategic Growth",
+    sentiment: "positive"
+  },
+  {
     headline: "Fintech VC Investment in HK Surges 2.3x to US$638M in 2025",
     date: "2026-02-05",
     source: "HKMA / InvestHK",
@@ -726,6 +897,24 @@ const NEWS_DATA = [
     sentiment: "positive"
   },
   {
+    headline: "As AI spreads, entry-level economics jobs are shifting",
+    date: "2026-02-04",
+    source: "marketplace.org",
+    url: "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVUw4dmJYcHpnc1RTZVpULUgtMlhwYm5keDZnaDI1ZWJsWFNjN0xkWFlBdjBBcThtWHdGSWU2dHZMcExPWnhkTTBpVmh5OVVuMkxiLTV2Sms2SEpRWjBXVUg3V1NCakt6NDBfbnIxRHVQRFdTODhYMHViak9nYlQxS2M1ZU5paURNdVU4Qk9zU3U3VDhYZ0E1UVFSdw?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "As AI spreads, entry-level economics jobs are shifting",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Part 1: Hong Kong’s gig economy",
+    date: "2026-01-26",
+    source: "Lewis Silkin LLP",
+    url: "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSWtITUFDVGx1WW11aDJVRGE4TnBfWW5zWmVVeUk1NE9iUklqVHJUa1c4aDlvTW1Jc1dIbE40VW56dDZfendpZFo1ZG9wWUhLclFoV1VtbDQ5WnBzVS0ydlB1eENkQl8xTmx3T1FGVkdRM1Ftd05yNTh1SVM5blI3Sjg5bw?oc=5",
+    category: "GLOBAL",
+    impact: "Part 1: Hong Kong’s gig economy",
+    sentiment: "neutral"
+  },
+  {
     headline: "零售服務業就業人口自2018年底大跌21% 部分行業呈「無就業式增長」 [Retail & Hospitality Employment Down 21% Since End-2018; Some Sectors Show 'Jobless Growth']",
     date: "2026-01-19",
     source: "明報 / HKU經濟學家",
@@ -733,10 +922,251 @@ const NEWS_DATA = [
     category: "LOCAL EMPLOYMENT",
     impact: "A Ming Pao data analysis found that HK's retail, accommodation, and F&B employment fell 21% from end-2018 to November 2025, reaching 490,000 workers — a loss of 130,000 jobs in these traditionally accessible sectors. Despite rising retail sales values, sector employment continues to decline due to structural shifts toward high-end economic transformation, favouring finance and tech over labour-intensive services. HKU economist Tang Sik-wai described the pattern as 'jobless growth', warning that low-skilled workers face severe difficulty transitioning to finance and tech positions without significant re-training support.",
     sentiment: "negative"
+  },
+  {
+    headline: "BlackRock to cut around 250 jobs in latest layoffs",
+    date: "2026-01-13",
+    source: "Reuters",
+    url: "https://news.google.com/rss/articles/CBMiogFBVV95cUxQazd5T3M2UWJhamc5dVIyWmxYTnBEMUZPMFY3aFhSQmJXS2xHWHN0cVBsakh4emhJN1kxcTBRSWFoS1FOcWZMNllaUnZ4dFhTMURETGEtSTFQYjZKdmxTTDZXaXJrUEZ5amJKa0htVUw5WHNkMFFocnFjY3pGeFpwZXRQaUFFclFiX01fT0dYbWJYM3AxOTJMSjhCQVZCd0tITEE?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "BlackRock to cut around 250 jobs in latest layoffs",
+    sentiment: "negative"
+  },
+  {
+    headline: "China Data Compliance Trends: Rules, Enforcement, and Governance",
+    date: "2026-01-09",
+    source: "China Briefing",
+    url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNenowRV9DSEhHZ09KLTh0VXQyQVBBU2pKQ1hUSG1Lc3VaZHpDdWRkM0ZTSnlrZUJXRkdzZFpYanRBOHRyeEROUFU0NWZLUklHQmNIOTJXNEQ1RXgtc1pLWUJKTXh0dUEyNnhrM1A0SkxEdGtkSG42RUJJbklWa3AxeEhFdllLWm00c2Rn?oc=5",
+    category: "CHINA MAINLAND",
+    impact: "China Data Compliance Trends: Rules, Enforcement, and Governance",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Emerging Greater Bay Area Workforce Retains Strong Interest in Fintech, with AI Skills Leading the Wish List: Bloomberg Survey | Press | Bloomberg LP",
+    date: "2025-12-29",
+    source: "Bloomberg.com",
+    url: "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQYzlGbjNxTGNLV08zejNOQS13NWg4SmZDRWx6SmdrTjZPUzQxX0g2Z0tUcEdEc3ZDUTA5YW9MSUV1b2c1dlhzOXlweE1rbXY0c3VyckRfSUxmREpwSF9VS191UEZYMEFvUjVpSHFBN09MY3BZVzJhWjd0SXV4V01vb3pRNHNXWkx4RGRMc2M2S2JaUTc2MmFYeEVWMnlrMGJRWHN1YU9ZaEZXNC1OTFhBZGdUQUpIRV9zZU5XZUVIR2p0cU14ZjBpbi1EWDQ5elhZUUtINEhjUVZvbmZ4WVA4U0hBc3N6VWdXN3JNVnRiTm82b2M1dGZiSQ?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "Emerging Greater Bay Area Workforce Retains Strong Interest in Fintech, with AI Skills Leading the Wish List: Bloomberg Survey | Press | Bloomberg LP",
+    sentiment: "positive"
+  },
+  {
+    headline: "Hong Kong accounting firms plan hiring spree and embrace AI to attract talent",
+    date: "2025-12-29",
+    source: "South China Morning Post",
+    url: "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNi1GalFJLXZkeE5sRzJZSXI2VGhMbGFfQ0xxQkd5eHI3dGRQeHdFWG9RZXZQcmt3OGViMVI1LWN6emVtZmtDQXVIRGdHOURGbWJ0NFdjMlIwTi1NSUNkN0V3OWlpTkkzYzlQRTZSaFdFY0xDY0ttZkpBdWUzZXhCZGJBcG43OEVTUWNGbGZObHd3eWh5bXRwNUpsVmdLak5uTGVNVEkwcTFnZkN3SVZjcG1WV042REpRbWdxaVFDZEJIYmVWVDBuQ3gzdmVrVFZqWVHSAdIBQVVfeXFMT2VkUGJhUVBJc3RmT1VXR0lIZU5mcll2ZFkyWXh0eHVBMGxNZUFxRmJGV0NtS2xfWWx1OFZ5OVRmdzZ5Q2tZNl9wbHRZb1M4NXdYV1RxbWhGcFhEMWY4QXdWSGxCR3F4WFF6ZzRKZEpLTHNyYmFYQzd5OGtwaXl0Zm02d3lnMUxlNkJJTlFVQ3pzeTRGcFpLdVkxcVBfbnJERUYtekdrS2lRWFlfTm0wd3I1RG9hS1lQRktsOXpJOFhpd25FdFNfQ25IbkhDX3h3OUxR?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "Hong Kong accounting firms plan hiring spree and embrace AI to attract talent",
+    sentiment: "neutral"
+  },
+  {
+    headline: "China resets the path to comprehensive AI governance",
+    date: "2025-12-25",
+    source: "East Asia Forum",
+    url: "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRkNLNnA5WHFkSVJ4YWtTZ29PXzdRWDEwcWF0ZENNRjBvbW90NTJuYTg4UUVESUZUSkNrc1dzcm9rYjNvc05TSWtoY0hGQjBYZmVzSFF4U0toZFk0Y3VTS0JYQk9hRGhtLW42YkVZNHRCT1AyamhmWGdwUUhpNTR3dTF2a0ZzUDIzRnlmeGZRX0VSYV8x?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "China resets the path to comprehensive AI governance",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Total employment drops as Hong Kong employers aim for a 'conservative' hiring pace in 2026",
+    date: "2025-12-18",
+    source: "hcamag.com",
+    url: "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPNjdQejBjTWlfbGM3d2Z6enJJbG42cmpUeWR3cndMYkxmdExSOFNZdDBEenFELWpMT3BBaDIyTGsxVWw5QUdVY19UeVQzeHB6QTVnNGtQVlQyTy1YeGFmMUdmWi1NaG5EUkxDTUo1aEdDSnc3RHlTYkJIRGlSaGI3alotMXJzQnh5aVFCVWtVQi1OeGZJcTB4SWp6d042Mmt3ZDNxWTYzeVZENlo3RE4tSEExcnFNVjdVYjcyWnMyeFJhblJaYWFBMmczUHhoZ0NNM3djakttLVRGTW5qX1ZrQU1oOHM?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Total employment drops as Hong Kong employers aim for a 'conservative' hiring pace in 2026",
+    sentiment: "negative"
+  },
+  {
+    headline: "Swire layoffs: British giant to cut nearly 10% workforce in Hong Kong amid China's economic slowdown",
+    date: "2025-11-26",
+    source: "Mint",
+    url: "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWFBEUUJEcnpnSmlneUtqT2Z5eDI1d0MzMHQ3WFAwRDZ4UTNMWlFQNnF0SHQ4aEh4SXJaNDg5eDJ5NDJiLVY5QUZlZGg0bElpXy0tZVFRUkdaeHIwT3VnTmtheTNJMk5PSlBGTWtPbVBvekZ1NGdvU3RxZWNrSVBucGtKNlJRR28zMG5WRmc2V1EwcGJ0VklwVmZld2ZiTFAyNUQyZzc4ZHU1dXE5ZW9SdUNXSnlTbldGcWdPU180bEkwTTkyeGZ5aFBRbUhtYWlFcGE0NVJiZVNsSW9ybjVyYThCdFFMOFpNUW11cVpn0gHzAUFVX3lxTFBmbkYtNU5ielloWWRld09mVWVOb200WnMzQkxRci1rdmtjejJkd0lBWDk4MWdzNVQydnF4YnRhNzh4NThhTjRrcEs2MzhfZ3JNZU9wNDk3cE5PVkptd3BsUmowM0RFZDE2WjJxbXFWV1Z2VXlMNUFhSlFJdGNHeGItRF9GMHV0RmNETjlBQUVwc2ItWHVrTUtJSnpPb3l3ZUEtd2dUYS1LZzhuU2ZwU05kSzk3ZWFnbnlCQ2hrWDNNS3QxNnh1Z1VzTlJzRmVEaFRxX29kVTV3emIwYUdldUJCNzcwYmFmVEFWX01oT1NLVXpsNA?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Swire layoffs: British giant to cut nearly 10% workforce in Hong Kong amid China's economic slowdown",
+    sentiment: "negative"
+  },
+  {
+    headline: "Swire Cuts Dozens of Jobs in Rare Layoffs as China Economy Slows",
+    date: "2025-11-25",
+    source: "Bloomberg.com",
+    url: "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdDFmZk0yV3gtaEtJVU44YTItMjNUZ3FGQWM4MndwQVpiXzNkRUZJTnJtLXBjS24ybTlyVzNEdXM2UVM1RTh5UDd3cnNfMmJDX0o0eEtvbXQtcWs1TTVTNHplaU9uUFZZd25VOE45X0otTzN6MFFIeUJnMkRfQzg3TXQxZHd1V3k4OFJoVE9rU2ZoVkYyUS0tNlllX2Y4NkN0eURFOEI3NldwMGcyTkpEU0R3U2F6Zw?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Swire Cuts Dozens of Jobs in Rare Layoffs as China Economy Slows",
+    sentiment: "negative"
+  },
+  {
+    headline: "I'm a former investment bank MD turned career coach. Here are my 4 tips for landing a job in a tough market.",
+    date: "2025-11-12",
+    source: "Business Insider",
+    url: "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcjNKU0VTT1RIYkZiYWYtN05RckVfYUtjREtaZ2ZWZUY0SE9BWGNhQlAxUXc2QVQyZWZVd1lYcW55OU5Ta2I0TEdmQVhpaDRObGI5ejB6WTVUcnBoa0tKNDdIV2ZpM0NwdGx1VVpLX2VKMWFFZXVTMHBuMk1ZTXRQSWF0MVFuQVEwSGVjRXJQV2NZSjdzYVktcmlmT1ZNZkU?oc=5",
+    category: "FINANCIAL SECTOR",
+    impact: "I'm a former investment bank MD turned career coach. Here are my 4 tips for landing a job in a tough market.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Empowering Data Compliance Through Technology: Building Scalable Governance in China",
+    date: "2025-11-07",
+    source: "China Briefing",
+    url: "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZ1BzbHpvZm5nWlhCMGdJMUJNOXdiRHkyclJQb05vV3g0cW42NWMza3Z0WHZ6R3dsU2tBWHFzdXZYS1JCZXhxaW5tWkZFT1c3eElCamtRWVJsS0Jsa1RTUE9RYmtROEVCeFJQRHU3TlAwSk1ZOWRvdmJWRU9FMS1XVGxqOTZYSlZuUUFmdUFiZVFIdw?oc=5",
+    category: "CHINA MAINLAND",
+    impact: "Empowering Data Compliance Through Technology: Building Scalable Governance in China",
+    sentiment: "neutral"
+  },
+  {
+    headline: "HKMA Focuses on Tokenisation and AI in “Fintech 2030” Strategy",
+    date: "2025-11-05",
+    source: "Hubbis",
+    url: "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcE4xVnlXMFJYWmdoQndBeE9sRl95NklXNTQ1R1k0bFV5MzJZZW1faFNlWm1aSzJxRVFrNWw0bDZTYVYwTmpSY1NRU2tOZi10TzI4Q2RPeFZfZFYwWFptMGt3ZzJwRWh6ZlF1ZkNTUHBtR0xxSzJ1V0ZWTUVwUWRudXQwM0pfTU52QTN0Rw?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "HKMA Focuses on Tokenisation and AI in “Fintech 2030” Strategy",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Watch Hong Kong's Hui on FinTech, AI and Start-Ups",
+    date: "2025-11-03",
+    source: "Bloomberg.com",
+    url: "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRWJ1WHJMa2NKVmNQTDg4Tk1xaFVESGlCbFcybzlOZjVHSlJtc1ctTVBqdmEzLWh6MWFrR0FjTkp6WjJZOFRNV2lkaUtzaU1rQUR4RGkzaTMtLVFsMkx3QjlQWGM2ckprc3lYNUxlSVhfcWxzcGVwMjRDOGZlWmdGaDh5VlFHYjZPTVctT2J1cXgxWmJxNXB3VmtZQ3JaT0k?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "Watch Hong Kong's Hui on FinTech, AI and Start-Ups",
+    sentiment: "neutral"
+  },
+  {
+    headline: "HSBC Vows No Layoffs After Hang Seng Deal, HK Finance Chief Says",
+    date: "2025-10-16",
+    source: "Bloomberg.com",
+    url: "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWmF5QmlSNFM5UHl4aDVOZ1hkLV9pNW9aczVrR2dxWk5xVFB0anJ5QWtnQlNZdVJIdDRtYmltRl9Vb1R1UFpYWks2LW1JbVYyTU9qRG5UVVFpZDRPYU1HM3ZEeXM5dHJ3VGMwQUdxWkRfLXFRUmxvVl8xYm5ZZEo2RW14YVdZMlI2WDN4S2Q4YnRKaTc0eENUN3M2ZVpuRy1IYzJnT2dVQVRXcFU2eFBaUF9YVQ?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "HSBC Vows No Layoffs After Hang Seng Deal, HK Finance Chief Says",
+    sentiment: "negative"
+  },
+  {
+    headline: "AI Governance: Practical Guidance from Hong Kong Privacy Commissioner for Personal Data",
+    date: "2025-10-02",
+    source: "Mayer Brown",
+    url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNNXhCa1dBcHVxYXRvSGpna3F0NVlhdGQ4X00tNVpXZld6MVhJNkcyc1Y4bnNuZzE3dW9IRVUxZnhObFFBbDljOVlaVUE2bl93Qy1WTl9RZHViYTczV2ZXZWFFYVZVbndSSUpTWUVFaHc3XzJJMDBLV19iMGptaE1lVk1sMWxxNnBsZWs0NnVCX1ZQZXppWXlSdUZObHhyZVJ3SU1wSmswOHNLM1o2TlVpTm55cjZ2YmxJVU1tOWNTbE95YTBSQ1J0NV9NUGdid1lXUHBtS2pLb0NONk5GSTBn?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "AI Governance: Practical Guidance from Hong Kong Privacy Commissioner for Personal Data",
+    sentiment: "neutral"
+  },
+  {
+    headline: "How to get a job in fintech",
+    date: "2025-08-01",
+    source: "eFinancialCareers",
+    url: "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQdTZFbndLQzVWN2VmaER5VGZFYXBGNDY2YUtRN2hyT3BmcVhJRHZuLUJMSlR6UWlweE5keF9aV2V4NzVUSE9leERlVmlILVJHSDhIRXp4NGQ3QmlNM19PY1hBTElnTEs4TEdCU1ZBOE4yLVNm?oc=5",
+    category: "FINTECH",
+    impact: "How to get a job in fintech",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Proofing the Future: Hong Kong’s AI Infrastructure Race for FSIs",
+    date: "2025-07-28",
+    source: "CDOTrends",
+    url: "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaVg0d3VrVWJuZ29TQU9GeHI3NFFJVHpySlVCMldmam0yT0lBdFhXOFhrT0RXSmp3UFdnV1ZZbXBYdjNHZE5oUmNnSGROVWVSNFlVamszeFd1ZUNkNnJVaE5Id2lGU0ZoeTNkV1JGMEFtLWpKSEdxTWRIMEs1U2VQY0FXYm9PTnBhZXBydzZtcmk4allFWFE?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "Proofing the Future: Hong Kong’s AI Infrastructure Race for FSIs",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Hong Kong Privacy Commissioner for Personal Data Completes Compliance Checks on the Use of AI and Data Privacy",
+    date: "2025-07-25",
+    source: "Mayer Brown",
+    url: "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPbHdGYkoza09HeGtqYzJTUGZNckxOMWNOdVh6MUR1b25OczNhRU5ZSTdhMkZ3bWpJZkVsWXotdnQ4dzZ4Y1Y2dW1NUFJxUjNZblV3bDdTOGllZFhkQ2Z1bFowWjlHSy1qQXhWMzQwamVjenlqc2UyVDdVazkyVDdPSURaaFRjbmNUSVdINTN6MG01R04zM2lyb0k3bXRZNFkzMG1DcmpFRjlFQlJBS3ZIWFJKeHZKak15Y2V3bFNrdW0zbHdiRmdEMHRmUGgtRV9xN2ZBaEdBZnR5WUp1ZUJMc0dWWGcyNHZCNzBxeExleTB0RHVxNEExTW5wRHZwOWs?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "Hong Kong Privacy Commissioner for Personal Data Completes Compliance Checks on the Use of AI and Data Privacy",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Walls, Bridges, or Fortresses? Comparing Data Security Governance in China, U.S. and EU",
+    date: "2025-07-04",
+    source: "China-US Focus",
+    url: "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOHVJeDFpSXNyLWpYTWViTFNNUWNka0g1cFVjLTd4em5Oalg0VXZTbk9xQ3FXOWV6SFRjeHUxNWs5aXJGWndacC10QmV2SUo4Y185Z21rbjMwSmt4cDE5UFRjby1nWjNGM3FkTDYzU05jWl84NTZfYnI4cDRkRGtZRWZSUFNaSDJlT25EZXczZFl5Njk5SHZOT1Jwbk9yQXJUQUhiNVhjc3N5cGhTWmQ3Z0hRRzFyaEFwTDRSamg5ZG5Cb2c?oc=5",
+    category: "CHINA MAINLAND",
+    impact: "Walls, Bridges, or Fortresses? Comparing Data Security Governance in China, U.S. and EU",
+    sentiment: "neutral"
+  },
+  {
+    headline: "25% of Hong Kong employers plan to cut staff in next quarter: survey",
+    date: "2025-06-17",
+    source: "South China Morning Post",
+    url: "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeDc5R1hKV1ZIWXUxWW1WRmdPd1FBVUU2aWRnTzFuNTNuZWo0Rm5oYXdTd0syN3dBYUZFa1M1VWI1UkpDVFJvVWxTaXRNNGtMbzA5VGc1U1RvaEl5bThtczhYSEp1ZGxHbFhPb2t1ZmItU3Q2a2J4VVdDR0lNWUYwcXpHRUdLa2NrLVRucV9fZVk1YURQNDFaak9FUDJ5RlFrTS0wcXhrTGJjek51OU15a2RLTWdWMWtVRW8wSDRKczZlZGZLY2fSAcYBQVVfeXFMT0RlVUZFak1XbXh1YkJuLWo4MkR0WHhkS3ZYRVFWRVAzcEZwQU5ZaGRjWkxNZW1KZzNHdlpFdWV0RzFTOGt6S1I2NlNqZWM5TkdrUmo5a0xZVEFfbmhRS01IOEpzVGJXYWlxSV9BbGNuMjE3Rzc2cFJZLWhSX1dTVzhmWDcyUl9sM1dJNkdOQmhBQTZENTVvMy1VUG9lRzJQWnJKZjJxR2g0U2tadlpfOWNhR3ctdFczc2FmZjJfR2g0ZF9MR2ZB?oc=5",
+    category: "GLOBAL",
+    impact: "25% of Hong Kong employers plan to cut staff in next quarter: survey",
+    sentiment: "negative"
   }
 ];
 
 const JOBS_DATA = [
+  {
+    title: "Career passport: Next stop, Hong Kong",
+    company: "CPA Australia",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Career passport: Next stop, Hong Kong",
+    source: "Google Jobs",
+    url: "https://news.google.com/rss/articles/CBMinAFBVV95cUxOU0FUR2xTbDFucGxrTkNTNjJhSU80SDBGbUllYlBNVnVwZkNLVG9RZFpHYkswNW1GYkJmTl9paHhzMmw1UWxoaWtsMHpwREtab3FabldJY3JWanJYTWlkVVpiMXByTkhxRFRzVzNpVkc4UnR3NGs0WndfZlpJbElqb29HOUtmUkZycGxiRGFRajVyQlpwMDhUTXBBTkM?oc=5",
+    posted: "Recent"
+  },
+  {
+    title: "Hong Kong salary guide 2026: Pay trends, hot skills, and hiring priorities across key sectors",
+    company: "Human Resources Online",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Hong Kong salary guide 2026: Pay trends, hot skills, and hiring priorities across key sectors",
+    source: "Google Jobs",
+    url: "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdjE0cHJ4N0k5UmpleURZWXlsRmRXX1BMN2NfdkFYTUFqZWdxTE9hNG55VVdyV0gwM3phaGY0WkpTMGlpV2xQTFBtSXg1Q25SVWRidm1QQk5YUHB2SjdxYXVIUG5VU0prVzlpbHJLeG03eE9ZcUtqWmNjVEZ1amFpaTJ2SS1jemk2MEZ6bGRkOER6QkJSSzVWU1IzNGdWX3lJZ1pLLWtKcXgzaXdMazVqNEhxYmNJdUVjY3hKaXJ6c2xUbHEtd3c?oc=5",
+    posted: "Recent"
+  },
+  {
+    title: "Cyberport Career Fair to kick off next Friday with over 2,000 jobs",
+    company: "The Standard (HK)",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Cyberport Career Fair to kick off next Friday with over 2,000 jobs",
+    source: "Google Jobs",
+    url: "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU3NiRW1jUWE2LUxvQ3FKb3N2c25JOVFxUzlKMWtLRVVHNGowcExCZ2ZBeWxNLWVyVVNyblBtRFRzaHVJMHNVVTRBcGpUbmttYmVZbkQ0QjJ2WVR6Q3VHY2lSN3hFa1h6UEktc2ViaHJxci1JZTByMjd2cUxObkFSNW93UjQ4a1dtN005Y1VORWtPQ0ZJSzZpblZ2WEtoNE13MzlFbjEtT3JKS3V6OXZHMUl3THB4VHc?oc=5",
+    posted: "Recent"
+  },
+  {
+    title: "Although job substitution due to the introduction of artificial intelligence (AI) in domestic compan..",
+    company: "매일경제",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Although job substitution due to the introduction of artificial intelligence (AI) in domestic compan..",
+    source: "Google Jobs",
+    url: "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBmZnVoNEdyRFJLOWM0SlRyeGJFeDFvLUsta3hya3JQVERjMXBPMkRFLVNOZ0JsUWwxaTVKUW5SSmpwZm1qNDBqaVpfMktNVnF4MGc?oc=5",
+    posted: "Recent"
+  },
+  {
+    title: "HK accounting firms plan to boost hiring in 2026, expand AI use",
+    company: "Tech in Asia",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "HK accounting firms plan to boost hiring in 2026, expand AI use",
+    source: "Google Jobs",
+    url: "https://news.google.com/rss/articles/CBMiekFVX3lxTFB6UWdfZGROMkRLVElaTm5nNjh4MnBIZm41OG4tMXQ1UXFITDVKS2xYQXJJZU12VFFOdXI1Rl9xNTBjSjh4X251R0pFRi1yZU5RR0ZsNWRxOHBOOFNwOV9XdWs5a18xRjRQR1Rsb0hLclp4a2o1S3dtUU13?oc=5",
+    posted: "Recent"
+  },
+  {
+    title: "China's job market braces for AI storm amid trade war and slowing economy",
+    company: "Nikkei Asia",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "China's job market braces for AI storm amid trade war and slowing economy",
+    source: "Google Jobs",
+    url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPY0JTWk5Zc21EMWkyZWFRTlIwZG5PeW5qaVNIY3RQX01SNEtLMnlXckNqTjVSWnlWS01YNDVGTjQ4QS1wSWFudWZCUzkzdEVoSTU0LXl6dk02VXQxQzFHQ1pRdUp3RklLOG85b191eThjVkkxa2w2dEpuRlRXaG5SRGRmbTBuM3hJVUV5NW9UWGdkZHkyc29IZTg5ZFpqWjk4WmpWUVM3WDhOWFZOaXgyWTRSYWd3TG9TSHhwY05famlBSkhxeFhEMUhvMk5HbFZZcnF0SU1abzRwUQ?oc=5",
+    posted: "Recent"
+  },
+  {
+    title: "Cybersecurity jobs available right now: October 14, 2025",
+    company: "Help Net Security",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Cybersecurity jobs available right now: October 14, 2025",
+    source: "Google Jobs",
+    url: "https://news.google.com/rss/articles/CBMinwFBVV95cUxOc25qZFpGeVI4VUtOMXRscFBxTmt0WFZaYkZaVGNKNUdVRm10bE82TGFzcDdzejJwbGFJNTBlc2F6X3M1T1ZCSHpmVjZCWXh2QzhlZ1pTQzdSMnJ6Q1RZYXYtSkQ1YTJsX2NDbmNlZmZicWoxd2l3RndqSjlvdms0djFna2hsRzZnM1VMMDlVc1FCaGZJQnlZclREMUR6Qk0?oc=5",
+    posted: "Recent"
+  },
   {
     title: "Head of Data Protection Office",
     company: "Standard Chartered Bank",
