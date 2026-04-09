@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "09 Apr 2026 10:41 HKT",
+  updated: "09 Apr 2026 10:49 HKT",
   version: "v2026.04"
 };
 
@@ -41,8 +41,8 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "25,740",
-    delta: "▲ +2.48%",
+    value: "25,766",
+    delta: "▲ +2.59%",
     deltaClass: "positive",
     period: "09 Apr 2026",
     source: "Yahoo Finance (^HSI)",
@@ -978,6 +978,24 @@ const NEWS_DATA = [
     sentiment: "negative"
   },
   {
+    headline: "The DOJ’s Data Security Program: A New Era of Cross-Border Data Transfer Compliance",
+    date: "2025-12-17",
+    source: "FTI Consulting",
+    url: "https://news.google.com/rss/articles/CBMivAFBVV95cUxQek12NEtkVnpGMWp6WGd2MFAwaXZjUUk1eVRPSUVtNEM5YzhkME8zVnRmSk5tTHd5bFZfVDBoZjlrZzM5cW0zaW1CNTcwdHNoNDlaU1NSbXJiX2VpZmhPcWVFN2NfbXhtRlFQYnlWNHMtM01IcFdGbUZKUnhRdmh6LVp6Q3FUZ0VUVjRlNnpDX28zWHlDVjJ4cHlpSlBjVTVBWi1EMW94VUxzNGVqVFNGazBONDlSMmJJTGdlNQ?oc=5",
+    category: "GLOBAL",
+    impact: "The DOJ’s Data Security Program: A New Era of Cross-Border Data Transfer Compliance",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Three upcoming AI laws across APAC that will reshape governance",
+    date: "2025-12-05",
+    source: "Lexology",
+    url: "https://news.google.com/rss/articles/CBMimwFBVV95cUxPN3BVWEYtaFhqeEZKbnN0ZUthVEZJSHdRSmVUd0NIbHRVVFlHYi11dkViZXNGdFJqTE5WVWFVbS02Tm9OX3IxaU94ZEh3NS1OcEJCZFRVSGR3Rk05UldWdDJlc1JnS3VZallsWlktNHZzVEd4MlZlNzg3WDJhLXhqNzhOQWpqZnp1bDNiYndnTUJvT1A3RkJEZFhXUQ?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "Three upcoming AI laws across APAC that will reshape governance",
+    sentiment: "neutral"
+  },
+  {
     headline: "Swire layoffs: British giant to cut nearly 10% workforce in Hong Kong amid China's economic slowdown",
     date: "2025-11-26",
     source: "Mint",
@@ -994,6 +1012,15 @@ const NEWS_DATA = [
     category: "LOCAL EMPLOYMENT",
     impact: "Swire Cuts Dozens of Jobs in Rare Layoffs as China Economy Slows",
     sentiment: "negative"
+  },
+  {
+    headline: "More than a third of Hong Kong employers plan 2026 hiring increase",
+    date: "2025-11-20",
+    source: "Staffing Industry Analysts",
+    url: "https://news.google.com/rss/articles/CBMivwFBVV95cUxPYWVFSDk3LXB3S0hnekxFM3RYNlNsSXVzWkJkYlJ4cXJKX0c3T0J4Vjh2R2N5RDF6blRJVnBTVmFaeUJLZUNLZDk3NmZpem5SU1F3SFpCcmpNdVRabVFXNDVlOTRxZWhvSTh2RFBZWFBFdHZqQWFWV3F3NHl6RVRzYUxEZnpWeDBaOXRQU2JnMUM3QS1VaUF2QVIyOXBXcTlJaS1CZURObmFzTDhWdmswbGJrWEM3bXA1QWd1S05MNA?oc=5",
+    category: "LOCAL EMPLOYMENT",
+    impact: "More than a third of Hong Kong employers plan 2026 hiring increase",
+    sentiment: "positive"
   },
   {
     headline: "I'm a former investment bank MD turned career coach. Here are my 4 tips for landing a job in a tough market.",
@@ -1066,33 +1093,6 @@ const NEWS_DATA = [
     category: "TECHNOLOGY & AI",
     impact: "Proofing the Future: Hong Kong’s AI Infrastructure Race for FSIs",
     sentiment: "neutral"
-  },
-  {
-    headline: "Hong Kong Privacy Commissioner for Personal Data Completes Compliance Checks on the Use of AI and Data Privacy",
-    date: "2025-07-25",
-    source: "Mayer Brown",
-    url: "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPbHdGYkoza09HeGtqYzJTUGZNckxOMWNOdVh6MUR1b25OczNhRU5ZSTdhMkZ3bWpJZkVsWXotdnQ4dzZ4Y1Y2dW1NUFJxUjNZblV3bDdTOGllZFhkQ2Z1bFowWjlHSy1qQXhWMzQwamVjenlqc2UyVDdVazkyVDdPSURaaFRjbmNUSVdINTN6MG01R04zM2lyb0k3bXRZNFkzMG1DcmpFRjlFQlJBS3ZIWFJKeHZKak15Y2V3bFNrdW0zbHdiRmdEMHRmUGgtRV9xN2ZBaEdBZnR5WUp1ZUJMc0dWWGcyNHZCNzBxeExleTB0RHVxNEExTW5wRHZwOWs?oc=5",
-    category: "TECHNOLOGY & AI",
-    impact: "Hong Kong Privacy Commissioner for Personal Data Completes Compliance Checks on the Use of AI and Data Privacy",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Walls, Bridges, or Fortresses? Comparing Data Security Governance in China, U.S. and EU",
-    date: "2025-07-04",
-    source: "China-US Focus",
-    url: "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOHVJeDFpSXNyLWpYTWViTFNNUWNka0g1cFVjLTd4em5Oalg0VXZTbk9xQ3FXOWV6SFRjeHUxNWs5aXJGWndacC10QmV2SUo4Y185Z21rbjMwSmt4cDE5UFRjby1nWjNGM3FkTDYzU05jWl84NTZfYnI4cDRkRGtZRWZSUFNaSDJlT25EZXczZFl5Njk5SHZOT1Jwbk9yQXJUQUhiNVhjc3N5cGhTWmQ3Z0hRRzFyaEFwTDRSamg5ZG5Cb2c?oc=5",
-    category: "CHINA MAINLAND",
-    impact: "Walls, Bridges, or Fortresses? Comparing Data Security Governance in China, U.S. and EU",
-    sentiment: "neutral"
-  },
-  {
-    headline: "25% of Hong Kong employers plan to cut staff in next quarter: survey",
-    date: "2025-06-17",
-    source: "South China Morning Post",
-    url: "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeDc5R1hKV1ZIWXUxWW1WRmdPd1FBVUU2aWRnTzFuNTNuZWo0Rm5oYXdTd0syN3dBYUZFa1M1VWI1UkpDVFJvVWxTaXRNNGtMbzA5VGc1U1RvaEl5bThtczhYSEp1ZGxHbFhPb2t1ZmItU3Q2a2J4VVdDR0lNWUYwcXpHRUdLa2NrLVRucV9fZVk1YURQNDFaak9FUDJ5RlFrTS0wcXhrTGJjek51OU15a2RLTWdWMWtVRW8wSDRKczZlZGZLY2fSAcYBQVVfeXFMT0RlVUZFak1XbXh1YkJuLWo4MkR0WHhkS3ZYRVFWRVAzcEZwQU5ZaGRjWkxNZW1KZzNHdlpFdWV0RzFTOGt6S1I2NlNqZWM5TkdrUmo5a0xZVEFfbmhRS01IOEpzVGJXYWlxSV9BbGNuMjE3Rzc2cFJZLWhSX1dTVzhmWDcyUl9sM1dJNkdOQmhBQTZENTVvMy1VUG9lRzJQWnJKZjJxR2g0U2tadlpfOWNhR3ctdFczc2FmZjJfR2g0ZF9MR2ZB?oc=5",
-    category: "GLOBAL",
-    impact: "25% of Hong Kong employers plan to cut staff in next quarter: survey",
-    sentiment: "negative"
   }
 ];
 
