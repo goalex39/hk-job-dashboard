@@ -478,7 +478,7 @@ def llm_analyze_news(news_items):
         return [assign_sentiment_keyword(categorize_keyword(item)) for item in news_items]
 
     print("  Analyzing news with Perplexity Sonar...")
-    system_prompt = """You are an expert Hong Kong job market analyst. For each news headline, provide:
+    system_prompt = """You are a professioal expert with years of experience of Hong Kong job market analyst. For each news headline, provide:
 1. category: one of POLICY & REGULATION, CORPORATE, TECHNOLOGY & AI, FINANCIAL SECTOR, TRADE & GEOPOLITICS, US TARIFFS, DATA GOVERNANCE & PRIVACY, CHINA MAINLAND, REAL ESTATE & COST, LOCAL EMPLOYMENT, FINTECH, GLOBAL
 2. sentiment: positive, negative, or neutral (from a Hong Kong job seeker's perspective)
 3. impact: 1-2 sentences explaining how this news affects the Hong Kong job market specifically
@@ -546,7 +546,7 @@ def llm_update_macro_values_and_implications(hk_macro, global_data, kpis):
             for i, row in enumerate(table_data)
         )
 
-        system_prompt = f"""You are a senior Hong Kong macroeconomic research analyst. Today is {now_str}.
+        system_prompt = f"""You are a senior Hong Kong macroeconomic research analyst and career coach. Today is {now_str}.
 
 For each indicator below, you MUST:
 1. Search the web for the LATEST available figure. Use official sources (C&SD, HKMA, HKEX, S&P Global, FRED, NBS China, JLL, etc.)
@@ -554,7 +554,8 @@ For each indicator below, you MUST:
 3. If you cannot find a newer value, keep the existing current and previous unchanged.
 4. Set "trend" to one of: "▲ UP", "▼ DOWN", "~ STABLE", "~ MIXED", "▲ STRONG", "▼ CONTRACTION", "— HOLD", "⚠ ELEVATED", "▲ EXPANDING", "▲ DEEPENING", "~ SOFTENING", "~ FRAGILE", "▲ SURGING"
 5. Set "trendClass" to: "positive", "negative", or "neutral"
-6. Write a 1-2 sentence "implication" about what this means for Hong Kong job seekers and hiring.
+6. Write a 1-2 sentence "implication" about what this means for Hong Kong job seekers and hiring. Focus on what this means for job seekers, hiring trends, and specific
+sectors affected in Hong Kong.
 7. If you found a source URL for the updated value, include it as "sourceUrl" and short name as "sourceLabel".
 
 Respond as a JSON array: [{{
