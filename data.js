@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "09 Apr 2026 14:15 HKT",
+  updated: "09 Apr 2026 16:39 HKT",
   version: "v2026.04"
 };
 
@@ -41,9 +41,9 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "25,796",
-    delta: "▲ +2.70%",
-    deltaClass: "positive",
+    value: "25,752",
+    delta: "▼ -0.54%",
+    deltaClass: "negative",
     period: "09 Apr 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
@@ -144,7 +144,7 @@ const HK_MACRO_DATA = [
     previous: "3.5% (2025)",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Q1 GDP growth of 3.1% exceeding forecasts signals economic resilience, boosting hiring in export, tourism, and trade sectors for job seekers. Firms are likely to expand payrolls amid sustained momentum, improving job prospects. However, job seekers should target growth areas like services and logistics over contracting manufacturing.",
+    implication: "Q1 GDP growth of 3.1% exceeding forecasts signals economic resilience, boosting hiring in export, trade, and tourism sectors for job seekers. Firms are likely to expand payrolls amid sustained momentum, though competition remains high in professional services. Job seekers should target growth areas like logistics and retail for better prospects.",
     sourceLabel: "The Standard",
     sourceUrl: "https://www.thestandard.com.hk/finance/article/301665/Hong-Kong-Q1-GDP-expands-31pc-yy-faster-than-forecast"
   },
@@ -155,7 +155,7 @@ const HK_MACRO_DATA = [
     previous: "3.9% (Nov-Jan)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable unemployment at 3.8% indicates a balanced labor market, offering steady but competitive job opportunities for seekers. Hiring remains cautious across sectors, with low turnover limiting openings in retail and finance. Job seekers may find better prospects in stable public sector or professional services roles.",
+    implication: "Stable unemployment at 3.8% indicates a balanced labor market, offering steady but not abundant opportunities for job seekers. Hiring remains cautious across sectors, with finance and retail holding firm while manufacturing sees limited demand. Job seekers should focus on upskilling for stable roles in services.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk/en/scode210.html"
   },
@@ -166,7 +166,7 @@ const HK_MACRO_DATA = [
     previous: "1.1% (Jan 26)",
     trend: "▲ UP",
     trendClass: "neutral",
-    implication: "Mild CPI rise to 1.7% supports real wage stability, aiding job seekers' purchasing power amid job hunts. Low inflation encourages moderate hiring in consumer-facing sectors like retail and F&B. However, it may pressure low-wage roles, pushing seekers toward skilled positions in finance and tech.",
+    implication: "Mild CPI inflation at 1.7% supports real wage growth, aiding job seekers' purchasing power amid stable hiring. Low inflation encourages consumer spending, benefiting retail and hospitality hiring. However, it limits aggressive wage hikes, pressuring seekers in low-skill sectors to seek productivity gains.",
     sourceLabel: "HKSAR",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -177,18 +177,18 @@ const HK_MACRO_DATA = [
     previous: "53.3 (Feb, 35-mo high)",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "PMI contraction at 49.3 signals manufacturing slowdown, reducing hiring and job security in industrial sectors for workers. Job seekers face fewer opportunities in manufacturing and logistics, with potential layoffs. They should pivot to resilient areas like services and exports where demand persists.",
+    implication: "PMI contracting to 49.3 signals manufacturing slowdown, reducing job openings in industrial sectors for seekers. Firms may pause hiring or cut roles amid weaker demand, heightening competition. Job seekers should pivot to services or construction for more resilient opportunities.",
     sourceLabel: "S&P Global",
     sourceUrl: "https://www.markiteconomics.com"
   },
   {
     indicator: "Hang Seng Index",
-    current: "25,796",
+    current: "25,752",
     currentClass: "",
-    previous: "25,758",
-    trend: "▲ UP",
-    trendClass: "positive",
-    implication: "Slight Hang Seng rise supports financial sector confidence, spurring hiring in banking, investment, and fintech for job seekers. Active trading boosts demand for traders and analysts. Job seekers with finance skills will find more openings amid investor inflows.",
+    previous: "25,796",
+    trend: "▼ DOWN",
+    trendClass: "negative",
+    implication: "Slight Hang Seng decline to 25,752 reflects market caution, slowing hiring in finance and brokerage amid reduced trading volumes. Job seekers face tougher competition for investment roles, though high turnover suggests openings for skilled traders. Diversify into fintech or mainland-linked firms for stability.",
     sourceLabel: "HSI",
     sourceUrl: "https://www.hsi.com.hk"
   },
@@ -197,9 +197,9 @@ const HK_MACRO_DATA = [
     current: "9.9%",
     currentClass: "",
     previous: "~10%+ (Jan 26)",
-    trend: "▼ DOWN",
-    trendClass: "positive",
-    implication: "Declining Central office vacancy to 9.9% indicates rising demand, increasing hiring in professional services and finance. Job seekers in office-based roles like legal and consulting benefit from tenant expansions. Competition intensifies for prime locations, favoring experienced candidates.",
+    trend: "~ STABLE",
+    trendClass: "neutral",
+    implication: "Stable low office vacancy at 9.9% in Central supports professional services hiring in finance and legal sectors. Job seekers benefit from demand for office-based roles, though high-end spaces limit junior positions. Target corporate real estate or consulting for emerging opportunities.",
     sourceLabel: "JLL",
     sourceUrl: "https://realestateasia.com/commercial-office/news/hong-kong-grade-office-rents-decline-5-in-2026"
   },
@@ -210,7 +210,7 @@ const HK_MACRO_DATA = [
     previous: "HK$20,500 (2024)",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Median wage growth to HK$21,200 enhances earning potential for job seekers entering the market. Employers in high-demand sectors like finance and IT offer competitive pay to attract talent. Seekers should negotiate in growing fields while entry-level roles lag.",
+    implication: "Rising median wage to HK$21,200 enhances attractiveness of HK jobs, encouraging skilled seekers in high-demand sectors like tech and finance. Employers offer competitive pay to retain talent amid shortages, boosting hiring in professional fields. Entry-level seekers may see gradual improvements in services.",
     sourceLabel: "Ambition",
     sourceUrl: "https://www.austcham.com.hk/member-news/future-hiring-hong-kong-2026"
   },
@@ -221,7 +221,7 @@ const HK_MACRO_DATA = [
     previous: "58,410 (Dec 2024)",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Falling job vacancies to 46,000 tightens the market, making it tougher for seekers amid fewer openings. Hiring slows in retail and construction, increasing competition. Job seekers must upskill for niches like tech and healthcare with persistent demand.",
+    implication: "Declining job vacancies to 46,000 tightens the market, making it harder for seekers especially in retail and construction. Hiring slows as firms optimize staff, increasing competition across sectors. Focus on high-skill niches like healthcare or IT for remaining openings.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk/en/scode210.html"
   },
@@ -232,7 +232,7 @@ const HK_MACRO_DATA = [
     previous: "7.50M (mid-2024)",
     trend: "▲ UP",
     trendClass: "neutral",
-    implication: "Modest population growth to 7.51M sustains labor supply, keeping competition steady for job seekers. Larger workforce supports demand in services but pressures low-skill jobs. Seekers benefit from immigration-driven opportunities in professional sectors.",
+    implication: "Modest population growth to 7.51M sustains labor demand in consumer-facing sectors, aiding job seekers in services. Larger workforce may dilute per-capita opportunities, pressuring low-skill hiring. Seekers benefit from immigration-driven roles in hospitality and eldercare.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk"
   },
@@ -241,9 +241,9 @@ const HK_MACRO_DATA = [
     current: "HK$103B+ (Q1 26)",
     currentClass: "",
     previous: "HK$286B (FY2025)",
-    trend: "~ SOFTENING",
-    trendClass: "neutral",
-    implication: "Q1 IPOs at HK$103B+ maintain momentum, fueling hiring in investment banking and legal advisory. Job seekers with deal experience find opportunities despite yearly slowdown. Sectors like hi-tech listings drive specialist roles amid global lead.",
+    trend: "▼ CONTRACTION",
+    trendClass: "negative",
+    implication: "Q1 IPO slowdown to HK$103B+ reduces finance sector hiring momentum despite global lead. Job seekers in investment banking face fewer roles, though quality listings sustain some demand. Pivot to advisory or tech IPO support for opportunities.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3349071/hong-kong-economy-showed-resilience-first-quarter-2026-paul-chan-says"
   },
@@ -254,7 +254,7 @@ const HK_MACRO_DATA = [
     previous: "Well above 8% min",
     trend: "~ STABLE",
     trendClass: "positive",
-    implication: "High bank capital ratio at 25.1% ensures lending stability, supporting business hiring across sectors. Job seekers in banking enjoy secure environment with potential credit expansion. Robust buffers reduce layoff risks in finance.",
+    implication: "Robust bank capital ratio at 25.1% ensures lending stability, supporting business hiring across sectors. Job seekers in banking benefit from secure environment fostering credit and fintech expansion. Opportunities grow in risk management and compliance roles.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/03/20260330-4/"
   },
@@ -263,9 +263,9 @@ const HK_MACRO_DATA = [
     current: "US$638M (2025)",
     currentClass: "",
     previous: "US$274M (2024)",
-    trend: "▲ UP",
+    trend: "▲ SURGING",
     trendClass: "positive",
-    implication: "Fintech VC surge to US$638M in 2025 drives startup hiring in tech and innovation hubs. Job seekers with digital skills gain from expanding roles in payments and blockchain. Competition rises but opportunities abound for specialists.",
+    implication: "Fintech VC surge to US$638M drives startup hiring in tech and innovation hubs, favoring skilled job seekers. Rapid growth creates roles in software dev, AI, and blockchain despite volatility. Seekers should target fintech clusters for high-potential opportunities.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk/media/eng/doc/key-information/press-release/2026/20260203e3a1.pdf"
   }
@@ -279,9 +279,9 @@ const GLOBAL_DATA = [
     previous: "Held Mar 2026",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "The steady US Federal Funds Rate keeps borrowing costs elevated, constraining HK banks' lending margins and slowing credit growth for businesses. Job seekers in finance and real estate face cautious hiring as firms delay expansions amid high rates. Tech and export sectors may see limited opportunities until anticipated Fed cuts materialize later in 2026.",
-    sourceLabel: "Federal Reserve / Schwab",
-    sourceUrl: "https://www.schwab.com/learn/story/fomc-meeting"
+    implication: "The US Federal Funds Rate holding steady at 3.50-3.75% maintains predictable borrowing costs for HK firms with US exposure, supporting stable hiring in finance and trade sectors. Job seekers in interest-sensitive areas like real estate may see limited new openings as investment remains cautious without rate cuts. Overall, this neutral stance fosters steady but not aggressive job market expansion in Hong Kong.",
+    sourceLabel: "Federal Reserve / Schwab / Trading Economics",
+    sourceUrl: "https://www.federalreserve.gov/monetarypolicy/files/fomcprojtabl20260318.pdf"
   },
   {
     indicator: "China GDP Growth",
@@ -289,8 +289,8 @@ const GLOBAL_DATA = [
     currentClass: "",
     previous: "4.5% (Q4 2025 QoQ)",
     trend: "~ STABLE",
-    trendClass: "positive",
-    implication: "China's steady GDP growth supports cross-border trade and GBA opportunities, boosting demand for logistics, trade finance, and supply chain roles in HK. Job seekers with Mandarin skills or mainland experience gain edge in hiring. However, no acceleration limits aggressive expansion in manufacturing-related jobs.",
+    trendClass: "neutral",
+    implication: "China's steady GDP growth at 5.0% for FY2025 sustains demand for HK services in logistics and professional sectors, benefiting job seekers with cross-border skills. Hiring in GBA-related industries remains resilient, though mainland slowdown risks could cap expansion. Job market stability encourages applications in trade and finance without major surges.",
     sourceLabel: "NBS China",
     sourceUrl: "https://www.stats.gov.cn"
   },
@@ -301,18 +301,18 @@ const GLOBAL_DATA = [
     previous: "Back in expansion",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "China PMI at 50.4 signals fragile expansion, providing mild support for HK manufacturing and export hiring without strong momentum. Job seekers in electronics and machinery face steady but not surging opportunities tied to mainland factories. Overall, hiring remains cautious amid global uncertainties.",
+    implication: "China PMI at 50.4 indicates stable manufacturing expansion, supporting HK supply chain and export hiring in logistics and engineering. Job seekers in industrial sectors face consistent opportunities without acceleration. This balance aids moderate hiring trends amid global uncertainties.",
     sourceLabel: "NBS China",
     sourceUrl: "https://www.stats.gov.cn"
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.834",
+    current: "7.835",
     currentClass: "",
     previous: "7.834",
-    trend: "~ STABLE",
+    trend: "▲ UP",
     trendClass: "neutral",
-    implication: "The pegged USD/HKD rate at 7.834 ensures currency stability, aiding multinationals in planning but limiting HKMA's policy flexibility. Job seekers benefit from predictable forex roles in banking, with stable hiring in treasury and trade finance. No shifts mean no major boosts or cuts to financial sector employment.",
+    implication: "Slight USD/HKD strengthening to 7.835 keeps the peg stable, ensuring currency predictability for HK importers and boosting trade sector confidence. Job seekers in import-dependent retail and logistics see steady demand without volatility-driven shifts. Hiring remains balanced as financial stability prevails.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk"
   },
@@ -321,9 +321,9 @@ const GLOBAL_DATA = [
     current: "10% (Section 122)",
     currentClass: "caution",
     previous: "IEEPA voided by SCOTUS",
-    trend: "▲ UP",
+    trend: "▲ DEEPENING",
     trendClass: "negative",
-    implication: "Escalating US-China tariffs to 10% raise import costs, pressuring HK traders and retailers with thinner margins and potential layoffs. Job seekers in logistics and wholesale face heightened competition and reduced hiring. Finance roles advising on tariff mitigation may see temporary uptick.",
+    implication: "Escalating US-China tariffs at 10% under Section 122 pressure export-oriented HK firms, leading to hiring freezes in manufacturing and trade. Job seekers in affected sectors face heightened competition and slower recruitment amid cost pressures. Diversification into services may offer limited relief for skilled professionals.",
     sourceLabel: "Bloomberg",
     sourceUrl: "https://news.bloomberglaw.com/international-trade/china-stocks-in-hong-kong-jump-as-us-court-strikes-down-tariffs"
   },
@@ -332,9 +332,9 @@ const GLOBAL_DATA = [
     current: "Trump-Xi Apr 2026",
     currentClass: "",
     previous: "KL Joint Arrangement Nov 25",
-    trend: "▲ DEEPENING",
+    trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "Trump-Xi April 2026 summit fosters diplomatic thaw, potentially easing tensions and opening trade negotiation roles in HK's diplomatic and advisory firms. Job seekers in international relations and policy consulting gain from heightened activity. Broader hiring in trade sectors could follow if deals reduce barriers.",
+    implication: "Trump-Xi Apr 2026 diplomacy signals thawing US-China ties, potentially easing trade frictions and spurring hiring in HK's logistics and finance sectors. Job seekers with international expertise gain advantages as cross-border deals revive. This positive shift could accelerate recruitment in professional services.",
     sourceLabel: "The Standard",
     sourceUrl: "https://www.thestandard.com.hk/china/article/324913/Trump-to-travel-to-China-next-month-with-US-tariffs-in-focus"
   },
@@ -343,9 +343,9 @@ const GLOBAL_DATA = [
     current: "US$527B",
     currentClass: "",
     previous: "US$2.9T infra through 2028",
-    trend: "▲ EXPANDING",
+    trend: "▲ SURGING",
     trendClass: "positive",
-    implication: "Rising global AI capex to US$527B drives demand for HK tech talent in AI development and data centers. Job seekers with AI/ML skills see strong hiring in fintech and startups, especially via TTPS. Expansion supports GBA integration for cross-border tech roles.",
+    implication: "Global AI capex at US$527B drives tech investments, creating high-demand jobs for HK talent in AI, data centers, and fintech. Job seekers with STEM skills benefit from surging hiring by multinationals and startups. Sectors like IT services and R&D see rapid expansion, favoring skilled applicants.",
     sourceLabel: "HKSTP",
     sourceUrl: "https://www.hkstp.org/en/park-life/news-and-events/news/hkstp-career-fair-2026-reimagine-ai-plus"
   },
@@ -356,7 +356,7 @@ const GLOBAL_DATA = [
     previous: "15th 5-Year Plan launched",
     trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "Accelerating GBA integration creates jobs in infrastructure, professional services, and cross-border logistics for HK residents. Job seekers benefit from easier mobility and demand in finance, legal, and healthcare sectors spanning HK-Guangdong. Hiring trends favor bilingual professionals with mainland exposure.",
+    implication: "Accelerating GBA integration opens more opportunities in infrastructure and professional services, aiding job seekers targeting mainland-HK roles. Hiring surges in construction, healthcare, and finance within the Bay Area. This trend strengthens employment prospects for mobile professionals.",
     sourceLabel: "Beijing Review",
     sourceUrl: "https://www.bjreview.com/China/202603/t20260316_800433003.html"
   },
@@ -367,13 +367,22 @@ const GLOBAL_DATA = [
     previous: "184 previously",
     trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "TTPS expansion to 200 universities widens talent pool, intensifying competition for local job seekers but signaling strong employer demand. Hiring surges in tech, finance, and biotech as firms tap global talent. HK graduates should upskill in AI and fintech to stay competitive.",
+    implication: "TTPS expansion to 200 universities widens talent pools, intensifying competition for local job seekers while boosting high-skill hiring in tech and finance. Employers ramp up recruitment of global experts, pressuring mid-tier applicants to upskill. Sectors like innovation and professional services see deepened talent influx.",
     sourceLabel: "LeapScholar",
     sourceUrl: "https://leapscholar.com/digest/news-hong-kong-top-talent-pass-scheme-2026-2027"
   }
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Cook jailed for 11 months over selling account used to defraud Tai Po fire donors",
+    date: "2026-04-09",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/law-and-crime/article/3349493/man-jailed-11-months-giving-over-account-used-defraud-tai-po-fire-donors?utm_source=rss_feed",
+    category: "FINANCIAL SECTOR",
+    impact: "Jailing a cook for fraud involving donor accounts is a isolated crime with minimal broad market impact, though it underscores financial accountability in nonprofits.[1] It may slightly boost demand for fraud detection roles in finance, aligning with sought-after cybersecurity and compliance positions.[4] Overall, it does little to shift the cautious hiring outlook where only 19% of employers plan headcount increases.[3]",
+    sentiment: "neutral"
+  },
   {
     headline: "Hong Kong to roll out subsidies, fee waivers for transport sector as fuel costs soar",
     date: "2026-04-09",
@@ -1084,25 +1093,26 @@ const NEWS_DATA = [
     category: "TECHNOLOGY & AI",
     impact: "Three upcoming AI laws across APAC that will reshape governance",
     sentiment: "neutral"
-  },
-  {
-    headline: "Swire layoffs: British giant to cut nearly 10% workforce in Hong Kong amid China's economic slowdown",
-    date: "2025-11-26",
-    source: "Mint",
-    url: "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWFBEUUJEcnpnSmlneUtqT2Z5eDI1d0MzMHQ3WFAwRDZ4UTNMWlFQNnF0SHQ4aEh4SXJaNDg5eDJ5NDJiLVY5QUZlZGg0bElpXy0tZVFRUkdaeHIwT3VnTmtheTNJMk5PSlBGTWtPbVBvekZ1NGdvU3RxZWNrSVBucGtKNlJRR28zMG5WRmc2V1EwcGJ0VklwVmZld2ZiTFAyNUQyZzc4ZHU1dXE5ZW9SdUNXSnlTbldGcWdPU180bEkwTTkyeGZ5aFBRbUhtYWlFcGE0NVJiZVNsSW9ybjVyYThCdFFMOFpNUW11cVpn0gHzAUFVX3lxTFBmbkYtNU5ielloWWRld09mVWVOb200WnMzQkxRci1rdmtjejJkd0lBWDk4MWdzNVQydnF4YnRhNzh4NThhTjRrcEs2MzhfZ3JNZU9wNDk3cE5PVkptd3BsUmowM0RFZDE2WjJxbXFWV1Z2VXlMNUFhSlFJdGNHeGItRF9GMHV0RmNETjlBQUVwc2ItWHVrTUtJSnpPb3l3ZUEtd2dUYS1LZzhuU2ZwU05kSzk3ZWFnbnlCQ2hrWDNNS3QxNnh1Z1VzTlJzRmVEaFRxX29kVTV3emIwYUdldUJCNzcwYmFmVEFWX01oT1NLVXpsNA?oc=5",
-    category: "LOCAL EMPLOYMENT",
-    impact: "Swire layoffs: British giant to cut nearly 10% workforce in Hong Kong amid China's economic slowdown",
-    sentiment: "negative"
   }
 ];
 
 const JOBS_DATA = [
   {
+    title: "Data Governance & AI Director - Investment Bank",
+    company: "Hays",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Lead data governance and AI governance frameworks for an investment bank, overseeing governance and rules management processes.",
+    source: "Indeed",
+    url: "https://hk.indeed.com/viewjob?jk=66321cac1ffb1365",
+    posted: "09 Apr 2026"
+  },
+  {
     title: "Operations Data Governance & Data Strategy, Senior Analyst",
     company: "AIA",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Oversee end-to-end data lifecycle management and shape data governance frameworks, policies, standards, and data stewardship.",
+    desc: "Oversee end-to-end data lifecycle management and shape data governance frameworks, policies, and standards.",
     source: "Indeed",
     url: "https://hk.indeed.com/viewjob?jk=b097c6dd668027af",
     posted: "09 Apr 2026"
@@ -1112,19 +1122,9 @@ const JOBS_DATA = [
     company: "AIA",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Own data governance frameworks, ensuring implementation, monitoring, and continuous improvement across data domains while overseeing end-to-end data lifecycle.",
+    desc: "Own data governance frameworks and oversee end-to-end data lifecycle management across data domains.",
     source: "Indeed",
     url: "https://hk.indeed.com/viewjob?jk=e4739ae06f5c099e",
-    posted: "09 Apr 2026"
-  },
-  {
-    title: "Data Governance & AI Director - Investment Bank",
-    company: "Hays",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Oversee data governance and rules management processes with experience in AI governance and policy creation for an investment bank.",
-    source: "Indeed",
-    url: "https://hk.indeed.com/viewjob?jk=66321cac1ffb1365",
     posted: "09 Apr 2026"
   },
   {
@@ -1132,7 +1132,7 @@ const JOBS_DATA = [
     company: "中國移動",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Coordinate data development and business teams to conduct data model reviews, execute data governance, and establish data architecture design methodology.",
+    desc: "Coordinate data development and business teams to execute data governance and establish data architecture design methodology.",
     source: "Indeed",
     url: "https://hk.indeed.com/viewjob?jk=c521a5c39ff79531",
     posted: "09 Apr 2026"
@@ -1142,7 +1142,7 @@ const JOBS_DATA = [
     company: "Not specified",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Support establishment of data governance committee to address data quality issues across departments in a role focused on data governance leadership.",
+    desc: "Lead data governance initiatives and frameworks for organizational data management.",
     source: "Indeed",
     url: "https://hk.indeed.com/viewjob?jk=85f8ba4bcccd23d4",
     posted: "09 Apr 2026"
