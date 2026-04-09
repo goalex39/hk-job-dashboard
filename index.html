@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HK Job Market Terminal</title>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=jetbrains-mono@400,500,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="terminal">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <svg class="logo" viewBox="0 0 28 28" width="22" height="22" fill="none" aria-label="HK Job Market Terminal">
+          <rect x="2" y="2" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+          <path d="M8 8v12M20 8v12M8 14h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="topbar-title">HK:JOB_MKT</span>
+        <span class="topbar-ver" id="version-tag">v2026.04</span>
+      </div>
+      <div class="topbar-status">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+          <span class="theme-toggle-icon" id="theme-icon">☀</span>
+          <span id="theme-label">Light</span>
+        </button>
+        <span class="status-dot"></span>
+        <span class="status-text" id="status-text">LIVE</span>
+      </div>
+    </header>
+
+    <!-- Tab Bar -->
+    <nav class="tabbar" role="tablist">
+      <button class="tab active" role="tab" aria-selected="true" data-tab="overview">
+        <span class="tab-icon">◈</span> Overview
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="hk-macro">
+        <span class="tab-icon">▤</span> HK Macro
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="global">
+        <span class="tab-icon">◎</span> Global
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="news">
+        <span class="tab-icon">▧</span> News Feed
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="jobs">
+        <span class="tab-icon">▦</span> Job Openings
+      </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- OVERVIEW TAB -->
+      <section class="tab-panel active" id="panel-overview">
+        <div class="section-header">
+          <h2>Market Pulse</h2>
+          <span class="section-sub">Key indicators at a glance</span>
+        </div>
+        <div class="kpi-grid" id="kpi-grid">
+          <!-- rendered by JS from KPI_DATA -->
+        </div>
+
+        <div class="section-header" style="margin-top: var(--space-8);">
+          <h2>Signal Board</h2>
+          <span class="section-sub">What the data tells a job seeker</span>
+        </div>
+        <div class="signal-grid" id="signal-grid">
+          <!-- rendered by JS from SIGNAL_DATA -->
+        </div>
+      </section>
+
+      <!-- HK MACRO TAB -->
+      <section class="tab-panel" id="panel-hk-macro">
+        <div class="section-header">
+          <h2>Hong Kong Domestic Indicators</h2>
+          <span class="section-sub">Latest macroeconomic data for the local market</span>
+        </div>
+        <div class="macro-table-wrap">
+          <table class="macro-table">
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th>Current</th>
+                <th>Previous</th>
+                <th>Trend</th>
+                <th>Job Market Implication</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody id="hk-macro-tbody">
+              <!-- rendered by JS from HK_MACRO_DATA -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- GLOBAL TAB -->
+      <section class="tab-panel" id="panel-global">
+        <div class="section-header">
+          <h2>Global Indicators Affecting HK</h2>
+          <span class="section-sub">International macro factors that shape the local job market</span>
+        </div>
+        <div class="macro-table-wrap">
+          <table class="macro-table">
+            <thead>
+              <tr>
+                <th>Indicator</th>
+                <th>Current</th>
+                <th>Previous / Context</th>
+                <th>Trend</th>
+                <th>HK Job Market Impact</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody id="global-macro-tbody">
+              <!-- rendered by JS from GLOBAL_DATA -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- NEWS TAB -->
+      <section class="tab-panel" id="panel-news">
+        <div class="section-header">
+          <h2>News & Intelligence Feed</h2>
+          <span class="section-sub">Events affecting the Hong Kong job market</span>
+        </div>
+        <div class="news-filters" id="news-filters">
+          <!-- rendered by JS -->
+        </div>
+        <div class="news-list" id="news-list">
+          <!-- populated by JS -->
+        </div>
+      </section>
+
+      <!-- JOBS TAB -->
+      <section class="tab-panel" id="panel-jobs">
+        <div class="section-header">
+          <h2>Data / AI Governance Openings</h2>
+          <span class="section-sub">Live listings from JobsDB, LinkedIn, eFinancialCareers, Indeed</span>
+        </div>
+        <div class="jobs-filters">
+          <button class="filter-btn active" data-source="all">All Sources</button>
+          <button class="filter-btn" data-source="JobsDB">JobsDB</button>
+          <button class="filter-btn" data-source="LinkedIn">LinkedIn</button>
+          <button class="filter-btn" data-source="eFinancialCareers">eFinancialCareers</button>
+          <button class="filter-btn" data-source="Indeed">Indeed</button>
+        </div>
+        <div class="jobs-stats" id="jobs-stats"></div>
+        <div class="jobs-list" id="jobs-list">
+          <!-- populated by JS -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
