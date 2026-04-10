@@ -246,6 +246,106 @@ body {
   color: var(--text-muted);
 }
 
+/* ---- Signal Board Header Controls ---- */
+.signal-board-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.signal-board-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+/* Countdown pill */
+.signal-refresh-countdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-faint);
+  background: var(--surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+  user-select: none;
+  min-width: 56px;
+  justify-content: center;
+  transition: color 150ms;
+}
+
+.countdown-icon {
+  font-size: 11px;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+/* Manual refresh button */
+.signal-refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(34, 211, 167, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: background 150ms, border-color 150ms, color 150ms;
+  letter-spacing: 0.3px;
+}
+.signal-refresh-btn:hover {
+  background: rgba(34, 211, 167, 0.2);
+  border-color: var(--accent);
+}
+.signal-refresh-btn:active {
+  background: rgba(34, 211, 167, 0.28);
+}
+
+[data-theme="light"] .signal-refresh-btn {
+  color: var(--accent);
+  background: rgba(14, 155, 120, 0.08);
+  border-color: rgba(14, 155, 120, 0.25);
+}
+[data-theme="light"] .signal-refresh-btn:hover {
+  background: rgba(14, 155, 120, 0.16);
+  border-color: var(--accent);
+}
+
+.refresh-btn-icon {
+  font-size: 13px;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 150ms;
+}
+
+/* Spin animation for the refresh icon */
+@keyframes spin-once {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.refresh-btn-icon.spin {
+  animation: spin-once 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Signal grid flash on refresh */
+@keyframes signal-flash {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+.signal-grid.signal-refreshed {
+  animation: signal-flash 350ms ease-out;
+}
+
 /* ---- KPI Grid ---- */
 .kpi-grid {
   display: grid;
@@ -408,7 +508,7 @@ a.kpi-link:hover .kpi-period {
   background: var(--surface-2);
   padding: var(--space-3) var(--space-4);
   text-align: left;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border));
   white-space: nowrap;
 }
 
@@ -725,6 +825,10 @@ a.kpi-link:hover .kpi-period {
   }
   .status-text {
     font-size: 10px;
+  }
+  .signal-board-title-row {
+    flex-direction: column;
+    gap: var(--space-2);
   }
 }
 
