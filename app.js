@@ -97,20 +97,72 @@
   const signalSentMap = { positive: 'signal-positive', negative: 'signal-negative', caution: 'signal-caution' };
   const signalIconMap = { positive: '\u25b2', negative: '\u25bc', caution: '\u25c6' };
 
-  signalGrid.innerHTML = SIGNAL_DATA.map(s => {
-    const cls = signalSentMap[s.sentiment] || 'signal-caution';
-    const icon = signalIconMap[s.sentiment] || '\u25c6';
-    return `
-      <div class="signal-card ${cls}">
-        <div class="signal-icon">${icon}</div>
-        <div class="signal-body">
-          <div class="signal-title">${s.title}</div>
-          <div class="signal-desc">${s.desc}</div>
-          <a class="signal-source" href="${s.sourceUrl}" target="_blank" rel="noopener">${s.sourceLabel} \u2197</a>
+  function renderSignalBoard() {
+    signalGrid.innerHTML = SIGNAL_DATA.map(s => {
+      const cls = signalSentMap[s.sentiment] || 'signal-caution';
+      const icon = signalIconMap[s.sentiment] || '\u25c6';
+      return `
+        <div class="signal-card ${cls}">
+          <div class="signal-icon">${icon}</div>
+          <div class="signal-body">
+            <div class="signal-title">${s.title}</div>
+            <div class="signal-desc">${s.desc}</div>
+            <a class="signal-source" href="${s.sourceUrl}" target="_blank" rel="noopener">${s.sourceLabel} \u2197</a>
+          </div>
         </div>
-      </div>
-    `;
-  }).join('');
+      `;
+    }).join('');
+    // Flash the grid to signal refresh
+    signalGrid.classList.remove('signal-refreshed');
+    void signalGrid.offsetWidth; // force reflow
+    signalGrid.classList.add('signal-refreshed');
+  }
+
+  renderSignalBoard();
+
+  // ---- Signal Board Auto-Refresh (60s countdown) ----
+  const REFRESH_INTERVAL = 60; // seconds
+  let countdown = REFRESH_INTERVAL;
+  const countdownEl = document.getElementById('countdown-value');
+  const refreshBtn = document.getElementById('signal-refresh-btn');
+  const refreshIcon = document.getElementById('refresh-btn-icon');
+  let autoRefreshTimer = null;
+  let countdownTimer = null;
+
+  function resetCountdown() {
+    countdown = REFRESH_INTERVAL;
+    if (countdownEl) countdownEl.textContent = countdown;
+  }
+
+  function doRefresh() {
+    // Spin the refresh icon
+    if (refreshIcon) {
+      refreshIcon.classList.add('spin');
+      setTimeout(() => refreshIcon.classList.remove('spin'), 700);
+    }
+    renderSignalBoard();
+    resetCountdown();
+  }
+
+  function startAutoRefresh() {
+    // Countdown tick every second
+    countdownTimer = setInterval(() => {
+      countdown -= 1;
+      if (countdownEl) countdownEl.textContent = countdown;
+      if (countdown <= 0) {
+        doRefresh();
+      }
+    }, 1000);
+  }
+
+  startAutoRefresh();
+
+  // Manual refresh button
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', () => {
+      doRefresh();
+    });
+  }
 
   // ---- Render Macro Tables ----
   function renderMacroTable(data, tbodyId) {
