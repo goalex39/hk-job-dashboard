@@ -16,7 +16,6 @@
   const themeLabel = document.getElementById('theme-label');
   const root = document.documentElement;
 
-  // Detect initial theme: check URL param, then system preference, default dark
   function getInitialTheme() {
     const params = new URLSearchParams(window.location.search);
     if (params.get('theme') === 'light') return 'light';
@@ -97,72 +96,20 @@
   const signalSentMap = { positive: 'signal-positive', negative: 'signal-negative', caution: 'signal-caution' };
   const signalIconMap = { positive: '\u25b2', negative: '\u25bc', caution: '\u25c6' };
 
-  function renderSignalBoard() {
-    signalGrid.innerHTML = SIGNAL_DATA.map(s => {
-      const cls = signalSentMap[s.sentiment] || 'signal-caution';
-      const icon = signalIconMap[s.sentiment] || '\u25c6';
-      return `
-        <div class="signal-card ${cls}">
-          <div class="signal-icon">${icon}</div>
-          <div class="signal-body">
-            <div class="signal-title">${s.title}</div>
-            <div class="signal-desc">${s.desc}</div>
-            <a class="signal-source" href="${s.sourceUrl}" target="_blank" rel="noopener">${s.sourceLabel} \u2197</a>
-          </div>
+  signalGrid.innerHTML = SIGNAL_DATA.map(s => {
+    const cls = signalSentMap[s.sentiment] || 'signal-caution';
+    const icon = signalIconMap[s.sentiment] || '\u25c6';
+    return `
+      <div class="signal-card ${cls}">
+        <div class="signal-icon">${icon}</div>
+        <div class="signal-body">
+          <div class="signal-title">${s.title}</div>
+          <div class="signal-desc">${s.desc}</div>
+          <a class="signal-source" href="${s.sourceUrl}" target="_blank" rel="noopener">${s.sourceLabel} \u2197</a>
         </div>
-      `;
-    }).join('');
-    // Flash the grid to signal refresh
-    signalGrid.classList.remove('signal-refreshed');
-    void signalGrid.offsetWidth; // force reflow
-    signalGrid.classList.add('signal-refreshed');
-  }
-
-  renderSignalBoard();
-
-  // ---- Signal Board Auto-Refresh (60s countdown) ----
-  const REFRESH_INTERVAL = 60; // seconds
-  let countdown = REFRESH_INTERVAL;
-  const countdownEl = document.getElementById('countdown-value');
-  const refreshBtn = document.getElementById('signal-refresh-btn');
-  const refreshIcon = document.getElementById('refresh-btn-icon');
-  let autoRefreshTimer = null;
-  let countdownTimer = null;
-
-  function resetCountdown() {
-    countdown = REFRESH_INTERVAL;
-    if (countdownEl) countdownEl.textContent = countdown;
-  }
-
-  function doRefresh() {
-    // Spin the refresh icon
-    if (refreshIcon) {
-      refreshIcon.classList.add('spin');
-      setTimeout(() => refreshIcon.classList.remove('spin'), 700);
-    }
-    renderSignalBoard();
-    resetCountdown();
-  }
-
-  function startAutoRefresh() {
-    // Countdown tick every second
-    countdownTimer = setInterval(() => {
-      countdown -= 1;
-      if (countdownEl) countdownEl.textContent = countdown;
-      if (countdown <= 0) {
-        doRefresh();
-      }
-    }, 1000);
-  }
-
-  startAutoRefresh();
-
-  // Manual refresh button
-  if (refreshBtn) {
-    refreshBtn.addEventListener('click', () => {
-      doRefresh();
-    });
-  }
+      </div>
+    `;
+  }).join('');
 
   // ---- Render Macro Tables ----
   function renderMacroTable(data, tbodyId) {
@@ -235,14 +182,12 @@
   // ---- Build News Filter Buttons Dynamically ----
   const newsFiltersEl = document.getElementById('news-filters');
   const usedCategories = [...new Set(NEWS_DATA.map(n => n.category))];
-  // Sort categories in a logical order, matching the defined order
   const catOrder = [
     'POLICY & REGULATION', 'CORPORATE', 'TECHNOLOGY & AI', 'FINANCIAL SECTOR',
     'TRADE & GEOPOLITICS', 'US TARIFFS', 'DATA GOVERNANCE & PRIVACY',
     'CHINA MAINLAND', 'REAL ESTATE & COST', 'GLOBAL', 'LOCAL EMPLOYMENT', 'FINTECH'
   ];
   const sortedCats = catOrder.filter(c => usedCategories.includes(c));
-  // Add any categories not in catOrder at the end
   usedCategories.forEach(c => { if (!sortedCats.includes(c)) sortedCats.push(c); });
 
   let filterHTML = '<button class="filter-btn active" data-filter="all">All</button>';
@@ -285,7 +230,6 @@
     }).join('');
   }
 
-  // News filter buttons
   newsFiltersEl.addEventListener('click', (e) => {
     const btn = e.target.closest('.filter-btn');
     if (!btn) return;
@@ -349,7 +293,6 @@
     }).join('');
   }
 
-  // Jobs filter buttons
   document.querySelectorAll('.jobs-filters .filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.jobs-filters .filter-btn').forEach(b => b.classList.remove('active'));

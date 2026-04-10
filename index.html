@@ -23,7 +23,7 @@
       </div>
       <div class="topbar-status">
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
-          <span class="theme-toggle-icon" id="theme-icon">☀</span>
+          <span class="theme-toggle-icon" id="theme-icon">&#9728;</span>
           <span id="theme-label">Light</span>
         </button>
         <span class="status-dot"></span>
@@ -34,19 +34,19 @@
     <!-- Tab Bar -->
     <nav class="tabbar" role="tablist">
       <button class="tab active" role="tab" aria-selected="true" data-tab="overview">
-        <span class="tab-icon">◈</span> Overview
+        <span class="tab-icon">&#9672;</span> Overview
       </button>
       <button class="tab" role="tab" aria-selected="false" data-tab="hk-macro">
-        <span class="tab-icon">▤</span> HK Macro
+        <span class="tab-icon">&#9636;</span> HK Macro
       </button>
       <button class="tab" role="tab" aria-selected="false" data-tab="global">
-        <span class="tab-icon">◎</span> Global
+        <span class="tab-icon">&#9678;</span> Global
       </button>
       <button class="tab" role="tab" aria-selected="false" data-tab="news">
-        <span class="tab-icon">▧</span> News Feed
+        <span class="tab-icon">&#9639;</span> News Feed
       </button>
       <button class="tab" role="tab" aria-selected="false" data-tab="jobs">
-        <span class="tab-icon">▦</span> Job Openings
+        <span class="tab-icon">&#9638;</span> Job Openings
       </button>
     </nav>
 
@@ -63,22 +63,21 @@
           <!-- rendered by JS from KPI_DATA -->
         </div>
 
-        <div class="section-header signal-board-header" style="margin-top: var(--space-8);">
+        <div class="section-header" style="margin-top: var(--space-8);">
           <div class="signal-board-title-row">
             <div>
               <h2>Signal Board</h2>
               <span class="section-sub">What the data tells a job seeker</span>
             </div>
-            <div class="signal-board-controls">
-              <span class="signal-refresh-countdown" id="signal-countdown" title="Auto-refresh countdown">
-                <span class="countdown-icon">↻</span>
-                <span id="countdown-value">60</span>s
-              </span>
-              <button class="signal-refresh-btn" id="signal-refresh-btn" aria-label="Refresh Signal Board">
-                <span class="refresh-btn-icon" id="refresh-btn-icon">⟳</span>
-                Refresh
-              </button>
-            </div>
+            <a
+              class="signal-refresh-btn"
+              href="https://github.com/goalex39/hk-job-dashboard/actions/workflows/daily-refresh.yml"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Run refresh.py via GitHub Actions"
+              aria-label="Run refresh.py on GitHub Actions">
+              &#10227; Run refresh.py
+            </a>
           </div>
         </div>
         <div class="signal-grid" id="signal-grid">
@@ -139,7 +138,7 @@
       <!-- NEWS TAB -->
       <section class="tab-panel" id="panel-news">
         <div class="section-header">
-          <h2>News & Intelligence Feed</h2>
+          <h2>News &amp; Intelligence Feed</h2>
           <span class="section-sub">Events affecting the Hong Kong job market</span>
         </div>
         <div class="news-filters" id="news-filters">

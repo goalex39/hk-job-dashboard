@@ -246,7 +246,7 @@ body {
   color: var(--text-muted);
 }
 
-/* ---- Signal Board Header Controls ---- */
+/* ---- Signal Board Header ---- */
 .signal-board-title-row {
   display: flex;
   align-items: flex-start;
@@ -255,38 +255,7 @@ body {
   flex-wrap: wrap;
 }
 
-.signal-board-controls {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  flex-shrink: 0;
-}
-
-/* Countdown pill */
-.signal-refresh-countdown {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--text-faint);
-  background: var(--surface-2);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: 3px 8px;
-  user-select: none;
-  min-width: 56px;
-  justify-content: center;
-  transition: color 150ms;
-}
-
-.countdown-icon {
-  font-size: 11px;
-  line-height: 1;
-  opacity: 0.7;
-}
-
-/* Manual refresh button */
+/* ---- Run refresh.py button ---- */
 .signal-refresh-btn {
   display: inline-flex;
   align-items: center;
@@ -298,10 +267,13 @@ body {
   background: var(--accent-dim);
   border: 1px solid rgba(34, 211, 167, 0.3);
   border-radius: var(--radius-sm);
-  padding: 3px 10px;
+  padding: 4px 12px;
   cursor: pointer;
-  transition: background 150ms, border-color 150ms, color 150ms;
-  letter-spacing: 0.3px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 150ms, border-color 150ms;
+  flex-shrink: 0;
+  align-self: center;
 }
 .signal-refresh-btn:hover {
   background: rgba(34, 211, 167, 0.2);
@@ -319,31 +291,6 @@ body {
 [data-theme="light"] .signal-refresh-btn:hover {
   background: rgba(14, 155, 120, 0.16);
   border-color: var(--accent);
-}
-
-.refresh-btn-icon {
-  font-size: 13px;
-  line-height: 1;
-  display: inline-block;
-  transition: transform 150ms;
-}
-
-/* Spin animation for the refresh icon */
-@keyframes spin-once {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-.refresh-btn-icon.spin {
-  animation: spin-once 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Signal grid flash on refresh */
-@keyframes signal-flash {
-  0% { opacity: 0.5; }
-  100% { opacity: 1; }
-}
-.signal-grid.signal-refreshed {
-  animation: signal-flash 350ms ease-out;
 }
 
 /* ---- KPI Grid ---- */
@@ -508,7 +455,7 @@ a.kpi-link:hover .kpi-period {
   background: var(--surface-2);
   padding: var(--space-3) var(--space-4);
   text-align: left;
-  border-bottom: 1px solid var(--border));
+  border-bottom: 1px solid var(--border);
   white-space: nowrap;
 }
 
@@ -918,27 +865,11 @@ a.kpi-link:hover .kpi-period {
 }
 
 /* Light mode text contrast fixes */
-[data-theme="light"] .news-headline {
-  color: #1a1d24;
-}
-[data-theme="light"] .news-impact {
-  color: #4a5060;
-}
-[data-theme="light"] .signal-desc {
-  color: #4a5060;
-}
-[data-theme="light"] .job-desc {
-  color: #4a5060;
-}
-[data-theme="light"] .kpi-value {
-  color: #1a1d24;
-}
-[data-theme="light"] .signal-title {
-  color: #1a1d24;
-}
-[data-theme="light"] .job-title {
-  color: #1a1d24;
-}
-[data-theme="light"] .section-header h2 {
-  color: #0e9b78;
-}
+[data-theme="light"] .news-headline { color: #1a1d24; }
+[data-theme="light"] .news-impact { color: #4a5060; }
+[data-theme="light"] .signal-desc { color: #4a5060; }
+[data-theme="light"] .job-desc { color: #4a5060; }
+[data-theme="light"] .kpi-value { color: #1a1d24; }
+[data-theme="light"] .signal-title { color: #1a1d24; }
+[data-theme="light"] .job-title { color: #1a1d24; }
+[data-theme="light"] .section-header h2 { color: #0e9b78; }
