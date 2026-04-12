@@ -4,6 +4,10 @@ on:
   schedule:
     # 00:00 UTC = 08:00 HKT
     - cron: "0 0 * * *"
+    # 05:00 UTC = 13:00 HKT
+    - cron: "0 5 * * *"
+    # 13:00 UTC = 21:00 HKT
+    - cron: "0 13 * * *"
   workflow_dispatch: # allow manual trigger from GitHub UI
 
 permissions:
