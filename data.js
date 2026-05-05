@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "05 May 2026 13:57 HKT",
+  updated: "05 May 2026 21:35 HKT",
   version: "v2026.04"
 };
 
@@ -41,8 +41,8 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "25,769",
-    delta: "▼ -1.25%",
+    value: "25,899",
+    delta: "▼ -0.76%",
     deltaClass: "negative",
     period: "05 May 2026",
     source: "Yahoo Finance (^HSI)",
@@ -139,25 +139,25 @@ const SIGNAL_DATA = [
 const HK_MACRO_DATA = [
   {
     indicator: "GDP Growth",
-    current: "4.0%+ (Q1 2026)",
+    current: "5.9% (Q1 2026)",
     currentClass: "",
-    previous: "3.1% (Q1 2026)",
-    trend: "▲ STRONG",
+    previous: "4.0%+ (Q1 2026)",
+    trend: "▲ SURGING",
     trendClass: "positive",
-    implication: "Hong Kong's economy is accelerating faster than expected, driven by robust exports, private consumption, and tourism, which should support job creation and business expansion across sectors.",
-    sourceLabel: "Financial Secretary Paul Chan / Xinhua",
-    sourceUrl: "http://english.news.cn/20260503/56fb389cd9fb43b4a6d0fc536ada07aa/c.html"
+    implication: "Robust GDP growth signals expanding economic activity, creating more job opportunities and supporting hiring across sectors for HK job seekers.",
+    sourceLabel: "hkeconomy.gov.hk",
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
   {
     indicator: "Unemployment Rate",
     current: "3.7% (Q1 2026)",
     currentClass: "",
     previous: "3.2% (Q1 2026)",
-    trend: "▲ UP",
+    trend: "▼ UP",
     trendClass: "negative",
-    implication: "Rising unemployment despite strong GDP growth suggests labor market tightness may be easing; job seekers may face slightly increased competition, though the rate remains historically low.",
-    sourceLabel: "Search results inconclusive",
-    sourceUrl: "https://news.futunn.com/en/post/72476683/paul-chan-hong-kong-s-q1-gdp-growth-accelerated-marking"
+    implication: "Rising unemployment indicates softening labor demand, making it tougher for job seekers while employers face less pressure to hire aggressively.",
+    sourceLabel: "Paul Chan / RTHK",
+    sourceUrl: "https://news.rthk.hk/rthk/en/component/k2/1853353-20260503.htm"
   },
   {
     indicator: "CPI Inflation",
@@ -166,7 +166,7 @@ const HK_MACRO_DATA = [
     previous: "1.7%",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Mild inflation remains stable, preserving purchasing power for workers and maintaining predictable wage negotiations for employers.",
+    implication: "Stable mild inflation maintains purchasing power, supporting steady consumer spending and balanced hiring conditions for job seekers.",
     sourceLabel: "hkeconomy.gov.hk",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -177,18 +177,18 @@ const HK_MACRO_DATA = [
     previous: "49.3",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Manufacturing activity remains below 50 (contraction threshold), indicating subdued industrial sector momentum with limited near-term hiring pressure.",
+    implication: "PMI hovering at contraction threshold suggests fragile manufacturing activity, limiting job growth in industrial sectors for seekers.",
     sourceLabel: "Current value",
     sourceUrl: "https://www.markiteconomics.com"
   },
   {
     indicator: "Hang Seng Index",
-    current: "25,769",
+    current: "25,899",
     currentClass: "",
-    previous: "25,777",
-    trend: "~ STABLE",
-    trendClass: "neutral",
-    implication: "Equity market stability reflects investor confidence in Hong Kong's economic resilience, supporting wealth effects and business sentiment for hiring.",
+    previous: "25,769",
+    trend: "▲ UP",
+    trendClass: "positive",
+    implication: "Rising Hang Seng boosts investor confidence and financial sector activity, enhancing job prospects in finance and related fields.",
     sourceLabel: "Current value",
     sourceUrl: "https://www.hsi.com.hk"
   },
@@ -199,7 +199,7 @@ const HK_MACRO_DATA = [
     previous: "9.9%",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable office vacancy suggests steady commercial real estate demand, supporting service sector employment in finance and professional services.",
+    implication: "Stable low office vacancy in Central reflects consistent office demand, supporting hiring in professional services for job seekers.",
     sourceLabel: "Current value",
     sourceUrl: "https://realestateasia.com/commercial-office/news/hong-kong-grade-office-rents-decline-5-in-2026"
   },
@@ -210,7 +210,7 @@ const HK_MACRO_DATA = [
     previous: "HK$20,500 (2024)",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Median wages are rising year-on-year, reflecting tight labor markets and improved worker bargaining power in Hong Kong's job market.",
+    implication: "Increasing median wages improve earning potential, attracting talent and encouraging employers to offer competitive pay to secure hires.",
     sourceLabel: "Current value",
     sourceUrl: "https://www.austcham.com.hk/member-news/future-hiring-hong-kong-2026"
   },
@@ -221,7 +221,7 @@ const HK_MACRO_DATA = [
     previous: "58,410 (Dec 2024)",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Job vacancies have declined significantly, suggesting either improved labor market matching or softening hiring demand; job seekers face a tighter market.",
+    implication: "Declining job vacancies signal cooling labor demand, intensifying competition for available positions among job seekers.",
     sourceLabel: "Current value",
     sourceUrl: "https://www.censtatd.gov.hk/en/scode210.html"
   },
@@ -230,9 +230,9 @@ const HK_MACRO_DATA = [
     current: "7.51M",
     currentClass: "",
     previous: "7.50M (mid-2024)",
-    trend: "~ STABLE",
-    trendClass: "neutral",
-    implication: "Stable population provides consistent labor supply and consumer base, supporting steady economic activity and employment levels.",
+    trend: "▲ UP",
+    trendClass: "positive",
+    implication: "Growing population expands the labor pool, potentially increasing competition for jobs while supporting demand in consumer-driven sectors.",
     sourceLabel: "Current value",
     sourceUrl: "https://www.censtatd.gov.hk"
   },
@@ -241,9 +241,9 @@ const HK_MACRO_DATA = [
     current: "HK$103B+ (Q1 2026)",
     currentClass: "",
     previous: "HK$103B+ (Q1 26)",
-    trend: "▲ STRONG",
-    trendClass: "positive",
-    implication: "Robust IPO activity attracts capital inflows and supports financial services employment; investors continue moving assets to Hong Kong despite global volatility.",
+    trend: "~ STABLE",
+    trendClass: "neutral",
+    implication: "Stable strong IPO activity sustains financial market vibrancy, maintaining job opportunities in investment banking and related services.",
     sourceLabel: "Financial Secretary Paul Chan",
     sourceUrl: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3349071/hong-kong-economy-showed-resilience-first-quarter-2026-paul-chan-says"
   },
@@ -252,9 +252,9 @@ const HK_MACRO_DATA = [
     current: "25.1%",
     currentClass: "",
     previous: "Well above 8% min",
-    trend: "~ STABLE",
+    trend: "▲ STRONG",
     trendClass: "positive",
-    implication: "Strong banking capital ratios support financial system stability and credit availability for businesses, enabling continued hiring and investment.",
+    implication: "High bank capital ratios ensure financial stability, fostering lending and business expansion that supports broader employment growth.",
     sourceLabel: "Current value",
     sourceUrl: "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/03/20260330-4/"
   },
@@ -265,7 +265,7 @@ const HK_MACRO_DATA = [
     previous: "US$274M (2024)",
     trend: "▲ SURGING",
     trendClass: "positive",
-    implication: "Fintech VC investment more than doubled year-on-year, signaling strong growth in Hong Kong's digital finance ecosystem and creating high-skill job opportunities.",
+    implication: "Surging fintech VC funding drives startup growth and innovation, creating high-value tech jobs and opportunities for skilled professionals.",
     sourceLabel: "Current value",
     sourceUrl: "https://www.hkma.gov.hk/media/eng/doc/key-information/press-release/2026/20260203e3a1.pdf"
   }
@@ -277,11 +277,11 @@ const GLOBAL_DATA = [
     current: "3.50–3.75%",
     currentClass: "",
     previous: "3.50-3.75%",
-    trend: "— HOLD",
+    trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "The Fed's extended pause amid elevated oil prices and geopolitical uncertainty signals a prolonged period of higher US borrowing costs, which may constrain capital flows to Hong Kong and pressure local hiring in export-dependent sectors.",
-    sourceLabel: "Charles Schwab / Trading Economics",
-    sourceUrl: "https://www.schwab.com/learn/story/fomc-meeting"
+    implication: "Stable US Fed rates maintain predictable borrowing costs for HK firms with USD exposure, supporting steady hiring without pressuring wage inflation. Job seekers face no immediate shifts in financial sector opportunities tied to US monetary policy.",
+    sourceLabel: "Trading Economics / Charles Schwab",
+    sourceUrl: "https://tradingeconomics.com/united-states/interest-rate"
   },
   {
     indicator: "China GDP Growth",
@@ -290,7 +290,7 @@ const GLOBAL_DATA = [
     previous: "5.0% (FY2025)",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "China's accelerating growth provides stronger demand for Hong Kong's financial and logistics services, supporting job creation in professional services and trade-related sectors.",
+    implication: "China's accelerating GDP growth boosts demand for HK services and logistics, creating more cross-border job openings. Hiring in trade-related sectors likely to pick up, benefiting job seekers with bilingual skills.",
     sourceLabel: "NBS China",
     sourceUrl: "http://www.stats.gov.cn/english/PressRelease/202604/t20260417_1934567.html"
   },
@@ -299,20 +299,20 @@ const GLOBAL_DATA = [
     current: "50.8 (Mar 2026)",
     currentClass: "",
     previous: "50.4 (Mar 2026)",
-    trend: "▲ EXPANDING",
+    trend: "▲ UP",
     trendClass: "positive",
-    implication: "China's manufacturing expansion above the 50-point threshold signals strengthening economic momentum, which benefits Hong Kong exporters and logistics firms seeking to expand headcount.",
+    implication: "China PMI expansion signals stronger manufacturing activity, increasing subcontracting and export opportunities for HK firms. This supports hiring in supply chain and logistics roles for job seekers.",
     sourceLabel: "NBS China",
     sourceUrl: "http://www.stats.gov.cn/english/PressRelease/202604/t20260430_1934678.html"
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.835",
+    current: "7.836",
     currentClass: "",
-    previous: "7.833",
-    trend: "~ STABLE",
+    previous: "7.835",
+    trend: "▲ UP",
     trendClass: "neutral",
-    implication: "The USD/HKD peg remains stable, maintaining predictability for Hong Kong businesses and workers in currency-sensitive roles, though elevated US rates continue to support the peg's strength.",
+    implication: "Slight USD/HKD appreciation keeps the peg stable, ensuring currency predictability for importers and multinationals in HK. Minimal impact on hiring, though exporters may trim jobs slightly.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk/eng/key-information/exchange-rate-quotations/"
   },
@@ -321,9 +321,9 @@ const GLOBAL_DATA = [
     current: "10% baseline (Section 122)",
     currentClass: "caution",
     previous: "10% (Section 122)",
-    trend: "— HOLD",
+    trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Sustained baseline tariffs create ongoing uncertainty for Hong Kong's re-export and manufacturing sectors, potentially limiting hiring expansion despite stable policy.",
+    implication: "Unchanged US-China tariffs maintain current trade frictions, limiting expansion in export manufacturing hiring. Job seekers in affected sectors face persistent but stable challenges.",
     sourceLabel: "Bloomberg",
     sourceUrl: "https://www.bloomberg.com/news/articles/2026-04-15/us-maintains-10-baseline-tariff-on-china-under-section-122"
   },
@@ -334,7 +334,7 @@ const GLOBAL_DATA = [
     previous: "Trump-Xi Apr 2026",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Continued high-level US-China engagement provides a diplomatic foundation for trade stability, reducing tail risks to Hong Kong's employment outlook in the near term.",
+    implication: "Recent Trump-Xi summit stabilizes bilateral ties, potentially easing investment flows into HK as a gateway. Hiring in finance and advisory roles may see modest gains for job seekers.",
     sourceLabel: "The Standard",
     sourceUrl: "https://www.thestandard.com.hk/business/article/312455/Trump-Xi-summit-Apr-2026-sets-tone-for-trade-talks"
   },
@@ -344,8 +344,8 @@ const GLOBAL_DATA = [
     currentClass: "",
     previous: "US$527B",
     trend: "~ STABLE",
-    trendClass: "neutral",
-    implication: "Flat global AI capex signals a consolidation phase in tech investment; Hong Kong tech talent demand may soften unless local AI hubs capture a larger share of regional spending.",
+    trendClass: "positive",
+    implication: "Sustained global AI capex drives tech hub growth in HK, boosting demand for AI engineers and data specialists. Job seekers with tech skills enjoy strong hiring prospects.",
     sourceLabel: "HKSTP",
     sourceUrl: "https://www.hkstp.org/news-and-media/press-releases/2026/ai-capex-2026-report/"
   },
@@ -356,7 +356,7 @@ const GLOBAL_DATA = [
     previous: "Accelerating",
     trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "Deepening GBA integration creates cross-border job opportunities and attracts talent to Hong Kong's role as a financial and professional services hub for the region.",
+    implication: "Deepening GBA integration opens more opportunities in mainland projects, increasing hiring for professionals in infrastructure and services. Job seekers with GBA mobility gain better cross-border employment options.",
     sourceLabel: "Beijing Review",
     sourceUrl: "http://www.bjreview.com.cn/feature/2026-04/20/content_923456.htm"
   },
@@ -367,13 +367,76 @@ const GLOBAL_DATA = [
     previous: "TTPS expanded to 200 unis",
     trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "Broader talent pipeline through expanded TTPS scheme strengthens Hong Kong's ability to attract young professionals and fill mid-level vacancies in competitive sectors.",
+    implication: "Broader TTPS eligibility floods talent pool with global graduates, intensifying competition for entry-level jobs while easing shortages in high-skill sectors. Employers ramp up hiring for specialized roles.",
     sourceLabel: "LeapScholar",
     sourceUrl: "https://www.leapscholar.com/hong-kong-talent-pass-scheme-2026"
   }
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Q1 GDP growth hits near 5-year high",
+    date: "2026-05-05",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1853617-20260505.htm",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Q1 GDP growth hitting a near 5-year high signals a robust economy, likely leading to increased hiring and lower unemployment at 3.7%.[3] Strong economic expansion underpins labor market stability and job creation for Hong Kong workers.",
+    sentiment: "positive"
+  },
+  {
+    headline: "Stroke of genius as pioneers sniff first aid chance",
+    date: "2026-05-05",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1853597-20260505.htm",
+    category: "LOCAL EMPLOYMENT",
+    impact: "The headline likely refers to opportunities in first aid training or services amid growing demand, potentially creating jobs in healthcare and emergency response sectors in Hong Kong.[4] This could open niche roles for skilled workers in a resilient job market.",
+    sentiment: "positive"
+  },
+  {
+    headline: "Sweden to form new spy agency in Ukraine war reset",
+    date: "2026-05-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/europe/article/3352505/sweden-form-new-spy-agency-ukraine-war-reset?utm_source=rss_feed",
+    category: "GLOBAL",
+    impact: "Sweden's new spy agency in response to the Ukraine war has no direct bearing on Hong Kong's job market, as it involves distant geopolitical shifts without local economic ties.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "America builds AI, China uses it. That gap may decide the future",
+    date: "2026-05-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/opinion/china-opinion/article/3352235/america-builds-ai-china-uses-it-gap-may-decide-future?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "The US-China AI usage gap highlights global tech competition but does not immediately alter Hong Kong's job market, though it may indirectly boost demand for AI skills in finance and tech sectors.[4][5] Local hiring in AI remains selective amid cautious employer strategies.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Hong Kong ‘block trade king’ exploited bank lapse to make HK$1.7 million, court told",
+    date: "2026-05-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/law-and-crime/article/3352518/hong-kong-block-trade-king-exploited-bank-lapse-make-hk17-million-court-told?utm_source=rss_feed",
+    category: "FINANCIAL SECTOR",
+    impact: "The court case involving a 'block trade king' exploiting bank lapses may erode trust in Hong Kong's financial sector, potentially leading to tighter regulations and cautious hiring.[2] This could reduce job opportunities in finance amid ongoing employer headcount restraint.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Hong Kong researchers develop ‘world-first’ nasal spray for rapid stroke aid",
+    date: "2026-05-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3352496/hong-kong-researchers-develop-world-first-nasal-spray-rapid-stroke-aid?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "Hong Kong researchers' world-first nasal spray for stroke aid could spur job growth in biotech, healthcare, and R&D sectors, where talent shortages already exist.[4] This innovation enhances the city's appeal for life sciences professionals.",
+    sentiment: "positive"
+  },
+  {
+    headline: "Hong Kong Customs detects two smuggling cases involving river trade vessels with goods worth about $41 million seized (with photo)",
+    date: "2026-05-05",
+    source: "政府新聞公報 (info.gov.hk)",
+    url: "https://www.info.gov.hk/gia/general/202605/05/P2026050500300.htm",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Customs smuggling detections demonstrate enforcement efforts but do not significantly affect overall job market dynamics, potentially maintaining stable roles in law enforcement and logistics.",
+    sentiment: "neutral"
+  },
   {
     headline: "Drones shatter months of relative calm in Sudan’s capital as international airport targeted",
     date: "2026-05-05",
@@ -1030,111 +1093,48 @@ const NEWS_DATA = [
     category: "POLICY & REGULATION",
     impact: "Approval of the budget bill provides fiscal stability, potentially supporting public sector employment and economic measures that underpin the labour market as unemployment dips to 3.7%[1][4]. However, specifics on job-related allocations remain unclear, offering limited direct job market boost.",
     sentiment: "neutral"
-  },
-  {
-    headline: "Tropical rainforest loss eases after record year, but still ‘11 football fields a minute’",
-    date: "2026-04-29",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/article/3351895/tropical-rainforest-loss-eases-after-record-year-still-11-football-fields-minute?utm_source=rss_feed",
-    category: "GLOBAL",
-    impact: "Global environmental news on rainforest loss has negligible direct effect on Hong Kong's job market, though it may indirectly influence sustainability roles in green sectors if local policies align.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Hong Kong penthouse sells for US$54m to mainland Chinese buyer as luxury demand spikes",
-    date: "2026-04-29",
-    source: "SCMP",
-    url: "https://www.scmp.com/business/article/3351873/hong-kong-penthouse-sells-us54m-mainland-chinese-buyer-luxury-demand-spikes?utm_source=rss_feed",
-    category: "REAL ESTATE & COST",
-    impact: "Spike in luxury property demand from mainland buyers boosts real estate sector activity, potentially creating jobs in high-end sales, property management, and construction-related roles in Hong Kong's premium market.",
-    sentiment: "positive"
-  },
-  {
-    headline: "2 months jail for Hong Kong security guard who shared post urging Legco poll boycott",
-    date: "2026-04-29",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/law-and-crime/article/3351876/2-months-jail-hong-kong-security-guard-who-shared-post-urging-legco-poll-boycott?utm_source=rss_feed",
-    category: "POLICY & REGULATION",
-    impact: "Jail sentence for political expression underscores national security enforcement, which may deter job seekers from public-facing or activist-related roles and heighten caution in sectors like security and media in Hong Kong.",
-    sentiment: "negative"
-  },
-  {
-    headline: "Watchdog urges Hong Kong Observatory to better explain typhoon warning decisions",
-    date: "2026-04-29",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3351869/watchdog-urges-hong-kong-observatory-better-explain-typhoon-warning-decisions?utm_source=rss_feed",
-    category: "LOCAL EMPLOYMENT",
-    impact: "Calls for better communication at the Hong Kong Observatory could lead to minor improvements in public sector operations, with limited implications for employment in meteorology or emergency services.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Hong Kong auditor takes aim at fire services over delayed safety hazard prosecutions",
-    date: "2026-04-29",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/society/article/3351857/hong-kong-auditor-takes-aim-fire-services-over-delayed-safety-hazard-prosecutions?utm_source=rss_feed",
-    category: "LOCAL EMPLOYMENT",
-    impact: "Auditor's criticism of delays in fire services prosecutions points to inefficiencies in public safety departments, potentially resulting in internal reviews or staffing pressures that affect job stability in emergency services in Hong Kong.",
-    sentiment: "negative"
-  },
-  {
-    headline: "AFCD announces arrangements at ecotourism hotspots forMainland's Labour Day Golden Week(with photos)",
-    date: "2026-04-29",
-    source: "政府新聞公報 (info.gov.hk)",
-    url: "https://www.info.gov.hk/gia/general/202604/29/P2026042900726.htm",
-    category: "CHINA MAINLAND",
-    impact: "Arrangements for mainland tourists during Labour Day at ecotourism spots are expected to increase visitor numbers, generating seasonal jobs in tourism, hospitality, and related services in Hong Kong's hotspots.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Govt urged to markedly raise quota for southbound cars",
-    date: "2026-04-29",
-    source: "RTHK",
-    url: "https://news.rthk.hk/rthk/en/component/k2/1852836-20260429.htm",
-    category: "TRADE & GEOPOLITICS",
-    impact: "Increased quota for southbound cars may facilitate cross-border commerce and business travel between Hong Kong and mainland China, potentially supporting job opportunities in logistics, transportation, and trade-related sectors. However, the direct employment impact on Hong Kong's job market is likely minimal unless it significantly boosts economic activity in these specific industries.",
-    sentiment: "neutral"
   }
 ];
 
 const JOBS_DATA = [
   {
-    title: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    title: "Clerk / Assistant",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    desc: "Clerk / Assistant",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_AssociateAVP_Relationship_Management_-_Hong_Kong.id24210669",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Clerk__Assistant.id21206843",
     posted: "05 May 2026"
   },
   {
-    title: "Financial Controller",
+    title: "Senior Manager, Investment Management",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Financial Controller",
+    desc: "Senior Manager, Investment Management",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Financial_Controller.id24185404",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Manager_Investment_Management.id23213408",
     posted: "05 May 2026"
   },
   {
-    title: "Credit Trader",
+    title: "Team Assistant (12 Months Contract)",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Credit Trader",
+    desc: "Team Assistant (12 Months Contract)",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Credit_Trader.id24210668",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Team_Assistant_12_Months_Contract.id24069662",
     posted: "05 May 2026"
   },
   {
-    title: "VP, Infrastructure debt fund, SEA focus",
+    title: "Systematic Trader",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "VP, Infrastructure debt fund, SEA focus",
+    desc: "Systematic Trader",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-VP_Infrastructure_debt_fund_SEA_focus.id24210667",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Systematic_Trader.id22936181",
     posted: "05 May 2026"
   },
   {
@@ -1195,6 +1195,46 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
+    posted: "05 May 2026"
+  },
+  {
+    title: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_AssociateAVP_Relationship_Management_-_Hong_Kong.id24210669",
+    posted: "05 May 2026"
+  },
+  {
+    title: "Financial Controller",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Financial Controller",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Financial_Controller.id24185404",
+    posted: "05 May 2026"
+  },
+  {
+    title: "Credit Trader",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Credit Trader",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Credit_Trader.id24210668",
+    posted: "05 May 2026"
+  },
+  {
+    title: "VP, Infrastructure debt fund, SEA focus",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "VP, Infrastructure debt fund, SEA focus",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-VP_Infrastructure_debt_fund_SEA_focus.id24210667",
     posted: "05 May 2026"
   },
   {
@@ -1878,16 +1918,6 @@ const JOBS_DATA = [
     posted: "30 Apr 2026"
   },
   {
-    title: "Clerk / Assistant",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Clerk / Assistant",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Clerk__Assistant.id21206843",
-    posted: "29 Apr 2026"
-  },
-  {
     title: "Senior Business Analyst, Claims Transformation",
     company: "See listing",
     location: "Hong Kong",
@@ -1895,26 +1925,6 @@ const JOBS_DATA = [
     desc: "Senior Business Analyst, Claims Transformation",
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Business_Analyst_Claims_Transformation.id24188886",
-    posted: "29 Apr 2026"
-  },
-  {
-    title: "Senior Manager, Investment Management",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Senior Manager, Investment Management",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Manager_Investment_Management.id23213408",
-    posted: "29 Apr 2026"
-  },
-  {
-    title: "Systematic Trader",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Systematic Trader",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Systematic_Trader.id22936181",
     posted: "29 Apr 2026"
   },
   {
