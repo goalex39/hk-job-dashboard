@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "18 May 2026 09:02 HKT",
+  updated: "18 May 2026 14:31 HKT",
   version: "v2026.04"
 };
 
@@ -41,10 +41,10 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "25,963",
-    delta: "▼ -1.62%",
+    value: "25,561",
+    delta: "▼ -1.55%",
     deltaClass: "negative",
-    period: "15 May 2026",
+    period: "18 May 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
     valueClass: ""
@@ -144,9 +144,9 @@ const HK_MACRO_DATA = [
     previous: "5.9% (Q1 2026)",
     trend: "▲ STRONG",
     trendClass: "positive",
-    implication: "Growth is stronger than the earlier dashboard snapshot and suggests hiring appetite should stay resilient in trade, tourism, and business services. Job seekers may see better openings, especially in export-linked and consumer-facing roles.",
-    sourceLabel: "Hong Kong Economic Situation",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    implication: "Hong Kong’s growth momentum is strong, which should support hiring in trade, logistics, finance, and professional services. Job seekers may see more openings and better bargaining power, especially in export-linked and consumer-facing roles.",
+    sourceLabel: "news.gov.hk / C&SD",
+    sourceUrl: "https://www.news.gov.hk/eng/2026/05/20260515/20260515_165309_577.html"
   },
   {
     indicator: "Unemployment Rate",
@@ -183,7 +183,7 @@ const HK_MACRO_DATA = [
   },
   {
     indicator: "Hang Seng Index",
-    current: "25,963",
+    current: "25,561",
     currentClass: "",
     previous: "25,963",
     trend: "— HOLD",
@@ -279,9 +279,9 @@ const GLOBAL_DATA = [
     previous: "3.50–3.75%",
     trend: "— HOLD",
     trendClass: "neutral",
-    implication: "U.S. rates staying high keeps HKD funding conditions tight, which can temper hiring in rate-sensitive sectors like real estate, fintech, and small business services. Job seekers may still see cautious headcount plans and slower salary growth until the Fed turns more clearly dovish.",
+    implication: "US policy remains restrictive but unchanged, so Hong Kong hiring conditions tied to global financial markets should stay broadly stable for now. A steady Fed also keeps USD funding costs elevated, which can temper risk appetite in recruiting and expansion.",
     sourceLabel: "Federal Reserve",
-    sourceUrl: "https://www.federalreserve.gov/monetarypolicy/openmarket.htm"
+    sourceUrl: "https://www.federalreserve.gov/releases/h15/"
   },
   {
     indicator: "China GDP Growth",
@@ -290,18 +290,18 @@ const GLOBAL_DATA = [
     previous: "5.2% (Q1 2026)",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "China’s growth remains a support for Hong Kong’s trade, logistics, retail, and professional services demand. For job seekers, this improves the odds of more openings tied to Mainland-facing business and regional expansion.",
+    implication: "Stronger China growth supports Hong Kong-facing trade, logistics, and services demand, which can improve hiring sentiment. It should help employers sustain headcount plans in sectors exposed to mainland demand.",
     sourceLabel: "NBS China",
     sourceUrl: "http://www.stats.gov.cn/english/"
   },
   {
     indicator: "China PMI (Mar 2026)",
-    current: "50.5 (Apr 2026)",
+    current: "50.4 (Apr 2026)",
     currentClass: "",
-    previous: "50.4 (Apr 2026)",
-    trend: "▲ EXPANDING",
-    trendClass: "positive",
-    implication: "A PMI above 50 suggests Mainland manufacturing is still expanding, which is mildly positive for Hong Kong exporters, shipping, and cross-border service providers. Hiring conditions should stay constructive, though not strong enough to imply a broad-based surge.",
+    previous: "50.5 (Apr 2026)",
+    trend: "~ STABLE",
+    trendClass: "neutral",
+    implication: "China manufacturing momentum looks broadly steady, so Hong Kong employers are unlikely to see a sharp demand swing from the mainland in the near term. Hiring should remain selective rather than broad-based.",
     sourceLabel: "NBS China PMI",
     sourceUrl: "http://www.stats.gov.cn/english/"
   },
@@ -310,9 +310,9 @@ const GLOBAL_DATA = [
     current: "7.829",
     currentClass: "",
     previous: "7.829",
-    trend: "~ STABLE",
+    trend: "— HOLD",
     trendClass: "neutral",
-    implication: "A stable USD/HKD keeps local monetary conditions anchored and reduces FX uncertainty for employers and job seekers. It supports hiring visibility, but does not by itself generate stronger labor demand.",
+    implication: "A stable peg keeps currency risk low for employers and job seekers. It supports steady salary benchmarking in HKD and reduces volatility in cross-border hiring decisions.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk/eng/"
   },
@@ -323,7 +323,7 @@ const GLOBAL_DATA = [
     previous: "10% baseline (Section 122)",
     trend: "— HOLD",
     trendClass: "neutral",
-    implication: "If tariffs remain at a baseline level, the trade shock to Hong Kong-linked supply chains stays contained. That means hiring in trade, logistics, and sourcing should remain steady rather than sharply improve or deteriorate.",
+    implication: "Tariff settings remain a structural drag on trade-sensitive hiring, especially for exporters and supply-chain firms in Hong Kong. Employers may continue to prefer flexible staffing and cost control over aggressive expansion.",
     sourceLabel: "USTR",
     sourceUrl: "https://ustr.gov/"
   },
@@ -334,7 +334,7 @@ const GLOBAL_DATA = [
     previous: "Trump-Xi Apr 2026",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable top-level U.S.-China diplomacy lowers immediate policy uncertainty for firms with cross-border exposure. For job seekers, that usually means fewer abrupt freezes in hiring plans, especially in trade, finance, and corporate services.",
+    implication: "Diplomatic engagement is unchanged, so there is no fresh policy catalyst for Hong Kong’s external-demand sectors. Hiring plans should continue to hinge more on macro data than on immediate geopolitical relief.",
     sourceLabel: "The Standard",
     sourceUrl: "https://www.thestandard.com.hk/"
   },
@@ -345,7 +345,7 @@ const GLOBAL_DATA = [
     previous: "US$527B",
     trend: "▲ SURGING",
     trendClass: "positive",
-    implication: "Very large AI capex points to continued demand for cloud, semiconductors, data-center, and enterprise transformation talent. In Hong Kong, that can lift hiring for AI product, risk, compliance, and tech-sales roles tied to regional expansion.",
+    implication: "Very large AI capex globally is supportive for Hong Kong roles in data, cloud, semiconductors, and AI-related finance and advisory work. Job seekers with AI, analytics, and digital transformation skills should continue to see above-average demand.",
     sourceLabel: "HKSTP",
     sourceUrl: "https://www.hkstp.org/"
   },
@@ -354,9 +354,9 @@ const GLOBAL_DATA = [
     current: "Accelerating integration",
     currentClass: "",
     previous: "Accelerating",
-    trend: "▲ UP",
+    trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "Deeper GBA integration should keep creating cross-border job opportunities and improve mobility for talent in Hong Kong. The main beneficiaries are likely to be finance, legal, healthcare, innovation, and supply-chain roles serving the broader Bay Area.",
+    implication: "Deeper GBA integration should keep cross-border hiring and talent circulation active, especially for finance, professional services, and innovation roles. Job seekers with bilingual and mainland-market experience may gain an edge.",
     sourceLabel: "Beijing Review",
     sourceUrl: "http://www.bjreview.com/"
   },
@@ -367,13 +367,22 @@ const GLOBAL_DATA = [
     previous: "TTPS expanded to 200 unis",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Broader eligibility under the TTPS should keep strengthening Hong Kong’s talent inflow and competition for high-skill roles. For employers, that improves hiring depth; for job seekers, it raises competition but also expands the market for skilled positions.",
+    implication: "A broader talent scheme increases the inflow of high-caliber applicants, which can widen competition for entry-level and professional roles. At the same time, it may create more opportunities in fast-growing sectors that struggle to recruit locally.",
     sourceLabel: "LeapScholar",
     sourceUrl: "https://leapscholar.com/"
   }
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Trump’s China trip assessed, South Korea’s AI problem: 5 weekend reads you missed",
+    date: "2026-05-18",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/article/3353918/trumps-china-trip-assessed-south-koreas-ai-problem-5-weekend-reads-you-missed?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "Any renewed focus on Trump-China tensions and South Korea’s AI challenges points to higher external uncertainty for Hong Kong’s trade, finance, and export-linked sectors. This can make employers more cautious on hiring, especially in roles exposed to cross-border policy and supply chain risk.",
+    sentiment: "negative"
+  },
   {
     headline: "UAE ditches oil for AI to build a ‘bridge’ to Global South",
     date: "2026-05-18",
@@ -1084,57 +1093,48 @@ const NEWS_DATA = [
     category: "GLOBAL",
     impact: "A US lawsuit against celebrities over a Netflix film has no relevance to Hong Kong's job market, offering no implications for local employment or hiring trends.",
     sentiment: "neutral"
-  },
-  {
-    headline: "Lawsuit blames ChatGPT maker OpenAI for helping plan Florida university shooting",
-    date: "2026-05-11",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/united-states-canada/article/3353194/lawsuit-blames-chatgpt-maker-openai-helping-plan-florida-university-shooting?utm_source=rss_feed",
-    category: "TECHNOLOGY & AI",
-    impact: "The lawsuit against OpenAI for a US shooting plan indirectly highlights AI risks but does not affect Hong Kong's job market directly. It may prompt minor caution in AI hiring without altering demand for tech roles.",
-    sentiment: "neutral"
   }
 ];
 
 const JOBS_DATA = [
   {
-    title: "HNW Finance, Senior Principal",
+    title: "Investor Relations Manager",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "HNW Finance, Senior Principal",
+    desc: "Investor Relations Manager",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-HNW_Finance_Senior_Principal.id24244430",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Investor_Relations_Manager.id24269777",
     posted: "18 May 2026"
   },
   {
-    title: "Assistant Manager, Network Development and Management",
+    title: "Transaction Monitoring and Fraud Manager - 12 month Contract",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Assistant Manager, Network Development and Management",
+    desc: "Transaction Monitoring and Fraud Manager - 12 month Contract",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Assistant_Manager_Network_Development_and_Management.id24244431",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Transaction_Monitoring_and_Fraud_Manager_-_12_month_Contract.id24269775",
     posted: "18 May 2026"
   },
   {
-    title: "Head of Finance IT (Investment bank, Up to $126k)",
+    title: "C++ Market Data Engineer - Global Trading Firm - Hong Kong",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Head of Finance IT (Investment bank, Up to $126k)",
+    desc: "C++ Market Data Engineer - Global Trading Firm - Hong Kong",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Head_of_Finance_IT_Investment_bank_Up_to_126k.id24001131",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-C_Market_Data_Engineer_-_Global_Trading_Firm_-_Hong_Kong.id24166471",
     posted: "18 May 2026"
   },
   {
-    title: "Senior Algo Developer, Java/C# (Leading iBank)",
+    title: "Claims Property & Casualty - Multiple Openings",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Senior Algo Developer, Java/C# (Leading iBank)",
+    desc: "Claims Property & Casualty - Multiple Openings",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Algo_Developer_JavaC_Leading_iBank.id23913648",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Claims_Property__Casualty_-_Multiple_Openings.id24244562",
     posted: "18 May 2026"
   },
   {
@@ -1195,6 +1195,46 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
+    posted: "18 May 2026"
+  },
+  {
+    title: "HNW Finance, Senior Principal",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "HNW Finance, Senior Principal",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-HNW_Finance_Senior_Principal.id24244430",
+    posted: "18 May 2026"
+  },
+  {
+    title: "Assistant Manager, Network Development and Management",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Assistant Manager, Network Development and Management",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Assistant_Manager_Network_Development_and_Management.id24244431",
+    posted: "18 May 2026"
+  },
+  {
+    title: "Head of Finance IT (Investment bank, Up to $126k)",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Head of Finance IT (Investment bank, Up to $126k)",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Head_of_Finance_IT_Investment_bank_Up_to_126k.id24001131",
+    posted: "18 May 2026"
+  },
+  {
+    title: "Senior Algo Developer, Java/C# (Leading iBank)",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Senior Algo Developer, Java/C# (Leading iBank)",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Algo_Developer_JavaC_Leading_iBank.id23913648",
     posted: "18 May 2026"
   },
   {
