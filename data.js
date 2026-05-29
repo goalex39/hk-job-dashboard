@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "29 May 2026 09:06 HKT",
+  updated: "29 May 2026 14:30 HKT",
   version: "v2026.04"
 };
 
@@ -41,10 +41,10 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "25,328",
-    delta: "▼ -1.06%",
-    deltaClass: "negative",
-    period: "27 May 2026",
+    value: "25,217",
+    delta: "▲ +0.84%",
+    deltaClass: "positive",
+    period: "29 May 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
     valueClass: ""
@@ -144,7 +144,7 @@ const HK_MACRO_DATA = [
     previous: "3.1% (Q1 2026 YoY)",
     trend: "▲ STRONG",
     trendClass: "positive",
-    implication: "Hong Kong’s growth momentum is firming, which typically supports hiring in trade, logistics, finance, and consumer-facing sectors. For job seekers, this improves the odds of openings, though competition may still be selective in higher-skill roles.",
+    implication: "Growth is running well above the earlier baseline, which should support hiring sentiment in trade, logistics, professional services, and consumer-facing sectors. For job seekers, this usually means more openings and slightly better bargaining power, though the benefits may be uneven across industries.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.info.gov.hk/gia/general/202605/05/P2026050500336.htm"
   },
@@ -155,7 +155,7 @@ const HK_MACRO_DATA = [
     previous: "3.3% (Mar-May 2026)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "The latest official update shows unemployment unchanged at 3.7%, indicating a broadly steady labour market rather than a clear deterioration or improvement. Job seekers should still expect cautious hiring, with opportunities concentrated in sectors tied to trade and domestic demand.",
+    implication: "The unemployment rate is unchanged from the latest official reading, indicating a broadly steady labor market rather than a clear pickup or deterioration. For job seekers, hiring conditions remain competitive but not markedly worse, with stability more likely than broad-based layoffs.",
     sourceLabel: "Hong Kong Economic Situation",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -166,7 +166,7 @@ const HK_MACRO_DATA = [
     previous: "1.6% (Apr 2026 YoY)",
     trend: "▲ UP",
     trendClass: "negative",
-    implication: "Inflation has edged higher, which can squeeze real wage gains even if nominal pay is stable. For hiring, this usually means employers may remain cost-conscious, especially in wage-sensitive service sectors.",
+    implication: "Inflation has edged higher, which can squeeze real wage gains if pay growth does not keep pace. For job seekers, this raises the importance of negotiating compensation and benefits, especially in lower-margin sectors.",
     sourceLabel: "Hong Kong Economic Situation",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -177,15 +177,15 @@ const HK_MACRO_DATA = [
     previous: "51.8 (Mar 2026)",
     trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "A PMI above 50 indicates continued expansion in private-sector activity, which is constructive for hiring intent. For job seekers, this usually points to more openings in business services, logistics, and related support roles.",
+    implication: "A reading above 50 signals continued expansion, suggesting firms are still adding activity and may keep hiring selectively. For job seekers, this is consistent with ongoing demand, though momentum appears modest rather than strong.",
     sourceLabel: "Hong Kong Economic Situation",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
   {
     indicator: "Hang Seng Index",
-    current: "25,328",
+    current: "25,217",
     currentClass: "",
-    previous: "25,006",
+    previous: "25,328",
     trend: "▲ UP",
     trendClass: "positive",
     implication: "A higher Hang Seng Index generally improves sentiment in financial markets and can support hiring in brokerage, asset management, and banking. It may also lift confidence among employers exposed to wealth and capital-market activity.",
@@ -274,14 +274,14 @@ const HK_MACRO_DATA = [
 const GLOBAL_DATA = [
   {
     indicator: "US Federal Funds Rate",
-    current: "4.25%–4.50%",
+    current: "3.50%–3.75%",
     currentClass: "",
-    previous: "3.50%–3.75%",
-    trend: "▼ HOLD",
-    trendClass: "neutral",
-    implication: "US borrowing costs remain restrictive, which can keep global financial conditions tight and weigh on Hong Kong hiring in rate-sensitive sectors such as property, finance, and trading-linked businesses.",
-    sourceLabel: "No newer official source found in provided results",
-    sourceUrl: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    previous: "4.25%–4.50%",
+    trend: "▼ DOWN",
+    trendClass: "negative",
+    implication: "US rates are still restrictive, but the hold at 3.50%–3.75% reduces immediate dollar-tightening pressure on Hong Kong hiring costs. For job seekers, this supports a steadier financing backdrop, though rate-sensitive sectors may still remain cautious.",
+    sourceLabel: "Federal Reserve hold (Apr 2026)",
+    sourceUrl: "https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html"
   },
   {
     indicator: "China GDP Growth",
@@ -307,9 +307,9 @@ const GLOBAL_DATA = [
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.833",
+    current: "7.834",
     currentClass: "",
-    previous: "7.844",
+    previous: "7.833",
     trend: "~ STABLE",
     trendClass: "neutral",
     implication: "The HKD remains tightly anchored to the USD, so FX is unlikely to materially change hiring plans, though a stable peg helps preserve business confidence and wage budgeting.",
@@ -374,6 +374,24 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Employer sanctioned for violating requirements of local recruitment under Enhanced Supplementary Labour Scheme",
+    date: "2026-05-29",
+    source: "政府新聞公報 (info.gov.hk)",
+    url: "https://www.info.gov.hk/gia/general/202605/29/P2026052800763.htm",
+    category: "POLICY & REGULATION",
+    impact: "Stricter enforcement of local recruitment rules under the Enhanced Supplementary Labour Scheme can make it harder for employers to rely on imported labour. For Hong Kong job seekers, this may slightly improve opportunities for local hires in affected sectors, but it also signals tighter compliance pressure on employers.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Cases of making ex gratia payments from Protection of Wages on Insolvency Fund gazetted",
+    date: "2026-05-29",
+    source: "政府新聞公報 (info.gov.hk)",
+    url: "https://www.info.gov.hk/gia/general/202605/29/P2026052900246.htm",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Ex gratia payments from the Protection of Wages on Insolvency Fund indicate employer insolvency or wage default, which is a negative signal for job security in the affected businesses. This can raise caution among job seekers and may reflect stress in sectors where layoffs or unpaid wages are a risk.",
+    sentiment: "negative"
+  },
   {
     headline: "Banking sector looks to fund Central Asia's boom",
     date: "2026-05-28",
@@ -1075,24 +1093,6 @@ const NEWS_DATA = [
     category: "GLOBAL",
     impact: "An Ebola outbreak abroad is unlikely to affect Hong Kong jobs directly, but it can raise caution in travel, aviation, and event-related sectors if risk perceptions rise. Healthcare, border control, and emergency preparedness roles may see some indirect attention, but the overall labour-market effect is limited.",
     sentiment: "negative"
-  },
-  {
-    headline: "Air France 2009 crash verdict sparks mixed emotions among families",
-    date: "2026-05-22",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/europe/article/3354499/air-france-2009-crash-verdict-sparks-mixed-emotions-among-victims-families?utm_source=rss_feed",
-    category: "GLOBAL",
-    impact: "The verdict is mainly a human and legal issue, with little direct impact on Hong Kong hiring. At most, it may keep attention on aviation safety, legal, and crisis-management functions, but it should not materially change job demand in the city.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Revamped Terminal 2 to uplift Hong Kong’s aviation hub status: Airport Authority",
-    date: "2026-05-22",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3354569/launch-terminal-2-will-boost-hong-kongs-aviation-hub-status-airport-authority?utm_source=rss_feed",
-    category: "CORPORATE",
-    impact: "A revamped Terminal 2 should support more hiring in aviation operations, passenger services, retail, security, engineering, and project delivery. It also strengthens Hong Kong’s airport hub competitiveness, which is beneficial for long-term aviation and logistics employment.",
-    sentiment: "positive"
   }
 ];
 
