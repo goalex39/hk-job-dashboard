@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "05 Jun 2026 21:58 HKT",
+  updated: "06 Jun 2026 09:03 HKT",
   version: "v2026.04"
 };
 
@@ -41,10 +41,10 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "24,962",
-    delta: "▼ -1.15%",
+    value: "25,253",
+    delta: "▼ -1.48%",
     deltaClass: "negative",
-    period: "05 Jun 2026",
+    period: "04 Jun 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
     valueClass: ""
@@ -142,20 +142,20 @@ const HK_MACRO_DATA = [
     current: "5.9% (Q1 2026 YoY)",
     currentClass: "",
     previous: "3.1% (Q1 2026 YoY)",
-    trend: "▲ UP",
+    trend: "▲ SURGING",
     trendClass: "positive",
-    implication: "Stronger GDP growth supports hiring sentiment in trade, logistics, finance, and consumer-facing sectors, though firms may still remain selective on headcount expansion.",
-    sourceLabel: "news.gov.hk",
-    sourceUrl: "https://www.news.gov.hk/eng/2026/05/20260515/20260515_165309_577.html"
+    implication: "Stronger GDP growth supports hiring sentiment in trade, logistics, consumer-facing services, and professional services. For job seekers, it usually means more openings and better bargaining power, especially in growth-linked roles.",
+    sourceLabel: "C&SD",
+    sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
   },
   {
     indicator: "Unemployment Rate",
     current: "3.7% (Feb-Apr 2026)",
     currentClass: "",
     previous: "3.3% (Mar-May 2026)",
-    trend: "— HOLD",
+    trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Unemployment holding at 3.7% suggests a broadly stable labor market, with job seekers still facing competition but no clear deterioration in hiring conditions.",
+    implication: "A stable unemployment rate suggests the labour market is not deteriorating materially, but it also does not yet signal broad-based improvement. Job seekers may still face selective competition, while employers remain cautious on headcount growth.",
     sourceLabel: "Hong Kong Economic Situation",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -164,11 +164,11 @@ const HK_MACRO_DATA = [
     current: "2.6% (2026 forecast)",
     currentClass: "",
     previous: "1.7% (Mar 2026 YoY)",
-    trend: "⚠ ELEVATED",
+    trend: "▲ UP",
     trendClass: "negative",
-    implication: "A higher inflation forecast means wage pressure may stay on the radar for employers, while job seekers may need larger pay increases to preserve real purchasing power.",
-    sourceLabel: "news.gov.hk",
-    sourceUrl: "https://www.news.gov.hk/eng/2026/05/20260515/20260515_165309_577.html"
+    implication: "A higher inflation forecast points to rising living costs, which can put pressure on wage expectations and real incomes. For hiring, it may encourage firms to be more selective on salary adjustments unless productivity and demand stay firm.",
+    sourceLabel: "Hong Kong Economic Situation",
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
   {
     indicator: "PMI (Mar 2026)",
@@ -183,9 +183,9 @@ const HK_MACRO_DATA = [
   },
   {
     indicator: "Hang Seng Index",
-    current: "24,962",
+    current: "25,253",
     currentClass: "",
-    previous: "24,953",
+    previous: "24,962",
     trend: "~ STABLE",
     trendClass: "neutral",
     implication: "A near-flat Hang Seng points to steady but cautious market sentiment, which typically keeps hiring in capital markets and brokerage services stable rather than aggressive.",
@@ -279,9 +279,9 @@ const GLOBAL_DATA = [
     previous: "4.25%–4.50%",
     trend: "— HOLD",
     trendClass: "neutral",
-    implication: "US borrowing costs are still restrictive but stable, which keeps global financial conditions firm. For Hong Kong job seekers and hiring, this usually supports a cautious recruitment environment rather than a strong credit-led upswing.",
+    implication: "Stable Fed policy keeps US funding conditions unchanged for now, limiting immediate spillover to Hong Kong hiring costs. For job seekers, this supports a steady but not strongly expansionary environment in finance and rate-sensitive sectors.",
     sourceLabel: "Federal Reserve / FOMC",
-    sourceUrl: "https://www.federalreserve.gov/monetarypolicy.htm"
+    sourceUrl: "https://www.wellsfargoadvisors.com/research-analysis/reports/fed-rate.htm"
   },
   {
     indicator: "China GDP Growth",
@@ -307,9 +307,9 @@ const GLOBAL_DATA = [
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.834",
+    current: "7.833",
     currentClass: "",
-    previous: "7.833",
+    previous: "7.834",
     trend: "— HOLD",
     trendClass: "neutral",
     implication: "The Hong Kong dollar remains effectively pinned to the US dollar, so FX is not creating a major additional labor-market signal. Hiring decisions are more likely to be driven by demand conditions than by exchange-rate volatility.",
@@ -374,6 +374,51 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "US strikes Iranian radar sites after drone shootdown in Strait of Hormuz",
+    date: "2026-06-06",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/middle-east/article/3356182/us-strikes-iranian-radar-sites-after-drone-shootdown-strait-hormuz?utm_source=rss_feed",
+    category: "GLOBAL",
+    impact: "Escalation in the Strait of Hormuz raises geopolitical risk and could add volatility to shipping, insurance, trade, and market sentiment in Hong Kong. That typically makes employers more cautious on hiring and investment, especially in trade-linked and finance-adjacent roles.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Don’t dream it’s over: mainland students rethink Hong Kong over costs, culture",
+    date: "2026-06-06",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3356168/dont-dream-its-over-mainland-students-rethink-hong-kong-over-costs-culture?utm_source=rss_feed",
+    category: "CHINA MAINLAND",
+    impact: "Mainland students reconsidering Hong Kong over costs and culture suggests softer future talent inflows for universities and early-career hiring pipelines. That is negative for sectors that rely on mainland graduate talent, though it may also intensify competition among employers for a smaller pool of candidates.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Hong Kong parents of undocumented baby Danny confident of regaining custody",
+    date: "2026-06-06",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/society/article/3356172/hong-kong-parents-undocumented-baby-danny-confident-regaining-custody?utm_source=rss_feed",
+    category: "LOCAL EMPLOYMENT",
+    impact: "This is primarily a legal and family-court matter, so the direct effect on the job market is minimal. Indirectly, it may add to public discussion about social services and welfare roles, but it does not materially change hiring conditions.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Putin says no reason to meet Ukraine’s Zelensky, calls his letter ‘rude’",
+    date: "2026-06-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/russia-central-asia/article/3356180/putin-says-no-reason-meet-ukraines-zelensky-calls-his-letter-rude?utm_source=rss_feed",
+    category: "GLOBAL",
+    impact: "A prolonged Russia-Ukraine conflict keeps geopolitical uncertainty elevated, which can weigh on global business confidence and cross-border trade conditions affecting Hong Kong. The job-market effect is mostly indirect, but weaker sentiment can slow hiring in externally exposed sectors.",
+    sentiment: "negative"
+  },
+  {
+    headline: "First AI-designed ‘universal vaccine’ tested in humans",
+    date: "2026-06-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/europe/article/3356176/first-ai-designed-universal-vaccine-tested-humans?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "Human testing of an AI-designed universal vaccine signals continued momentum in AI-driven life sciences and biotech innovation. For Hong Kong job seekers, this supports demand for AI, data science, biomedical, clinical research, and regulatory talent, especially in the innovation and health-tech ecosystem.",
+    sentiment: "positive"
+  },
   {
     headline: "Why are more Hong Kong youth not in education, work or training than Asian peers?",
     date: "2026-06-05",
@@ -1048,55 +1093,50 @@ const NEWS_DATA = [
     category: "LOCAL EMPLOYMENT",
     impact: "High rents and job anxiety among mainland students point to a tougher entry-level environment in Hong Kong. That can make graduate recruitment more competitive and may increase pressure on employers to offer clearer career paths, better pay, or flexible arrangements to attract and retain young talent.",
     sentiment: "negative"
-  },
-  {
-    headline: "Firms spent heavily on AI. Now rising costs are outpacing its value",
-    date: "2026-05-31",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/united-states-canada/article/3355439/firms-spent-heavily-ai-now-rising-costs-are-outpacing-its-value?utm_source=rss_feed",
-    category: "TECHNOLOGY & AI",
-    impact: "If AI spending is failing to deliver value, Hong Kong employers may become more cautious about new AI hiring and tighter on tech budgets. That can slow demand for some implementation roles, while increasing pressure on candidates to prove measurable productivity gains from AI work.",
-    sentiment: "negative"
-  },
-  {
-    headline: "Hong Kong NGO offers HK$30,000 to Tai Po fire victims who transfer property",
-    date: "2026-05-31",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/society/article/3355449/hong-kong-ngo-offers-hk30000-tai-po-fire-victims-who-transfer-property?utm_source=rss_feed",
-    category: "REAL ESTATE & COST",
-    impact: "Housing-related distress can add pressure to Hong Kong households and smaller employers, especially in lower- and middle-income segments. For job seekers, this points to continued cost-of-living strain and weaker consumer-facing hiring if local spending is affected.",
-    sentiment: "negative"
-  },
-  {
-    headline: "Hong Kong considers new offshore yuan venture fund for tech, emerging industries",
-    date: "2026-05-31",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3355448/hong-kong-considers-new-offshore-yuan-venture-fund-tech-emerging-industries?utm_source=rss_feed",
-    category: "FINTECH",
-    impact: "A new offshore yuan venture fund would support fintech, asset management, and fund administration hiring in Hong Kong, especially for professionals with RMB, venture capital, and cross-border investment experience. It also strengthens Hong Kong’s role as a financial gateway for mainland-linked innovation capital.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Hong Kong property recovery tested as bigger student housing deals gain traction",
-    date: "2026-05-31",
-    source: "SCMP",
-    url: "https://www.scmp.com/business/banking-finance/article/3355371/hong-kong-property-recovery-tested-bigger-student-housing-deals-gain-traction?utm_source=rss_feed",
-    category: "REAL ESTATE & COST",
-    impact: "A recovery in property activity and larger student housing deals should support jobs in real estate investment, leasing, asset management, valuation, and property services. It is a positive signal for a sector that can spill over into construction, facilities management, and related professional services.",
-    sentiment: "positive"
-  },
-  {
-    headline: "HK eyes logistics, finance role in Central Asia",
-    date: "2026-05-30",
-    source: "RTHK",
-    url: "https://news.rthk.hk/rthk/en/component/k2/1856655-20260531.htm",
-    category: "GLOBAL",
-    impact: "This points to more opportunities for Hong Kong firms and workers in logistics, trade facilitation, finance, and professional services tied to Central Asia. The likely effect is incremental job growth in cross-border logistics, trade finance, compliance, and market expansion roles as Hong Kong positions itself as an intermediary.",
-    sentiment: "positive"
   }
 ];
 
 const JOBS_DATA = [
+  {
+    title: "Client Value Management, Principal",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Client Value Management, Principal",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Client_Value_Management_Principal.id24371157",
+    posted: "06 Jun 2026"
+  },
+  {
+    title: "Manager, Business Development - AIA Agency",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Manager, Business Development - AIA Agency",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Manager_Business_Development_-_AIA_Agency.id24371156",
+    posted: "06 Jun 2026"
+  },
+  {
+    title: "TDA Transformation GenAI Solution, Principal",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "TDA Transformation GenAI Solution, Principal",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-TDA_Transformation_GenAI_Solution_Principal.id24371155",
+    posted: "06 Jun 2026"
+  },
+  {
+    title: "2026 AIA Hong Kong and Macau Summer Internship Program - Proposition & HealthCare",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "2026 AIA Hong Kong and Macau Summer Internship Program - Proposition & HealthCare",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-2026_AIA_Hong_Kong_and_Macau_Summer_Internship_Program_-_Proposition__HealthCare.id24371154",
+    posted: "06 Jun 2026"
+  },
   {
     title: "🔍 Browse all Data Governance jobs on JobsDB",
     company: "JobsDB Hong Kong",
@@ -1105,7 +1145,7 @@ const JOBS_DATA = [
     desc: "Search all data governance, AI governance, and data protection jobs currently listed on JobsDB Hong Kong.",
     source: "JobsDB",
     url: "https://hk.jobsdb.com/data-governance-jobs/in-Hong-Kong",
-    posted: "05 Jun 2026"
+    posted: "06 Jun 2026"
   },
   {
     title: "🔍 Browse all AI Governance jobs on JobsDB",
@@ -1115,7 +1155,7 @@ const JOBS_DATA = [
     desc: "Search all AI governance and AI risk management jobs currently listed on JobsDB Hong Kong.",
     source: "JobsDB",
     url: "https://hk.jobsdb.com/ai-governance-jobs/in-Hong-Kong",
-    posted: "05 Jun 2026"
+    posted: "06 Jun 2026"
   },
   {
     title: "🔍 Browse all Data Governance jobs on LinkedIn",
@@ -1125,7 +1165,7 @@ const JOBS_DATA = [
     desc: "Search all data governance and data management jobs in Hong Kong on LinkedIn.",
     source: "LinkedIn",
     url: "https://www.linkedin.com/jobs/search/?keywords=data+governance&location=Hong+Kong",
-    posted: "05 Jun 2026"
+    posted: "06 Jun 2026"
   },
   {
     title: "🔍 Browse all AI Governance jobs on LinkedIn",
@@ -1135,7 +1175,7 @@ const JOBS_DATA = [
     desc: "Search all AI governance, AI strategy, and responsible AI jobs in Hong Kong on LinkedIn.",
     source: "LinkedIn",
     url: "https://www.linkedin.com/jobs/search/?keywords=AI+governance&location=Hong+Kong",
-    posted: "05 Jun 2026"
+    posted: "06 Jun 2026"
   },
   {
     title: "🔍 Browse all Data Governance jobs on eFinancialCareers",
@@ -1145,7 +1185,7 @@ const JOBS_DATA = [
     desc: "Search all data governance jobs in Hong Kong's financial sector on eFinancialCareers.",
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs?keywords=data+governance&location=Hong+Kong",
-    posted: "05 Jun 2026"
+    posted: "06 Jun 2026"
   },
   {
     title: "🔍 Browse all Data Governance jobs on Indeed",
@@ -1155,7 +1195,7 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
-    posted: "05 Jun 2026"
+    posted: "06 Jun 2026"
   },
   {
     title: "Senior / System Administration Manager (Cloud)",
