@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "20 Jun 2026 09:06 HKT",
+  updated: "20 Jun 2026 14:34 HKT",
   version: "v2026.04"
 };
 
@@ -41,10 +41,10 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "23,925",
-    delta: "▼ -1.59%",
+    value: "24,312",
+    delta: "▼ -0.74%",
     deltaClass: "negative",
-    period: "18 Jun 2026",
+    period: "17 Jun 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
     valueClass: ""
@@ -183,9 +183,9 @@ const HK_MACRO_DATA = [
   },
   {
     indicator: "Hang Seng Index",
-    current: "23,925",
+    current: "24,312",
     currentClass: "",
-    previous: "24,312",
+    previous: "23,925",
     trend: "▼ DOWN",
     trendClass: "negative",
     implication: "A lower Hang Seng can weigh on sentiment in finance and capital markets, potentially making hiring more cautious in investment-linked roles.",
@@ -277,11 +277,11 @@ const GLOBAL_DATA = [
     current: "3.50%–3.75%",
     currentClass: "",
     previous: "4.25%–4.50%",
-    trend: "— HOLD",
+    trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "U.S. policy is unchanged, so global funding conditions remain steady for now. For Hong Kong job seekers and hiring, this supports a broadly stable external backdrop rather than a new rate-driven shock to recruiting or wage budgets.",
-    sourceLabel: "Federal Reserve FOMC statement",
-    sourceUrl: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+    implication: "The stable US Fed rate supports steady global capital flows, giving Hong Kong job seekers in finance and tech sectors confidence in continued hiring without sudden rate-driven contractions.",
+    sourceLabel: "Trading Economics",
+    sourceUrl: "https://tradingeconomics.com/united-states/interest-rate"
   },
   {
     indicator: "China GDP Growth",
@@ -309,7 +309,7 @@ const GLOBAL_DATA = [
     indicator: "USD/HKD Exchange",
     current: "7.837",
     currentClass: "",
-    previous: "7.838",
+    previous: "7.837",
     trend: "~ STABLE",
     trendClass: "neutral",
     implication: "No newer official figure was found, so the Hong Kong dollar remains effectively unchanged against the U.S. dollar. For Hong Kong job seekers and hiring, this suggests limited currency-related impact on local labor demand and compensation trends.",
@@ -374,6 +374,33 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Norway imposes near AI ban for junior school pupils, curbs use for older children",
+    date: "2026-06-20",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/europe/article/3357751/norway-imposes-near-ai-ban-junior-school-pupils-curbs-use-older-children?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "Stricter AI use for children signals tighter public scrutiny of AI adoption and may contribute to a more cautious regulatory climate. For Hong Kong employers, this is indirectly negative for some edtech and consumer-AI growth narratives, but it could modestly boost demand for AI governance and compliance skills.",
+    sentiment: "negative"
+  },
+  {
+    headline: "New measures aim to ease cross-border flow of resources within Northern Metropolis",
+    date: "2026-06-20",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/society/article/3357766/new-measures-aim-ease-cross-border-flow-resources-within-northern-metropolis?utm_source=rss_feed",
+    category: "CHINA MAINLAND",
+    impact: "Easing cross-border movement of resources for the Northern Metropolis supports construction, planning, logistics, and professional services demand. It also improves the outlook for firms tied to Greater Bay Area integration, which can create more project-based and long-term jobs in Hong Kong.",
+    sentiment: "positive"
+  },
+  {
+    headline: "‘Tap your cultural foundation’, Shangri-La’s Kuok Hui Kwong tells Hong Kong tourism trade",
+    date: "2026-06-20",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3357728/tap-your-cultural-foundation-shangri-las-kuok-hui-kwong-tells-hong-kong-tourism-trade?utm_source=rss_feed",
+    category: "TOURISM",
+    impact: "A stronger cultural branding push from Shangri-La’s leadership is supportive for Hong Kong tourism, hospitality, events, and marketing jobs. It suggests private-sector interest in attracting higher-value visitors, which can help employment in hotels, restaurants, and related services.",
+    sentiment: "positive"
+  },
   {
     headline: "Two arrested in separate ketamine seizures at airport",
     date: "2026-06-20",
@@ -1066,85 +1093,48 @@ const NEWS_DATA = [
     category: "DATA GOVERNANCE & PRIVACY",
     impact: "Stricter rules on secure storage of ride-hailing data can increase compliance burdens for platform operators and their vendors, which may slow hiring or shift demand toward legal, cybersecurity, and data-governance roles. It also signals a more regulated operating environment for tech and mobility jobs in Hong Kong.",
     sentiment: "negative"
-  },
-  {
-    headline: "HKUST AI tool aims to revolutionise tumour detection",
-    date: "2026-06-15",
-    source: "RTHK",
-    url: "https://news.rthk.hk/rthk/en/component/k2/1858522-20260615.htm",
-    category: "TECHNOLOGY & AI",
-    impact: "HKUST’s AI-driven tumour detection tool signals continued demand for AI, biomedical engineering, data science, and health-tech roles in Hong Kong. It may also strengthen collaboration between universities, hospitals, and startups, creating more research and commercialization opportunities.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Miss Hong Kong stirs Cantonese debate, China cuts degrees in AI push: 5 weekend reads you missed",
-    date: "2026-06-15",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/article/3357091/miss-hong-kong-stirs-cantonese-debate-china-cuts-degrees-ai-push-5-weekend-reads-you-missed?utm_source=rss_feed",
-    category: "TECHNOLOGY & AI",
-    impact: "The headline points to AI-related policy changes in China and a broader skills shift, which reinforces demand for AI talent, Cantonese-language content, and education-adjacent jobs in Hong Kong. For job seekers, it suggests more openings in AI development, digital media, and localization work, while some traditional roles may continue to be displaced.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Ukraine condemns ‘brutal’ Russian assault after Unesco heritage Kyiv-Pechersk Lavra is hit",
-    date: "2026-06-15",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/europe/article/3357095/ukraine-condemns-brutal-russian-assault-after-unesco-heritage-kyiv-pechersk-lavra-hit?utm_source=rss_feed",
-    category: "GLOBAL",
-    impact: "This is an overseas conflict headline with limited direct effect on Hong Kong hiring. Indirectly, it can add to geopolitical uncertainty, but it is unlikely to materially change local job demand on its own.",
-    sentiment: "neutral"
   }
 ];
 
 const JOBS_DATA = [
   {
-    title: "Senior Investment Consultant/ Investment Consultant, Private Banking",
+    title: "Senior QA Engineer",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Senior Investment Consultant/ Investment Consultant, Private Banking",
+    desc: "Senior QA Engineer",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Investment_Consultant_Investment_Consultant_Private_Banking.id24331875",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_QA_Engineer.id23854952",
     posted: "20 Jun 2026"
   },
   {
-    title: "Software Engineer - Associate - Markets Systems - IT",
+    title: "Associate Director, Digital Product Operations, Wealth Management",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Software Engineer - Associate - Markets Systems - IT",
+    desc: "Associate Director, Digital Product Operations, Wealth Management",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Software_Engineer_-_Associate_-_Markets_Systems_-_IT.id24280037",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Associate_Director_Digital_Product_Operations_Wealth_Management.id23096548",
     posted: "20 Jun 2026"
   },
   {
-    title: "Vice President, Process Review & Optimization",
+    title: "Finance Manager/Director, Family Office (Asset Management)",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Vice President, Process Review & Optimization",
+    desc: "Finance Manager/Director, Family Office (Asset Management)",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Vice_President_Process_Review__Optimization.id24401919",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Finance_ManagerDirector_Family_Office_Asset_Management.id23654940",
     posted: "20 Jun 2026"
   },
   {
-    title: "Associate - Senior Network Engineer - System & Network Operations - IT",
+    title: "Intermediary Sales, HK Retail & PB Business (AD/Director level)",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Associate - Senior Network Engineer - System & Network Operations - IT",
+    desc: "Intermediary Sales, HK Retail & PB Business (AD/Director level)",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Associate_-_Senior_Network_Engineer_-_System__Network_Operations_-_IT.id24280038",
-    posted: "20 Jun 2026"
-  },
-  {
-    title: "(Senior) Systems Analyst - Post-Trade Systems (Derivatives Clearing) - IT",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "(Senior) Systems Analyst - Post-Trade Systems (Derivatives Clearing) - IT",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Systems_Analyst_-_Post-Trade_Systems_Derivatives_Clearing_-_IT.id24280035",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Intermediary_Sales_HK_Retail__PB_Business_ADDirector_level.id24280358",
     posted: "20 Jun 2026"
   },
   {
@@ -1205,6 +1195,56 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
+    posted: "20 Jun 2026"
+  },
+  {
+    title: "Senior Investment Consultant/ Investment Consultant, Private Banking",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Senior Investment Consultant/ Investment Consultant, Private Banking",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Investment_Consultant_Investment_Consultant_Private_Banking.id24331875",
+    posted: "20 Jun 2026"
+  },
+  {
+    title: "Software Engineer - Associate - Markets Systems - IT",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Software Engineer - Associate - Markets Systems - IT",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Software_Engineer_-_Associate_-_Markets_Systems_-_IT.id24280037",
+    posted: "20 Jun 2026"
+  },
+  {
+    title: "Vice President, Process Review & Optimization",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Vice President, Process Review & Optimization",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Vice_President_Process_Review__Optimization.id24401919",
+    posted: "20 Jun 2026"
+  },
+  {
+    title: "Associate - Senior Network Engineer - System & Network Operations - IT",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Associate - Senior Network Engineer - System & Network Operations - IT",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Associate_-_Senior_Network_Engineer_-_System__Network_Operations_-_IT.id24280038",
+    posted: "20 Jun 2026"
+  },
+  {
+    title: "(Senior) Systems Analyst - Post-Trade Systems (Derivatives Clearing) - IT",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "(Senior) Systems Analyst - Post-Trade Systems (Derivatives Clearing) - IT",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Systems_Analyst_-_Post-Trade_Systems_Derivatives_Clearing_-_IT.id24280035",
     posted: "20 Jun 2026"
   },
   {
@@ -3255,26 +3295,6 @@ const JOBS_DATA = [
     desc: "Director AI Architect",
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Director_AI_Architect.id24152580",
-    posted: "09 May 2026"
-  },
-  {
-    title: "Senior QA Engineer",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Senior QA Engineer",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_QA_Engineer.id23854952",
-    posted: "09 May 2026"
-  },
-  {
-    title: "Associate Director, Digital Product Operations, Wealth Management",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Associate Director, Digital Product Operations, Wealth Management",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Associate_Director_Digital_Product_Operations_Wealth_Management.id23096548",
     posted: "09 May 2026"
   },
   {
