@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "26 Jun 2026 09:06 HKT",
+  updated: "26 Jun 2026 14:28 HKT",
   version: "v2026.04"
 };
 
@@ -41,10 +41,10 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "23,412",
-    delta: "▲ +0.33%",
-    deltaClass: "positive",
-    period: "24 Jun 2026",
+    value: "22,621",
+    delta: "▼ -1.97%",
+    deltaClass: "negative",
+    period: "26 Jun 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
     valueClass: ""
@@ -142,11 +142,11 @@ const HK_MACRO_DATA = [
     current: "5.9%",
     currentClass: "",
     previous: "5.9% (Q1 2026 YoY)",
-    trend: "▲ UP",
+    trend: "▲ STRONG",
     trendClass: "positive",
-    implication: "Strong Q1 GDP growth driven by exports and consumption signals robust hiring in trade, logistics, and retail sectors, offering more job opportunities for Hong Kong workers.",
+    implication: "Strong GDP growth driven by exports and consumption signals robust hiring in logistics, tech, and retail sectors, offering job seekers more opportunities with competitive wages.",
     sourceLabel: "C&SD",
-    sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
+    sourceUrl: "https://www.reuters.com/world/asia-pacific/hong-kong-q1-gdp-expands-59-yy-government-maintains-2026-growth-forecast-2026-05-15/"
   },
   {
     indicator: "Unemployment Rate",
@@ -183,9 +183,9 @@ const HK_MACRO_DATA = [
   },
   {
     indicator: "Hang Seng Index",
-    current: "23,412",
+    current: "22,621",
     currentClass: "",
-    previous: "23,077",
+    previous: "23,412",
     trend: "▲ UP",
     trendClass: "positive",
     implication: "Rising Hang Seng Index reflects stronger market confidence, likely boosting hiring in finance, investment, and professional services sectors.",
@@ -279,9 +279,9 @@ const GLOBAL_DATA = [
     previous: "4.25%–4.50%",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable US rates reduce currency volatility, supporting Hong Kong's export and finance sectors, which may lead to steady hiring in banking and logistics for job seekers.",
-    sourceLabel: "Trading Economics",
-    sourceUrl: "https://tradingeconomics.com/united-states/interest-rate"
+    implication: "The stable US Fed rate supports steady global capital flows, giving Hong Kong job seekers in finance and tech sectors consistent hiring opportunities without rate-driven volatility.",
+    sourceLabel: "Federal Reserve",
+    sourceUrl: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
   },
   {
     indicator: "China GDP Growth",
@@ -307,7 +307,7 @@ const GLOBAL_DATA = [
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.840",
+    current: "7.841",
     currentClass: "",
     previous: "7.840",
     trend: "~ STABLE",
@@ -374,6 +374,69 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Data privacy academy 'can help HK cope with AI risks'",
+    date: "2026-06-26",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1859995-20260626.htm",
+    category: "DATA GOVERNANCE & PRIVACY",
+    impact: "The launch of the Data Privacy Academy creates new demand for data protection officers, AI governance practitioners, and compliance specialists in Hong Kong, offering career growth in the expanding privacy/AI sector.",
+    sentiment: "positive"
+  },
+  {
+    headline: "Red Rainstorm Warning in effect",
+    date: "2026-06-26",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1860006-20260626.htm",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Red rainstorm warnings cause class suspensions and potential work stoppages, temporarily disrupting daily operations and reducing productivity for Hong Kong workers, especially in education and service sectors.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Hong Kong to raise share of Medical Council lay members to 31%, set inquiry time",
+    date: "2026-06-26",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3358438/hong-kong-raise-share-lay-members-medical-council-25-31?utm_source=rss_feed",
+    category: "POLICY & REGULATION",
+    impact: "Increasing lay members in the Medical Council is a governance reform with limited immediate effect on Hong Kong job seekers, though it may indirectly influence healthcare policy long-term.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Why having more foreign-trained doctors in Hong Kong won’t threaten local ones",
+    date: "2026-06-26",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3358388/why-having-more-foreign-trained-doctors-hong-kong-wont-threaten-local-ones?utm_source=rss_feed",
+    category: "FINANCIAL SECTOR",
+    impact: "More foreign-trained doctors in Hong Kong expands the healthcare workforce, potentially creating additional opportunities for medical professionals, nurses, and allied health staff in the city.",
+    sentiment: "positive"
+  },
+  {
+    headline: "Hong Kong downgrades red rainstorm warning to amber after class suspensions",
+    date: "2026-06-26",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3358436/hong-kong-issues-red-rainstorm-warning-education-authorities-suspend-classes?utm_source=rss_feed",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Downgrading the red rainstorm warning to amber allows schools and businesses to resume normal operations, restoring productivity and reducing work disruption for Hong Kong employees.",
+    sentiment: "positive"
+  },
+  {
+    headline: "Cases of making ex gratia payments from Protection of Wages on Insolvency Fund gazetted",
+    date: "2026-06-26",
+    source: "政府新聞公報 (info.gov.hk)",
+    url: "https://www.info.gov.hk/gia/general/202606/26/P2026062600601.htm",
+    category: "FINANCIAL SECTOR",
+    impact: "Ex gratia payments from the Protection of Wages on Insolvency Fund indicate company insolvencies, signaling job losses and financial instability for affected workers in Hong Kong.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Hong Kong Customs combats unfair trade practices by postnatal care centre",
+    date: "2026-06-26",
+    source: "政府新聞公報 (info.gov.hk)",
+    url: "https://www.info.gov.hk/gia/general/202606/26/P2026062600337.htm",
+    category: "CORPORATE",
+    impact: "Hong Kong Customs combating unfair trade practices by a postnatal care centre highlights regulatory enforcement, which may lead to operational disruptions or job cuts in the affected business sector.",
+    sentiment: "negative"
+  },
   {
     headline: "Hong Kong’s own drug regulator pushes ahead with hiring, seeks WHO recognition",
     date: "2026-06-26",
@@ -1030,111 +1093,48 @@ const NEWS_DATA = [
     category: "GLOBAL",
     impact: "The Pope’s message on migrants is socially important but does not directly change Hong Kong hiring conditions. Any labour-market relevance would be indirect, through public discourse on migration and social services rather than immediate job creation.",
     sentiment: "neutral"
-  },
-  {
-    headline: "Hong Kong to roll out measures boosting offshore yuan trading in July: finance chief",
-    date: "2026-06-21",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3357804/hong-kong-roll-out-measures-boosting-offshore-yuan-trading-july-finance-chief?utm_source=rss_feed",
-    category: "FINANCIAL SECTOR",
-    impact: "Measures to boost offshore yuan trading should benefit banks, treasury teams, FX desks, payment firms, and market infrastructure roles in Hong Kong. It is positive for job seekers with renminbi, fixed income, trading, settlement, and financial technology expertise.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Israeli ‘smear campaign’ targets journalists, threatens safety, Al Jazeera says",
-    date: "2026-06-21",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/middle-east/article/3357830/israeli-smear-campaign-targets-journalists-threatens-safety-al-jazeera-says?utm_source=rss_feed",
-    category: "TRADE & GEOPOLITICS",
-    impact: "A campaign targeting journalists and threatening safety creates broader geopolitical and media-sector uncertainty. In Hong Kong, that can affect hiring sentiment in media, communications, and regional coverage roles, especially for employers sensitive to reputational and security risks.",
-    sentiment: "negative"
-  },
-  {
-    headline: "Iran, US claims conflict over Hormuz as 3 Indian crude tankers emerge",
-    date: "2026-06-21",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/asia/south-asia/article/3357824/iran-us-claims-conflict-over-hormuz-three-indian-crude-tankers-emerge?utm_source=rss_feed",
-    category: "TRADE & GEOPOLITICS",
-    impact: "Conflict over Hormuz and disruptions to crude shipments can lift energy costs and disrupt regional trade flows. For Hong Kong job seekers, that is usually negative for logistics, shipping, commodities, and cost-sensitive sectors, while increasing demand for risk and supply-chain management skills.",
-    sentiment: "negative"
-  },
-  {
-    headline: "No more painful biopsies? How a new blood test will transform cancer detection in Hong Kong",
-    date: "2026-06-21",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3357760/no-more-painful-biopsies-how-new-blood-test-will-transform-cancer-detection-hong-kong?utm_source=rss_feed",
-    category: "TECHNOLOGY & AI",
-    impact: "A new blood test that improves cancer detection suggests more demand for medical technology adoption, clinical support, and health-tech commercialization in Hong Kong. It could also create spillover opportunities in biotech, laboratory services, healthcare analytics, and insurance-related health screening roles.",
-    sentiment: "positive"
-  },
-  {
-    headline: "For Hong Kong to succeed in AI, energy cannot be an afterthought",
-    date: "2026-06-21",
-    source: "SCMP",
-    url: "https://www.scmp.com/opinion/hong-kong-opinion/article/3357309/hong-kong-succeed-ai-energy-cannot-be-afterthought?utm_source=rss_feed",
-    category: "GLOBAL",
-    impact: "For Hong Kong to succeed in AI, energy cannot be an afterthought",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Hong Kong ‘strategic adaptation ground’ for mainland Chinese tech giants: Paul Chan",
-    date: "2026-06-21",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3357818/hong-kong-strategic-adaptation-ground-mainland-chinese-tech-giants-paul-chan?utm_source=rss_feed",
-    category: "GLOBAL",
-    impact: "Hong Kong ‘strategic adaptation ground’ for mainland Chinese tech giants: Paul Chan",
-    sentiment: "neutral"
-  },
-  {
-    headline: "'HK a strategic adaptation ground for mainland firms'",
-    date: "2026-06-21",
-    source: "RTHK",
-    url: "https://news.rthk.hk/rthk/en/component/k2/1859335-20260621.htm",
-    category: "CHINA MAINLAND",
-    impact: "This suggests more mainland firms may use Hong Kong as a regional base, which can support demand for bilingual, cross-border business, compliance, and market-entry talent. It is likely to help roles tied to expansion, but the benefit will be concentrated in firms serving mainland capital and operations.",
-    sentiment: "neutral"
   }
 ];
 
 const JOBS_DATA = [
   {
-    title: "Senior Investment Consultant/ Investment Consultant, Private Banking",
+    title: "REWARDS (C&B), HUMAN RESOURCES - ASSOCIATE DIRECTOR",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Senior Investment Consultant/ Investment Consultant, Private Banking",
+    desc: "REWARDS (C&B), HUMAN RESOURCES - ASSOCIATE DIRECTOR",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Investment_Consultant_Investment_Consultant_Private_Banking.id24331875",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-REWARDS_CB_HUMAN_RESOURCES_-_ASSOCIATE_DIRECTOR.id23937064",
     posted: "26 Jun 2026"
   },
   {
-    title: "Investment Services, Public Market (Hong Kong)",
+    title: "COMPLIANCE ASSOCIATE / OFFICER (PERM / CONTRACT) - INVESTMENT COMPLIANCE",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Investment Services, Public Market (Hong Kong)",
+    desc: "COMPLIANCE ASSOCIATE / OFFICER (PERM / CONTRACT) - INVESTMENT COMPLIANCE",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Investment_Services_Public_Market_Hong_Kong.id24285659",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-COMPLIANCE_ASSOCIATE__OFFICER_PERM__CONTRACT_-_INVESTMENT_COMPLIANCE.id24276771",
     posted: "26 Jun 2026"
   },
   {
-    title: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    title: "OFFICE MANAGER / PERSONAL ASSISTANT",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    desc: "OFFICE MANAGER / PERSONAL ASSISTANT",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_AssociateAVP_Relationship_Management_-_Hong_Kong.id24443040",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-OFFICE_MANAGER__PERSONAL_ASSISTANT.id24210578",
     posted: "26 Jun 2026"
   },
   {
-    title: "Senior Cloud Services Engineer - Associate - Cloud Platform Services - 12month contract",
+    title: "ASSET MANAGEMENT COMPLIANCE, APAC – SENIOR MANAGER / AVP",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Senior Cloud Services Engineer - Associate - Cloud Platform Services - 12month contract",
+    desc: "ASSET MANAGEMENT COMPLIANCE, APAC – SENIOR MANAGER / AVP",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Cloud_Services_Engineer_-_Associate_-_Cloud_Platform_Services_-_12month_contract.id24401921",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-ASSET_MANAGEMENT_COMPLIANCE_APAC_%E2%80%93_SENIOR_MANAGER__AVP.id24308236",
     posted: "26 Jun 2026"
   },
   {
@@ -1198,6 +1198,46 @@ const JOBS_DATA = [
     posted: "26 Jun 2026"
   },
   {
+    title: "Senior Investment Consultant/ Investment Consultant, Private Banking",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Senior Investment Consultant/ Investment Consultant, Private Banking",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Investment_Consultant_Investment_Consultant_Private_Banking.id24331875",
+    posted: "26 Jun 2026"
+  },
+  {
+    title: "Investment Services, Public Market (Hong Kong)",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Investment Services, Public Market (Hong Kong)",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Investment_Services_Public_Market_Hong_Kong.id24285659",
+    posted: "26 Jun 2026"
+  },
+  {
+    title: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_AssociateAVP_Relationship_Management_-_Hong_Kong.id24443040",
+    posted: "26 Jun 2026"
+  },
+  {
+    title: "Senior Cloud Services Engineer - Associate - Cloud Platform Services - 12month contract",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Senior Cloud Services Engineer - Associate - Cloud Platform Services - 12month contract",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Cloud_Services_Engineer_-_Associate_-_Cloud_Platform_Services_-_12month_contract.id24401921",
+    posted: "26 Jun 2026"
+  },
+  {
     title: "Senior Manager, Entrepreneur Office (Hong Kong), Wealth Management",
     company: "See listing",
     location: "Hong Kong",
@@ -1205,36 +1245,6 @@ const JOBS_DATA = [
     desc: "Senior Manager, Entrepreneur Office (Hong Kong), Wealth Management",
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Manager_Entrepreneur_Office_Hong_Kong_Wealth_Management.id23171102",
-    posted: "25 Jun 2026"
-  },
-  {
-    title: "COMPLIANCE ASSOCIATE / OFFICER (PERM / CONTRACT) - INVESTMENT COMPLIANCE",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "COMPLIANCE ASSOCIATE / OFFICER (PERM / CONTRACT) - INVESTMENT COMPLIANCE",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-COMPLIANCE_ASSOCIATE__OFFICER_PERM__CONTRACT_-_INVESTMENT_COMPLIANCE.id24276771",
-    posted: "25 Jun 2026"
-  },
-  {
-    title: "REWARDS (C&B), HUMAN RESOURCES - ASSOCIATE DIRECTOR",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "REWARDS (C&B), HUMAN RESOURCES - ASSOCIATE DIRECTOR",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-REWARDS_CB_HUMAN_RESOURCES_-_ASSOCIATE_DIRECTOR.id23937064",
-    posted: "25 Jun 2026"
-  },
-  {
-    title: "OFFICE MANAGER / PERSONAL ASSISTANT",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "OFFICE MANAGER / PERSONAL ASSISTANT",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-OFFICE_MANAGER__PERSONAL_ASSISTANT.id24210578",
     posted: "25 Jun 2026"
   },
   {
@@ -1905,16 +1915,6 @@ const JOBS_DATA = [
     desc: "COMPLIANCE ASSOCIATE / OFFICER - INVESTMENT COMPLIANCE",
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-COMPLIANCE_ASSOCIATE__OFFICER_-_INVESTMENT_COMPLIANCE.id24276771",
-    posted: "17 Jun 2026"
-  },
-  {
-    title: "ASSET MANAGEMENT COMPLIANCE, APAC – SENIOR MANAGER / AVP",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "ASSET MANAGEMENT COMPLIANCE, APAC – SENIOR MANAGER / AVP",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-ASSET_MANAGEMENT_COMPLIANCE_APAC_%E2%80%93_SENIOR_MANAGER__AVP.id24308236",
     posted: "17 Jun 2026"
   },
   {
