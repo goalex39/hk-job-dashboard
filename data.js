@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "02 Jul 2026 09:04 HKT",
+  updated: "02 Jul 2026 14:21 HKT",
   version: "v2026.04"
 };
 
@@ -41,10 +41,10 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "22,881",
-    delta: "▼ -0.63%",
-    deltaClass: "negative",
-    period: "30 Jun 2026",
+    value: "23,028",
+    delta: "▲ +0.64%",
+    deltaClass: "positive",
+    period: "02 Jul 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
     valueClass: ""
@@ -142,9 +142,9 @@ const HK_MACRO_DATA = [
     current: "5.9%",
     currentClass: "",
     previous: "5.9% (Q1 2026 YoY)",
-    trend: "▲ UP",
+    trend: "▲ STRONG",
     trendClass: "positive",
-    implication: "Robust GDP growth driven by exports and consumption signals strong hiring momentum, especially in trade, logistics, and consumer-facing sectors for job seekers.",
+    implication: "Strong GDP growth signals robust business expansion, leading to increased hiring across trade, logistics, and professional services for job seekers.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
   },
@@ -154,8 +154,8 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "3.7% (Feb-Apr 2026)",
     trend: "~ STABLE",
-    trendClass: "positive",
-    implication: "Unemployment remains low and stable, indicating a tight labor market where job seekers have good opportunities, particularly in professional and service roles.",
+    trendClass: "neutral",
+    implication: "Stable low unemployment indicates a healthy labor market with consistent job availability, though competition for top roles remains steady.",
     sourceLabel: "HK Govt",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -164,9 +164,9 @@ const HK_MACRO_DATA = [
     current: "1.7%",
     currentClass: "",
     previous: "2.6%",
-    trend: "~ SOFTENING",
-    trendClass: "neutral",
-    implication: "Lower inflation eases cost-of-living pressures, allowing employers to maintain wage growth without aggressive hikes, benefiting job seekers in entry-level roles.",
+    trend: "▼ DOWN",
+    trendClass: "positive",
+    implication: "Lower inflation preserves real wage value, making job offers more attractive and helping employers manage salary budgets without aggressive hikes.",
     sourceLabel: "HKTDC Research",
     sourceUrl: "https://research.hktdc.com/en/article/MzIwNjkzNTY5"
   },
@@ -176,19 +176,19 @@ const HK_MACRO_DATA = [
     currentClass: "caution",
     previous: "51.9 (May 2026)",
     trend: "~ STABLE",
-    trendClass: "positive",
-    implication: "PMI above 50 confirms manufacturing expansion, supporting hiring in production, supply chain, and AI-related electronics sectors for skilled workers.",
+    trendClass: "neutral",
+    implication: "PMI above 50 confirms manufacturing expansion, supporting steady demand for production, engineering, and supply chain roles.",
     sourceLabel: "S&P Global",
     sourceUrl: "https://tradingeconomics.com/hong-kong/gdp-growth"
   },
   {
     indicator: "Hang Seng Index",
-    current: "22,881",
+    current: "23,028",
     currentClass: "",
     previous: "22,881",
-    trend: "~ STABLE",
-    trendClass: "neutral",
-    implication: "Stable Hang Seng index suggests steady investor confidence, supporting hiring in finance, asset management, and fintech roles for professionals.",
+    trend: "▲ UP",
+    trendClass: "positive",
+    implication: "Rising Hang Seng boosts financial sector confidence, increasing hiring in asset management, trading, and fintech for job seekers.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -199,7 +199,7 @@ const HK_MACRO_DATA = [
     previous: "8.9% (Central)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable office vacancy in Central indicates no major shift in commercial space demand, keeping hiring in real estate and corporate services steady.",
+    implication: "Stable office vacancy suggests steady demand for corporate roles in Central, with no major surge or contraction in hiring for admin and management.",
     sourceLabel: "N/A",
     sourceUrl: "https://www.jll.com.hk/en/trends-and-insights/research/hong-kong-property-market-monitor"
   },
@@ -210,7 +210,7 @@ const HK_MACRO_DATA = [
     previous: "HK$21,800",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Slight median wage decline may reflect softening in lower-tier roles, prompting job seekers to target upskilling or higher-value sectors for better pay.",
+    implication: "Slight median wage decline may pressure entry-level job seekers to accept lower offers, while employers gain flexibility in salary negotiations.",
     sourceLabel: "N/A",
     sourceUrl: "https://www.censtatd.gov.hk/en/scode200.html"
   },
@@ -221,7 +221,7 @@ const HK_MACRO_DATA = [
     previous: "57,400",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Reduced job vacancies suggest cautious hiring, urging job seekers to apply early and focus on high-demand fields like tech, healthcare, and green finance.",
+    implication: "Reduced job vacancies indicate tighter hiring, requiring job seekers to be more competitive and consider multiple industries to secure roles.",
     sourceLabel: "HK Govt",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -232,9 +232,9 @@ const HK_MACRO_DATA = [
     previous: "7.54M",
     trend: "▲ UP",
     trendClass: "neutral",
-    implication: "Population growth supports consumer demand, indirectly sustaining hiring in retail, hospitality, and community services for entry-level job seekers.",
+    implication: "Population growth expands the labor pool, increasing competition for jobs but also driving demand in consumer-facing sectors like retail and hospitality.",
     sourceLabel: "C&SD",
-    sourceUrl: "https://www.censtatd.gov.hk/en/web_table.html?id=310-31001"
+    sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
   },
   {
     indicator: "IPO Market",
@@ -242,8 +242,8 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "HK$136.4B (Q1 2026)",
     trend: "~ STABLE",
-    trendClass: "positive",
-    implication: "Stable IPO market indicates continued capital inflow, supporting hiring in investment banking, legal, and corporate finance for experienced professionals.",
+    trendClass: "neutral",
+    implication: "Stable IPO market supports continued hiring in securities, legal, and corporate finance, though no major surge in new roles is expected.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -254,7 +254,7 @@ const HK_MACRO_DATA = [
     previous: "25.3%",
     trend: "▼ DOWN",
     trendClass: "neutral",
-    implication: "Slight dip in bank capital ratio remains within safe limits, ensuring stable hiring in banking and financial services without major disruptions.",
+    implication: "Slight dip in bank capital ratio remains within safe limits, ensuring banking sector stability and steady hiring for risk, compliance, and IT roles.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -264,8 +264,8 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "US$848M (2025)",
     trend: "~ STABLE",
-    trendClass: "positive",
-    implication: "Stable fintech VC funding supports innovation-driven hiring in software, AI, and digital assets, offering opportunities for tech-savvy job seekers.",
+    trendClass: "neutral",
+    implication: "Stable fintech VC funding sustains demand for tech developers and data analysts, but job seekers should expect moderate rather than explosive hiring growth.",
     sourceLabel: "InvestHK",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   }
@@ -279,9 +279,9 @@ const GLOBAL_DATA = [
     previous: "4.25%–4.50%",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable US rates keep borrowing costs predictable for HK firms, supporting steady hiring in finance and tech sectors.",
-    sourceLabel: "CNBC",
-    sourceUrl: "https://www.forbes.com/advisor/investing/fed-funds-rate-history/"
+    implication: "Stable US rates mean no immediate shift in global capital flows, so Hong Kong job seekers in finance and tech should expect steady hiring but no surge in cross-border opportunities.",
+    sourceLabel: "Federal Reserve",
+    sourceUrl: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
   },
   {
     indicator: "China GDP Growth",
@@ -307,7 +307,7 @@ const GLOBAL_DATA = [
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.843",
+    current: "7.844",
     currentClass: "",
     previous: "7.843",
     trend: "~ STABLE",
@@ -374,6 +374,60 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Standby Signal No. 1 to remain throughout Thursday",
+    date: "2026-07-02",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1860732-20260702.htm",
+    category: "LOCAL EMPLOYMENT",
+    impact: "The No. 1 typhoon signal is an advisory warning that does not force closures, so most Hong Kong workplaces remain operational with minimal disruption to daily job activities.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Gaza marks 1,000 days of war. Palestinians there face an uncertain future",
+    date: "2026-07-02",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/middle-east/article/3359135/gaza-marks-1000-days-war-palestinians-there-face-uncertain-future?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "While the Gaza war highlights global instability, it has no direct immediate impact on Hong Kong's local job market sectors or hiring trends for job seekers.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "‘Massive’ Russian missile and drone barrage pounds Ukraine capital",
+    date: "2026-07-02",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/europe/article/3359095/massive-russian-missile-and-drone-barrage-pounds-ukraine-capital?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "The Russian missile barrage on Ukraine underscores ongoing geopolitical tensions but does not directly alter Hong Kong's employment landscape or specific industry hiring demand.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Beijing’s liaison office in Hong Kong restructured, stressing youth, district work",
+    date: "2026-07-02",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/politics/article/3359127/beijings-liaison-office-hong-kong-restructured-stressing-youth-district-work?utm_source=rss_feed",
+    category: "POLICY & REGULATION",
+    impact: "Restructuring the liaison office to focus on youth and district work may create new government or community sector job opportunities for young Hong Kong professionals.",
+    sentiment: "positive"
+  },
+  {
+    headline: "Residents, visitors flock to waterfront as PLA navy ships sail into Hong Kong",
+    date: "2026-07-02",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/society/article/3359093/residents-visitors-flock-waterfront-pla-navy-ships-sail-hong-kong?utm_source=rss_feed",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Increased public interest in waterfront events and PLA ship visits boosts tourism and hospitality demand, potentially leading to short-term hiring in retail, catering, and event management.",
+    sentiment: "positive"
+  },
+  {
+    headline: "No 1 typhoon signal to remain in force as tropical depression closes in on Hong Kong",
+    date: "2026-07-02",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/article/3359089/hong-kong-issues-no-1-typhoon-signal-thursday-morning?utm_source=rss_feed",
+    category: "LOCAL EMPLOYMENT",
+    impact: "The No. 1 typhoon signal remains an advisory alert that does not mandate workplace closures, ensuring normal business operations and minimal impact on job seekers' daily routines.",
+    sentiment: "neutral"
+  },
   {
     headline: "US won’t renew USMCA trade pact as Greer targets Canada’s China ties",
     date: "2026-07-01",
@@ -1039,114 +1093,10 @@ const NEWS_DATA = [
     category: "POLICY & REGULATION",
     impact: "The Labour Department's concern over a fatal work accident in Kowloon Bay highlights ongoing safety risks in construction and manual labor sectors, potentially leading to stricter regulations that could slow project timelines and temporarily reduce job opportunities for workers in high-risk industries.",
     sentiment: "negative"
-  },
-  {
-    headline: "Data privacy academy 'can help HK cope with AI risks'",
-    date: "2026-06-26",
-    source: "RTHK",
-    url: "https://news.rthk.hk/rthk/en/component/k2/1859995-20260626.htm",
-    category: "DATA GOVERNANCE & PRIVACY",
-    impact: "The launch of the Data Privacy Academy creates new demand for data protection officers, AI governance practitioners, and compliance specialists in Hong Kong, offering career growth in the expanding privacy/AI sector.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Red Rainstorm Warning in effect",
-    date: "2026-06-26",
-    source: "RTHK",
-    url: "https://news.rthk.hk/rthk/en/component/k2/1860006-20260626.htm",
-    category: "LOCAL EMPLOYMENT",
-    impact: "Red rainstorm warnings cause class suspensions and potential work stoppages, temporarily disrupting daily operations and reducing productivity for Hong Kong workers, especially in education and service sectors.",
-    sentiment: "negative"
-  },
-  {
-    headline: "Hong Kong to raise share of Medical Council lay members to 31%, set inquiry time",
-    date: "2026-06-26",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3358438/hong-kong-raise-share-lay-members-medical-council-25-31?utm_source=rss_feed",
-    category: "POLICY & REGULATION",
-    impact: "Increasing lay members in the Medical Council is a governance reform with limited immediate effect on Hong Kong job seekers, though it may indirectly influence healthcare policy long-term.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Why having more foreign-trained doctors in Hong Kong won’t threaten local ones",
-    date: "2026-06-26",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3358388/why-having-more-foreign-trained-doctors-hong-kong-wont-threaten-local-ones?utm_source=rss_feed",
-    category: "FINANCIAL SECTOR",
-    impact: "More foreign-trained doctors in Hong Kong expands the healthcare workforce, potentially creating additional opportunities for medical professionals, nurses, and allied health staff in the city.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Hong Kong downgrades red rainstorm warning to amber after class suspensions",
-    date: "2026-06-26",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3358436/hong-kong-issues-red-rainstorm-warning-education-authorities-suspend-classes?utm_source=rss_feed",
-    category: "LOCAL EMPLOYMENT",
-    impact: "Downgrading the red rainstorm warning to amber allows schools and businesses to resume normal operations, restoring productivity and reducing work disruption for Hong Kong employees.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Cases of making ex gratia payments from Protection of Wages on Insolvency Fund gazetted",
-    date: "2026-06-26",
-    source: "政府新聞公報 (info.gov.hk)",
-    url: "https://www.info.gov.hk/gia/general/202606/26/P2026062600601.htm",
-    category: "FINANCIAL SECTOR",
-    impact: "Ex gratia payments from the Protection of Wages on Insolvency Fund indicate company insolvencies, signaling job losses and financial instability for affected workers in Hong Kong.",
-    sentiment: "negative"
   }
 ];
 
 const JOBS_DATA = [
-  {
-    title: "Senior Associate/AVP, Relationship Management - Hong Kong",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Senior Associate/AVP, Relationship Management - Hong Kong",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_AssociateAVP_Relationship_Management_-_Hong_Kong.id24443040",
-    posted: "02 Jul 2026"
-  },
-  {
-    title: "Head of International Technology & Automotive",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Head of International Technology & Automotive",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Head_of_International_Technology__Automotive.id24466550",
-    posted: "02 Jul 2026"
-  },
-  {
-    title: "Principal Cloud Services Engineer - Assistant Vice President - Cloud Platform Services - IT - 12 months Contract",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Principal Cloud Services Engineer - Assistant Vice President - Cloud Platform Services - IT - 12 months Contract",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Principal_Cloud_Services_Engineer_-_Assistant_Vice_President_-_Cloud_Platform_Services_-_IT_-_12_months_Contract.id24401922",
-    posted: "02 Jul 2026"
-  },
-  {
-    title: "Senior Cloud Services Engineer - Associate - Cloud Platform Services - 12month contract",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Senior Cloud Services Engineer - Associate - Cloud Platform Services - 12month contract",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Cloud_Services_Engineer_-_Associate_-_Cloud_Platform_Services_-_12month_contract.id24401921",
-    posted: "02 Jul 2026"
-  },
-  {
-    title: "Associate, Derivative Trading Operations (Morning Shift)",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Associate, Derivative Trading Operations (Morning Shift)",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Associate_Derivative_Trading_Operations_Morning_Shift.id24401924",
-    posted: "02 Jul 2026"
-  },
   {
     title: "🔍 Browse all Data Governance jobs on JobsDB",
     company: "JobsDB Hong Kong",
@@ -1205,6 +1155,56 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
+    posted: "02 Jul 2026"
+  },
+  {
+    title: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Senior Associate/AVP, Relationship Management - Hong Kong",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_AssociateAVP_Relationship_Management_-_Hong_Kong.id24443040",
+    posted: "02 Jul 2026"
+  },
+  {
+    title: "Head of International Technology & Automotive",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Head of International Technology & Automotive",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Head_of_International_Technology__Automotive.id24466550",
+    posted: "02 Jul 2026"
+  },
+  {
+    title: "Principal Cloud Services Engineer - Assistant Vice President - Cloud Platform Services - IT - 12 months Contract",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Principal Cloud Services Engineer - Assistant Vice President - Cloud Platform Services - IT - 12 months Contract",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Principal_Cloud_Services_Engineer_-_Assistant_Vice_President_-_Cloud_Platform_Services_-_IT_-_12_months_Contract.id24401922",
+    posted: "02 Jul 2026"
+  },
+  {
+    title: "Senior Cloud Services Engineer - Associate - Cloud Platform Services - 12month contract",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Senior Cloud Services Engineer - Associate - Cloud Platform Services - 12month contract",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Cloud_Services_Engineer_-_Associate_-_Cloud_Platform_Services_-_12month_contract.id24401921",
+    posted: "02 Jul 2026"
+  },
+  {
+    title: "Associate, Derivative Trading Operations (Morning Shift)",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Associate, Derivative Trading Operations (Morning Shift)",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Associate_Derivative_Trading_Operations_Morning_Shift.id24401924",
     posted: "02 Jul 2026"
   },
   {
