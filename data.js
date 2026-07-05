@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "05 Jul 2026 11:51 HKT",
+  updated: "05 Jul 2026 16:06 HKT",
   version: "v2026.04"
 };
 
@@ -142,9 +142,9 @@ const HK_MACRO_DATA = [
     current: "5.9%",
     currentClass: "",
     previous: "5.9% (Q1 2026 YoY)",
-    trend: "▲ STRONG",
-    trendClass: "positive",
-    implication: "Strong GDP growth signals robust hiring across export, logistics, and professional services, offering job seekers more opportunities and potential wage gains.",
+    trend: "~ STABLE",
+    trendClass: "neutral",
+    implication: "Stable GDP growth supports steady hiring in trade, logistics, and professional services, offering job seekers consistent opportunities without major expansion or contraction.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
   },
@@ -155,7 +155,7 @@ const HK_MACRO_DATA = [
     previous: "3.7% (Feb-Apr 2026)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable unemployment at a low level indicates a healthy labor market, with hiring demand matching job seeker supply in most sectors.",
+    implication: "Unemployment remains low and stable, indicating a healthy labor market where job seekers can find roles across sectors with minimal competition pressure.",
     sourceLabel: "HK Govt",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -166,7 +166,7 @@ const HK_MACRO_DATA = [
     previous: "2.6%",
     trend: "▼ DOWN",
     trendClass: "positive",
-    implication: "Lower CPI inflation preserves real wage value for job seekers and reduces cost pressures for employers, supporting steady hiring in consumer-facing industries.",
+    implication: "Lower CPI inflation reduces cost-of-living pressures, improving disposable income for workers and encouraging hiring in consumer-facing industries.",
     sourceLabel: "HKTDC Research",
     sourceUrl: "https://research.hktdc.com/en/article/MjIxMjgxNDgwNA"
   },
@@ -177,7 +177,7 @@ const HK_MACRO_DATA = [
     previous: "51.9 (May 2026)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "PMI above 50 confirms continued manufacturing expansion, sustaining demand for production, engineering, and supply chain roles.",
+    implication: "PMI above 50 signals continued manufacturing expansion, supporting job openings in production, supply chain, and related technical roles.",
     sourceLabel: "S&P Global",
     sourceUrl: "https://tradingeconomics.com/hong-kong/gdp-growth"
   },
@@ -188,7 +188,7 @@ const HK_MACRO_DATA = [
     previous: "23,350",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable Hang Seng Index reflects steady investor confidence, supporting continued hiring in finance, asset management, and related professional services.",
+    implication: "Stable Hang Seng Index reflects steady market confidence, sustaining hiring in finance, investment, and asset management sectors.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -199,7 +199,7 @@ const HK_MACRO_DATA = [
     previous: "8.9% (Central)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable office vacancy in Central suggests no major shift in corporate space demand, implying steady but not expanding hiring in office-based professional sectors.",
+    implication: "Unchanged office vacancy in Central suggests stable demand for commercial space, maintaining hiring in real estate, property management, and corporate services.",
     sourceLabel: "N/A",
     sourceUrl: "https://www.jll.com.hk/en/trends-and-insights/research/hong-kong-property-market-monitor"
   },
@@ -210,7 +210,7 @@ const HK_MACRO_DATA = [
     previous: "HK$21,800",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Slight decline in median wage may reflect softening in entry-level or part-time pay, prompting job seekers to target higher-value roles or sectors with stronger growth.",
+    implication: "Slight decline in median wage may signal cautious salary offers, prompting job seekers to prioritize roles with growth potential or non-monetary benefits.",
     sourceLabel: "N/A",
     sourceUrl: "https://www.censtatd.gov.hk/en/scode200.html"
   },
@@ -221,7 +221,7 @@ const HK_MACRO_DATA = [
     previous: "57,400",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Reduced job vacancies indicate tighter hiring demand, requiring job seekers to be more competitive, upskill, or consider emerging sectors like AI and fintech.",
+    implication: "Reduced job vacancies indicate tighter hiring, requiring job seekers to be more competitive and flexible in sector or location choices.",
     sourceLabel: "HK Govt",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -232,9 +232,9 @@ const HK_MACRO_DATA = [
     previous: "7.54M",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Population growth expands the labor pool and consumer base, supporting long-term hiring in retail, healthcare, and education sectors.",
+    implication: "Population growth expands labor supply and consumer demand, creating more opportunities in retail, healthcare, education, and service industries.",
     sourceLabel: "C&SD",
-    sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
   {
     indicator: "IPO Market",
@@ -243,7 +243,7 @@ const HK_MACRO_DATA = [
     previous: "HK$136.4B (Q1 2026)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable IPO market maintains demand for finance, legal, and compliance roles in capital markets, though not signaling a surge in new hiring.",
+    implication: "Stable IPO market supports continued hiring in finance, legal, and corporate advisory roles tied to capital market activities.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -254,7 +254,7 @@ const HK_MACRO_DATA = [
     previous: "25.3%",
     trend: "▼ DOWN",
     trendClass: "neutral",
-    implication: "Slight decline in bank capital ratio remains within safe limits, indicating stable banking sector operations and continued hiring in financial services.",
+    implication: "Slight drop in bank capital ratio remains within safe limits, maintaining confidence in banking sector hiring for risk, compliance, and finance roles.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -265,9 +265,9 @@ const HK_MACRO_DATA = [
     previous: "US$848M (2025)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable fintech VC funding supports ongoing but not accelerating hiring in tech, data, and digital product roles within the fintech ecosystem.",
+    implication: "Stable fintech VC funding sustains innovation-driven hiring in tech, software development, and digital finance for job seekers with relevant skills.",
     sourceLabel: "InvestHK",
-    sourceUrl: "https://research.hktdc.com/en/article/MjIxMjgxNDgwNA"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   }
 ];
 
@@ -279,7 +279,7 @@ const GLOBAL_DATA = [
     previous: "4.25%–4.50%",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable US rates mean no immediate shift in HK borrowing costs, keeping hiring in finance and trade sectors steady for job seekers.",
+    implication: "Stable US rates mean no immediate pressure on HK job costs, but hiring remains cautious as global demand is soft.",
     sourceLabel: "Federal Reserve",
     sourceUrl: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
   },
@@ -374,6 +374,42 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "More Hetao tech hub land sales set",
+    date: "2026-07-05",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1861075-20260705.htm",
+    category: "CHINA MAINLAND",
+    impact: "The planned land sales for the Hetao tech hub signal continued infrastructure investment, creating new opportunities for Hong Kong professionals in life sciences, microelectronics, and AI to work in cross-border innovation projects.",
+    sentiment: "positive"
+  },
+  {
+    headline: "Minefields, stalled talks keep Strait of Hormuz in strategic limbo",
+    date: "2026-07-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/week-asia/politics/article/3359407/minefields-stalled-talks-keep-strait-hormuz-strategic-limbo?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "Strategic limbo in the Strait of Hormuz due to minefields and stalled talks could disrupt global shipping and energy trade, potentially slowing growth in Hong Kong's logistics and finance sectors.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Hong Kong must brace for AI bubble risk and quantum computer threat: HKMA chief",
+    date: "2026-07-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359457/hong-kong-must-brace-ai-bubble-risk-and-quantum-computer-threat-hkma-chief?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "The HKMA chief's warning about AI bubble risk and quantum threats may cause caution in tech hiring and investment, potentially slowing job growth in AI and emerging tech fields in Hong Kong.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Cathay Pacific aircraft evacuated after smoke reported in cabin on landing",
+    date: "2026-07-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/transport/article/3359451/cathay-pacific-flight-india-emits-smoke-while-landing-hong-kong?utm_source=rss_feed",
+    category: "CORPORATE",
+    impact: "The evacuation of a Cathay Pacific aircraft due to smoke highlights operational risks in aviation, which could temporarily affect hiring or job stability in Hong Kong's airline and related service sectors.",
+    sentiment: "negative"
+  },
   {
     headline: "Why Hong Kong students are heading to mainland China to intern",
     date: "2026-07-05",
@@ -1057,84 +1093,48 @@ const NEWS_DATA = [
     category: "POLICY & REGULATION",
     impact: "Labour Department courses on heat stroke prevention improve occupational health standards, supporting worker safety and potentially reducing job-related health issues in Hong Kong.",
     sentiment: "positive"
-  },
-  {
-    headline: "Self-exiled Chinese billionaire Guo Wengui jailed for 30 years in US for fraud conviction",
-    date: "2026-06-30",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/united-states-canada/article/3358821/self-exiled-chinese-billionaire-guo-wengui-jailed-30-years-us-fraud-conviction?utm_source=rss_feed",
-    category: "US TARIFFS",
-    impact: "This news about Guo Wengui's US fraud conviction has minimal direct impact on Hong Kong's job market, as it pertains to a Chinese exile's legal case in the US rather than Hong Kong employment policies or corporate hiring trends.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Hong Kong beauty operators warn tighter rules may deal ‘blow to our trade’",
-    date: "2026-06-30",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3358805/hong-kong-beauty-operators-warn-tighter-rules-may-deal-blow-our-trade?utm_source=rss_feed",
-    category: "LOCAL EMPLOYMENT",
-    impact: "Tighter rules threatening Hong Kong's beauty trade could reduce job opportunities for beauty operators and related service workers, potentially leading to layoffs or fewer hiring in this sector.",
-    sentiment: "negative"
-  },
-  {
-    headline: "Ukrainian oligarch among 3 wounded in ‘deliberate’ Monaco explosion",
-    date: "2026-06-29",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/europe/article/3358818/police-hunt-fugitive-monaco-after-3-wounded-deliberate-explosion?utm_source=rss_feed",
-    category: "TRADE & GEOPOLITICS",
-    impact: "The Monaco explosion involving an oligarch is an isolated international incident with no bearing on Hong Kong's job market dynamics or employment sectors.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Hong Kong cocaine haul hits 361kg in days after police raid another yacht",
-    date: "2026-06-29",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/law-and-crime/article/3358802/hong-kong-cocaine-haul-hits-361kg-days-after-police-raid-another-yacht?utm_source=rss_feed",
-    category: "TRADE & GEOPOLITICS",
-    impact: "The large cocaine haul and police raids on yachts may signal heightened security concerns that could disrupt Hong Kong's maritime and leisure industries, indirectly affecting jobs in related service sectors.",
-    sentiment: "negative"
   }
 ];
 
 const JOBS_DATA = [
   {
-    title: "Institutional sales manager/ senior associate - International asset management firm",
+    title: "Financial Services Manager (Retail Banking Department)",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Institutional sales manager/ senior associate - International asset management firm",
+    desc: "Financial Services Manager (Retail Banking Department)",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Institutional_sales_manager_senior_associate_-_International_asset_management_firm.id24457720",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Financial_Services_Manager_Retail_Banking_Department.id23814338",
     posted: "05 Jul 2026"
   },
   {
-    title: "Dealer",
+    title: "Business Development Officer (Retail Banking Department)",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Dealer",
+    desc: "Business Development Officer (Retail Banking Department)",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Dealer.id23145710",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Business_Development_Officer_Retail_Banking_Department.id23814337",
     posted: "05 Jul 2026"
   },
   {
-    title: "VP, Corporate Strategy, Chinese Investment Bank",
+    title: "Cloud Operation Manager",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "VP, Corporate Strategy, Chinese Investment Bank",
+    desc: "Cloud Operation Manager",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-VP_Corporate_Strategy_Chinese_Investment_Bank.id24431150",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Cloud_Operation_Manager.id24458109",
     posted: "05 Jul 2026"
   },
   {
-    title: "Business Project Specialist",
+    title: "Branch Service Officer (Retail Banking Department)",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Business Project Specialist",
+    desc: "Branch Service Officer (Retail Banking Department)",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Business_Project_Specialist.id24431154",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Branch_Service_Officer_Retail_Banking_Department.id23814321",
     posted: "05 Jul 2026"
   },
   {
@@ -1195,6 +1195,46 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
+    posted: "05 Jul 2026"
+  },
+  {
+    title: "Institutional sales manager/ senior associate - International asset management firm",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Institutional sales manager/ senior associate - International asset management firm",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Institutional_sales_manager_senior_associate_-_International_asset_management_firm.id24457720",
+    posted: "05 Jul 2026"
+  },
+  {
+    title: "Dealer",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Dealer",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Dealer.id23145710",
+    posted: "05 Jul 2026"
+  },
+  {
+    title: "VP, Corporate Strategy, Chinese Investment Bank",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "VP, Corporate Strategy, Chinese Investment Bank",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-VP_Corporate_Strategy_Chinese_Investment_Bank.id24431150",
+    posted: "05 Jul 2026"
+  },
+  {
+    title: "Business Project Specialist",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Business Project Specialist",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Business_Project_Specialist.id24431154",
     posted: "05 Jul 2026"
   },
   {
