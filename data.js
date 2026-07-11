@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "11 Jul 2026 10:56 HKT",
+  updated: "11 Jul 2026 15:15 HKT",
   version: "v2026.04"
 };
 
@@ -142,9 +142,9 @@ const HK_MACRO_DATA = [
     current: "5.9%",
     currentClass: "",
     previous: "5.9% (Q1 2026 YoY)",
-    trend: "▲ STRONG",
+    trend: "▲ UP",
     trendClass: "positive",
-    implication: "Strong Q1 2026 GDP growth signals robust external trade and domestic demand, supporting hiring confidence in export, logistics, and consumer-facing sectors.",
+    implication: "Strong Q1 GDP growth signals robust economic expansion, likely boosting hiring confidence in export, logistics, and professional services sectors.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
   },
@@ -155,7 +155,7 @@ const HK_MACRO_DATA = [
     previous: "3.7% (Feb-Apr 2026)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable unemployment at 3.7% indicates a tight labor market with limited slack, favoring experienced candidates but potentially slowing entry-level hiring.",
+    implication: "Stable unemployment at a low level indicates a tight labor market, favoring job seekers with competitive offers but potentially slowing new hiring volume.",
     sourceLabel: "Labour Dept",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -166,7 +166,7 @@ const HK_MACRO_DATA = [
     previous: "1.7%",
     trend: "▲ UP",
     trendClass: "neutral",
-    implication: "Moderate CPI rise reflects mild cost pressures; employers may adjust wage offers slightly but hiring volume remains tied to GDP and business sentiment.",
+    implication: "Moderate CPI rise reflects stable cost pressures; job seekers should note that wage growth may need to outpace inflation to maintain real income gains.",
     sourceLabel: "Economy Dept",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -177,9 +177,9 @@ const HK_MACRO_DATA = [
     previous: "51.9 (May 2026)",
     trend: "~ STABLE",
     trendClass: "positive",
-    implication: "PMI above 50 confirms expanding private sector activity, supporting continued hiring in manufacturing, professional services, and tech.",
+    implication: "PMI above 50 confirms expanding private sector activity, supporting continued hiring in manufacturing, tech, and supply chain roles.",
     sourceLabel: "S&P Global",
-    sourceUrl: "https://tradingeconomics.com/hong-kong/pmi"
+    sourceUrl: "https://tradingeconomics.com/hong-kong/gdp-growth"
   },
   {
     indicator: "Hang Seng Index",
@@ -188,7 +188,7 @@ const HK_MACRO_DATA = [
     previous: "24,175",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable Hang Seng suggests no major equity-driven capital shifts; hiring in finance and wealth management remains steady but not surging.",
+    implication: "Steady Hang Seng levels suggest stable corporate valuations, which may sustain investment in finance and wealth management hiring.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkex.com.hk"
   },
@@ -198,10 +198,10 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "8.9% (Central)",
     trend: "~ STABLE",
-    trendClass: "negative",
-    implication: "Persistent Central office vacancy indicates subdued demand for corporate space, potentially slowing hiring in real estate, legal, and back-office finance roles.",
+    trendClass: "neutral",
+    implication: "Unchanged Central office vacancy implies limited new space for expansion, potentially constraining hiring in real estate and corporate back-office functions.",
     sourceLabel: "JLL",
-    sourceUrl: "https://www.jll.com/en/insights/hong-kong-office-market"
+    sourceUrl: "https://www.jll.com"
   },
   {
     indicator: "Median Monthly Wage",
@@ -210,9 +210,9 @@ const HK_MACRO_DATA = [
     previous: "HK$21,800",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Declining median wage suggests wage compression or shift toward lower-paid roles; job seekers should prioritize sectors with strong growth like tech and logistics.",
+    implication: "Declining median wage may reduce attractiveness of entry-level roles; job seekers should prioritize sectors with stronger wage growth like tech or finance.",
     sourceLabel: "Labour Dept",
-    sourceUrl: "https://www.labour.gov.hk/en/statistics/wage/index.htm"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
   {
     indicator: "Job Vacancies",
@@ -221,9 +221,9 @@ const HK_MACRO_DATA = [
     previous: "57,400",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Significant drop in job vacancies signals reduced hiring intent; candidates should expand search to contract roles and emerging sectors like fintech and green tech.",
+    implication: "Significant drop in job vacancies suggests employers are cautious; job seekers may face longer search times and should target high-demand niches.",
     sourceLabel: "Labour Dept",
-    sourceUrl: "https://www.labour.gov.hk/en/statistics/vacancy/index.htm"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
   {
     indicator: "Population",
@@ -232,9 +232,9 @@ const HK_MACRO_DATA = [
     previous: "7.54M",
     trend: "▲ UP",
     trendClass: "neutral",
-    implication: "Population growth reflects net inflow, increasing labor supply competition; job seekers must differentiate via skills in high-demand areas like AI and data analytics.",
+    implication: "Population growth supports domestic demand, potentially sustaining hiring in retail, healthcare, and education over the medium term.",
     sourceLabel: "C&SD",
-    sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
+    sourceUrl: "https://www.censtatd.gov.hk"
   },
   {
     indicator: "IPO Market",
@@ -243,7 +243,7 @@ const HK_MACRO_DATA = [
     previous: "HK$136.4B (Q1 2026)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable IPO volume indicates steady capital market activity; hiring in investment banking and corporate finance remains consistent but not expanding rapidly.",
+    implication: "Stable IPO volume indicates steady capital market activity, supporting continued hiring in investment banking, legal, and compliance roles.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkex.com.hk"
   },
@@ -254,7 +254,7 @@ const HK_MACRO_DATA = [
     previous: "25.3%",
     trend: "▼ DOWN",
     trendClass: "neutral",
-    implication: "Slight decline in bank capital ratio remains within safe buffers; no immediate impact on banking hiring, but may signal cautious lending affecting corporate expansion.",
+    implication: "Slight decline in bank capital ratio remains within safe limits; banking sector hiring may remain steady but could see tighter risk management focus.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk"
   },
@@ -265,7 +265,7 @@ const HK_MACRO_DATA = [
     previous: "US$848M (2025)",
     trend: "~ STABLE",
     trendClass: "positive",
-    implication: "Stable fintech VC funding supports continued hiring in AI, blockchain, and digital payment roles; job seekers with tech skills remain in demand.",
+    implication: "Stable fintech VC funding supports innovation-driven hiring in AI, blockchain, and digital payment roles for tech-savvy job seekers.",
     sourceLabel: "InvestHK",
     sourceUrl: "https://www.investhk.gov.hk"
   }
@@ -279,7 +279,7 @@ const GLOBAL_DATA = [
     previous: "4.25%–4.50%",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable US rates reduce HK borrowing cost volatility, supporting steady hiring in finance and export sectors.",
+    implication: "Stable US rates reduce HKD depreciation pressure, supporting HK job stability in finance and export sectors without triggering urgent hiring cuts.",
     sourceLabel: "Trading Economics",
     sourceUrl: "https://tradingeconomics.com/united-states/interest-rate"
   },
@@ -307,7 +307,7 @@ const GLOBAL_DATA = [
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.839",
+    current: "7.840",
     currentClass: "",
     previous: "7.839",
     trend: "~ STABLE",
@@ -374,6 +374,24 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "18 high-speed rail trips cancelled as Bavi looms large",
+    date: "2026-07-11",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1861863-20260711.htm",
+    category: "TRADE & GEOPOLITICS",
+    impact: "The cancellation of 18 high-speed rail trips due to the approaching storm Bavi disrupts cross-border connectivity, temporarily reducing demand for travel-related jobs and logistics roles in Hong Kong's transport sector[6][7].",
+    sentiment: "negative"
+  },
+  {
+    headline: "Trump says missiles ‘locked, loaded and aimed at Iran’ amid calls for his killing",
+    date: "2026-07-11",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/united-states-canada/article/3360203/trump-says-missiles-locked-loaded-and-aimed-iran-amid-calls-his-killing?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "Trump's aggressive stance on Iran heightens global geopolitical instability, which may dampen investor confidence and slow hiring in Hong Kong's finance and international trade sectors[3].",
+    sentiment: "negative"
+  },
   {
     headline: "Russia’s diesel export ban deals fresh blow to strained energy market",
     date: "2026-07-11",
@@ -1075,68 +1093,10 @@ const NEWS_DATA = [
     category: "TECHNOLOGY & AI",
     impact: "The emergence of AI-powered robots as 'China shock 3.0' threatens to accelerate automation in manufacturing and logistics, potentially reducing job opportunities for Hong Kong workers in these sectors while increasing demand for AI specialists.",
     sentiment: "negative"
-  },
-  {
-    headline: "Hong Kong police seize HK$120m of cocaine hidden in 3-tonne metal containers",
-    date: "2026-07-05",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/law-and-crime/article/3359491/hong-kong-police-seize-hk120m-cocaine-hidden-3-tonne-metal-containers?utm_source=rss_feed",
-    category: "LOCAL EMPLOYMENT",
-    impact: "This cocaine seizure has no direct impact on the Hong Kong job market, serving only as a public safety update without influencing hiring or employment trends.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Helpers’ union calls for raising food allowance to HK$2,770, citing inflation",
-    date: "2026-07-05",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/society/article/3359480/helpers-union-calls-raising-food-allowance-hk2770-citing-inflation?utm_source=rss_feed",
-    category: "REAL ESTATE & COST",
-    impact: "The call to raise food allowances for helpers addresses inflation-driven cost pressures, potentially improving retention in the domestic helper sector and supporting job stability for low-wage workers in Hong Kong.",
-    sentiment: "positive"
   }
 ];
 
 const JOBS_DATA = [
-  {
-    title: "Senior Relationship Manager",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Senior Relationship Manager",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Relationship_Manager.id24457669",
-    posted: "11 Jul 2026"
-  },
-  {
-    title: "Compliance Officer - Global Quant Fund - Hong Kong",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Compliance Officer - Global Quant Fund - Hong Kong",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Compliance_Officer_-_Global_Quant_Fund_-_Hong_Kong.id24367300",
-    posted: "11 Jul 2026"
-  },
-  {
-    title: "Foreign ibank - Trade Support Associate - up to 50K",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Foreign ibank - Trade Support Associate - up to 50K",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Foreign_ibank_-_Trade_Support_Associate_-_up_to_50K.id24410393",
-    posted: "11 Jul 2026"
-  },
-  {
-    title: "Assistant Audit Manager / Audit Manager (Data Analytics)",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Assistant Audit Manager / Audit Manager (Data Analytics)",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Assistant_Audit_Manager__Audit_Manager_Data_Analytics.id23994150",
-    posted: "11 Jul 2026"
-  },
   {
     title: "🔍 Browse all Data Governance jobs on JobsDB",
     company: "JobsDB Hong Kong",
@@ -1195,6 +1155,46 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
+    posted: "11 Jul 2026"
+  },
+  {
+    title: "Senior Relationship Manager",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Senior Relationship Manager",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Relationship_Manager.id24457669",
+    posted: "11 Jul 2026"
+  },
+  {
+    title: "Compliance Officer - Global Quant Fund - Hong Kong",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Compliance Officer - Global Quant Fund - Hong Kong",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Compliance_Officer_-_Global_Quant_Fund_-_Hong_Kong.id24367300",
+    posted: "11 Jul 2026"
+  },
+  {
+    title: "Foreign ibank - Trade Support Associate - up to 50K",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Foreign ibank - Trade Support Associate - up to 50K",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Foreign_ibank_-_Trade_Support_Associate_-_up_to_50K.id24410393",
+    posted: "11 Jul 2026"
+  },
+  {
+    title: "Assistant Audit Manager / Audit Manager (Data Analytics)",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Assistant Audit Manager / Audit Manager (Data Analytics)",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Assistant_Audit_Manager__Audit_Manager_Data_Analytics.id23994150",
     posted: "11 Jul 2026"
   },
   {
