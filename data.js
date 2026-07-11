@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "11 Jul 2026 15:15 HKT",
+  updated: "11 Jul 2026 22:19 HKT",
   version: "v2026.04"
 };
 
@@ -144,7 +144,7 @@ const HK_MACRO_DATA = [
     previous: "5.9% (Q1 2026 YoY)",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Strong Q1 GDP growth signals robust economic expansion, likely boosting hiring confidence in export, logistics, and professional services sectors.",
+    implication: "Strong Q1 2026 GDP growth signals robust external trade and domestic demand, supporting hiring in export logistics, tech, and retail sectors.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
   },
@@ -155,7 +155,7 @@ const HK_MACRO_DATA = [
     previous: "3.7% (Feb-Apr 2026)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable unemployment at a low level indicates a tight labor market, favoring job seekers with competitive offers but potentially slowing new hiring volume.",
+    implication: "Stable unemployment at 3.7% indicates a resilient labor market with steady job availability across professional and service sectors.",
     sourceLabel: "Labour Dept",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -166,7 +166,7 @@ const HK_MACRO_DATA = [
     previous: "1.7%",
     trend: "▲ UP",
     trendClass: "neutral",
-    implication: "Moderate CPI rise reflects stable cost pressures; job seekers should note that wage growth may need to outpace inflation to maintain real income gains.",
+    implication: "Moderate CPI rise to 1.9% in May reflects fuel price pressures; job seekers should note stable but slightly higher living costs affecting wage negotiation leverage.",
     sourceLabel: "Economy Dept",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -177,7 +177,7 @@ const HK_MACRO_DATA = [
     previous: "51.9 (May 2026)",
     trend: "~ STABLE",
     trendClass: "positive",
-    implication: "PMI above 50 confirms expanding private sector activity, supporting continued hiring in manufacturing, tech, and supply chain roles.",
+    implication: "PMI above 50 confirms expanding private sector activity, favoring hiring in manufacturing, logistics, and AI-related electronics production.",
     sourceLabel: "S&P Global",
     sourceUrl: "https://tradingeconomics.com/hong-kong/gdp-growth"
   },
@@ -188,7 +188,7 @@ const HK_MACRO_DATA = [
     previous: "24,175",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Steady Hang Seng levels suggest stable corporate valuations, which may sustain investment in finance and wealth management hiring.",
+    implication: "Stable Hang Seng Index suggests no immediate surge in financial sector hiring, but steady market conditions support continued roles in asset management and fintech.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkex.com.hk"
   },
@@ -198,8 +198,8 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "8.9% (Central)",
     trend: "~ STABLE",
-    trendClass: "neutral",
-    implication: "Unchanged Central office vacancy implies limited new space for expansion, potentially constraining hiring in real estate and corporate back-office functions.",
+    trendClass: "negative",
+    implication: "Persistent Central office vacancy at 8.9% indicates subdued demand for corporate space, potentially slowing hiring in traditional office-based professional services.",
     sourceLabel: "JLL",
     sourceUrl: "https://www.jll.com"
   },
@@ -210,7 +210,7 @@ const HK_MACRO_DATA = [
     previous: "HK$21,800",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Declining median wage may reduce attractiveness of entry-level roles; job seekers should prioritize sectors with stronger wage growth like tech or finance.",
+    implication: "Decline in median monthly wage to HK$21,200 suggests wage pressure in lower-tier jobs; job seekers should prioritize sectors with stronger growth like tech and exports.",
     sourceLabel: "Labour Dept",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -221,7 +221,7 @@ const HK_MACRO_DATA = [
     previous: "57,400",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Significant drop in job vacancies suggests employers are cautious; job seekers may face longer search times and should target high-demand niches.",
+    implication: "Drop in job vacancies to 46,000 signals tighter hiring conditions; candidates should enhance skills and target high-growth industries to remain competitive.",
     sourceLabel: "Labour Dept",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -232,7 +232,7 @@ const HK_MACRO_DATA = [
     previous: "7.54M",
     trend: "▲ UP",
     trendClass: "neutral",
-    implication: "Population growth supports domestic demand, potentially sustaining hiring in retail, healthcare, and education over the medium term.",
+    implication: "Population growth to 7.56M reflects continued inflow, increasing labor supply and competition for jobs, especially in entry-level roles.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk"
   },
@@ -242,8 +242,8 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "HK$136.4B (Q1 2026)",
     trend: "~ STABLE",
-    trendClass: "neutral",
-    implication: "Stable IPO volume indicates steady capital market activity, supporting continued hiring in investment banking, legal, and compliance roles.",
+    trendClass: "positive",
+    implication: "Stable Q1 IPO volume supports fintech and finance hiring, though lack of growth may limit rapid expansion in capital markets roles.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkex.com.hk"
   },
@@ -254,7 +254,7 @@ const HK_MACRO_DATA = [
     previous: "25.3%",
     trend: "▼ DOWN",
     trendClass: "neutral",
-    implication: "Slight decline in bank capital ratio remains within safe limits; banking sector hiring may remain steady but could see tighter risk management focus.",
+    implication: "Slight decline in bank capital ratio remains well above regulatory minimums, indicating banking sector stability and continued hiring in risk and compliance.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk"
   },
@@ -265,7 +265,7 @@ const HK_MACRO_DATA = [
     previous: "US$848M (2025)",
     trend: "~ STABLE",
     trendClass: "positive",
-    implication: "Stable fintech VC funding supports innovation-driven hiring in AI, blockchain, and digital payment roles for tech-savvy job seekers.",
+    implication: "Steady fintech VC funding supports innovation-driven hiring in AI, blockchain, and digital payment sectors for tech-savvy job seekers.",
     sourceLabel: "InvestHK",
     sourceUrl: "https://www.investhk.gov.hk"
   }
@@ -279,7 +279,7 @@ const GLOBAL_DATA = [
     previous: "4.25%–4.50%",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable US rates reduce HKD depreciation pressure, supporting HK job stability in finance and export sectors without triggering urgent hiring cuts.",
+    implication: "Stable US rates reduce pressure on HKD liquidity and borrowing costs, supporting steady hiring in finance and professional services.",
     sourceLabel: "Trading Economics",
     sourceUrl: "https://tradingeconomics.com/united-states/interest-rate"
   },
@@ -309,7 +309,7 @@ const GLOBAL_DATA = [
     indicator: "USD/HKD Exchange",
     current: "7.840",
     currentClass: "",
-    previous: "7.839",
+    previous: "7.840",
     trend: "~ STABLE",
     trendClass: "neutral",
     implication: "Stable USD/HKD rate supports predictable payroll for HK firms with US operations, aiding hiring in multinational roles.",
@@ -374,6 +374,33 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Trump subpoenas journalists over Qatari Air Force One reporting",
+    date: "2026-07-11",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/united-states-canada/article/3360237/trump-subpoenas-journalists-over-qatari-air-force-one-reporting?utm_source=rss_feed",
+    category: "POLICY & REGULATION",
+    impact: "Trump's subpoenas of journalists highlight growing global press freedom risks, which may deter international media firms from expanding Hong Kong operations or hiring local reporters[4].",
+    sentiment: "negative"
+  },
+  {
+    headline: "Ukraine presses allies for resupply as Russia launches ballistic missiles",
+    date: "2026-07-11",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/europe/article/3360232/ukraine-presses-allies-resupply-russia-launches-ballistic-missiles?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "Escalating Ukraine-Russia conflict and missile attacks increase global energy and supply chain volatility, potentially slowing Hong Kong's export-driven industries and reducing hiring in logistics and manufacturing[5].",
+    sentiment: "negative"
+  },
+  {
+    headline: "Don’t expect the rising tide of AI to lift all boats",
+    date: "2026-07-11",
+    source: "SCMP",
+    url: "https://www.scmp.com/opinion/world-opinion/article/3360068/dont-expect-rising-tide-ai-lift-all-boats?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "The warning that AI won't lift all boats suggests uneven job gains, with routine roles in Hong Kong facing displacement while only specialized tech roles see growth, worsening graduate employment prospects[5][8].",
+    sentiment: "negative"
+  },
   {
     headline: "18 high-speed rail trips cancelled as Bavi looms large",
     date: "2026-07-11",
@@ -1066,33 +1093,6 @@ const NEWS_DATA = [
     category: "TRADE & GEOPOLITICS",
     impact: "Trump's meeting with Ukraine and Syria leaders is a geopolitical event with no immediate impact on Hong Kong's job market, though it could influence future trade policies affecting export-oriented industries.",
     sentiment: "neutral"
-  },
-  {
-    headline: "Police arrest trio in HK$128m cocaine bust",
-    date: "2026-07-05",
-    source: "RTHK",
-    url: "https://news.rthk.hk/rthk/en/component/k2/1861091-20260705.htm",
-    category: "LOCAL EMPLOYMENT",
-    impact: "This crime bust has no direct impact on the Hong Kong job market, though it reinforces general public safety concerns that may indirectly affect employer confidence in specific sectors.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Fires ravage France, Spain, Portugal forests as Europe’s temperatures rise again",
-    date: "2026-07-05",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/europe/article/3359481/fires-ravage-france-spain-portugal-forests-europes-temperatures-rise-again?utm_source=rss_feed",
-    category: "TRADE & GEOPOLITICS",
-    impact: "Rising European temperatures and forest fires may disrupt global supply chains and increase climate-related economic risks, potentially affecting Hong Kong's export-oriented industries and job stability in related sectors.",
-    sentiment: "negative"
-  },
-  {
-    headline: "‘China shock 3.0’ is coming. And it’ll be AI-powered robots",
-    date: "2026-07-05",
-    source: "SCMP",
-    url: "https://www.scmp.com/opinion/china-opinion/article/3359052/china-shock-30-coming-and-itll-be-ai-powered-robots?utm_source=rss_feed",
-    category: "TECHNOLOGY & AI",
-    impact: "The emergence of AI-powered robots as 'China shock 3.0' threatens to accelerate automation in manufacturing and logistics, potentially reducing job opportunities for Hong Kong workers in these sectors while increasing demand for AI specialists.",
-    sentiment: "negative"
   }
 ];
 
