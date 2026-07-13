@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "13 Jul 2026 11:25 HKT",
+  updated: "13 Jul 2026 16:20 HKT",
   version: "v2026.04"
 };
 
@@ -41,9 +41,9 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "24,133",
-    delta: "▼ -0.17%",
-    deltaClass: "negative",
+    value: "24,198",
+    delta: "▲ +0.10%",
+    deltaClass: "positive",
     period: "13 Jul 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
@@ -142,9 +142,9 @@ const HK_MACRO_DATA = [
     current: "5.9%",
     currentClass: "",
     previous: "5.9% (Q1 2026 YoY)",
-    trend: "~ STABLE",
-    trendClass: "neutral",
-    implication: "GDP growth remains robust at 5.9% YoY in Q1 2026, supporting steady hiring in export-linked and domestic service sectors, though Q2 data is not yet available.",
+    trend: "▲ UP",
+    trendClass: "positive",
+    implication: "Strong GDP growth signals robust business expansion, likely increasing demand for talent across trade, finance, and professional services.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
   },
@@ -154,21 +154,21 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "3.7% (Feb-Apr 2026)",
     trend: "~ STABLE",
-    trendClass: "positive",
-    implication: "Unemployment holds at a low 3.7% in Mar-May 2026, indicating strong labor demand and favorable conditions for job seekers across most industries.",
+    trendClass: "neutral",
+    implication: "Stable low unemployment indicates a tight labor market, favoring job seekers with wage negotiation power but potentially slowing hiring volume.",
     sourceLabel: "Labour Dept",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/pdf/er_26q1.pdf"
   },
   {
     indicator: "CPI Inflation",
-    current: "1.9%",
+    current: "2.0%",
     currentClass: "",
-    previous: "1.7%",
+    previous: "1.9%",
     trend: "▲ UP",
     trendClass: "neutral",
-    implication: "CPI inflation rose to 1.9% in May 2026 YoY due to fuel prices, slightly increasing cost pressures for workers but not yet threatening wage growth.",
+    implication: "Moderate inflation rise may prompt employers to offer higher wages to retain staff, though cost pressures could limit hiring in consumer-facing sectors.",
     sourceLabel: "C&SD",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://research.hktdc.com/en/article/MzIwNjkzNTY5"
   },
   {
     indicator: "PMI (Mar 2026)",
@@ -177,20 +177,20 @@ const HK_MACRO_DATA = [
     previous: "51.9 (May 2026)",
     trend: "~ STABLE",
     trendClass: "positive",
-    implication: "PMI at 51.9 signals continued expansion in private sector activity, supporting hiring in manufacturing and business services.",
+    implication: "PMI above 50 confirms manufacturing expansion, supporting steady hiring in logistics, engineering, and supply chain roles.",
     sourceLabel: "S&P Global",
     sourceUrl: "https://tradingeconomics.com/hong-kong/gdp-growth"
   },
   {
     indicator: "Hang Seng Index",
-    current: "24,133",
+    current: "24,198",
     currentClass: "",
-    previous: "24,175",
-    trend: "~ SOFTENING",
-    trendClass: "neutral",
-    implication: "Hang Seng dipped slightly, reflecting modest market caution; equity-linked compensation may see limited upside, but overall hiring remains stable.",
+    previous: "24,133",
+    trend: "▲ UP",
+    trendClass: "positive",
+    implication: "Rising Hang Seng Index boosts wealth management and fintech hiring, while improving corporate confidence for broader recruitment.",
     sourceLabel: "HKEX",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/pdf/er_26q1.pdf"
   },
   {
     indicator: "Office Vacancy (Central)",
@@ -199,9 +199,9 @@ const HK_MACRO_DATA = [
     previous: "8.9% (Central)",
     trend: "~ HOLD",
     trendClass: "neutral",
-    implication: "Office vacancy in Central remains steady at 8.9%, suggesting stable demand for corporate office space and no immediate pressure on professional hiring.",
+    implication: "Stable office vacancy suggests no immediate surge in real estate hiring, but steady demand for property management and legal support roles.",
     sourceLabel: "JLL",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://www.jll.com/en/insights/hong-kong-office-vacancy"
   },
   {
     indicator: "Median Monthly Wage",
@@ -210,9 +210,9 @@ const HK_MACRO_DATA = [
     previous: "HK$21,800",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Median wage fell to HK$21,200, indicating softening pay growth; job seekers should prioritize sectors with strong wage momentum like tech and finance.",
+    implication: "Declining median wage may reduce attractiveness of entry-level roles, prompting job seekers to target higher-paying sectors like tech or finance.",
     sourceLabel: "Labour Dept",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/pdf/er_26q1.pdf"
   },
   {
     indicator: "Job Vacancies",
@@ -221,9 +221,9 @@ const HK_MACRO_DATA = [
     previous: "57,400",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Job vacancies dropped to 46,000, reflecting tighter hiring; candidates should apply early and target high-demand roles in AI, logistics, and fintech.",
+    implication: "Sharp drop in job vacancies indicates cautious hiring, requiring job seekers to be more competitive and flexible in role selection.",
     sourceLabel: "Labour Dept",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/pdf/er_26q1.pdf"
   },
   {
     indicator: "Population",
@@ -232,9 +232,9 @@ const HK_MACRO_DATA = [
     previous: "7.54M",
     trend: "▲ UP",
     trendClass: "neutral",
-    implication: "Population rose to 7.56M, increasing labor supply slightly; job seekers may face more competition but also benefit from broader economic activity.",
+    implication: "Population growth expands consumer base, supporting retail and service sector hiring, but may increase competition for jobs.",
     sourceLabel: "C&SD",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://www.censtatd.gov.hk/en/web_table.html?id=31"
   },
   {
     indicator: "IPO Market",
@@ -242,10 +242,10 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "HK$136.4B (Q1 2026)",
     trend: "~ HOLD",
-    trendClass: "neutral",
-    implication: "IPO market volume unchanged at HK$136.4B, supporting steady hiring in finance, legal, and advisory roles tied to capital markets.",
+    trendClass: "positive",
+    implication: "Stable IPO market sustains demand for legal, accounting, and investor relations professionals in capital markets.",
     sourceLabel: "HKEX",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/pdf/er_26q1.pdf"
   },
   {
     indicator: "Bank Capital Ratio",
@@ -254,9 +254,9 @@ const HK_MACRO_DATA = [
     previous: "25.3%",
     trend: "▼ DOWN",
     trendClass: "neutral",
-    implication: "Bank capital ratio dipped to 24.9%, still well above regulatory minimums; banking hiring remains stable but may see cautious expansion.",
+    implication: "Slight dip in bank capital ratio remains well above regulatory minimums, indicating stable banking sector hiring with no immediate contraction risk.",
     sourceLabel: "HKMA",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://www.hkma.gov.hk/en/key-information/reports-and-publications/statistical-reports/"
   },
   {
     indicator: "Fintech VC",
@@ -265,9 +265,9 @@ const HK_MACRO_DATA = [
     previous: "US$848M (2025)",
     trend: "~ HOLD",
     trendClass: "positive",
-    implication: "Fintech VC funding unchanged at US$848M, sustaining demand for tech talent in blockchain, AI, and digital payments sectors.",
+    implication: "Steady fintech VC funding supports continued hiring in software development, cybersecurity, and digital product management roles.",
     sourceLabel: "InvestHK",
-    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
+    sourceUrl: "https://www.investhk.gov.hk/en/what-we-do/fintech/"
   }
 ];
 
@@ -279,7 +279,7 @@ const GLOBAL_DATA = [
     previous: "4.25%–4.50%",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable US rates reduce pressure on HK interest rates, supporting borrowing conditions for job seekers and businesses in Hong Kong.",
+    implication: "Stable US rates support HK's export financing costs and reduce pressure on HKD peg, aiding job stability in trade and finance sectors.",
     sourceLabel: "Trading Economics",
     sourceUrl: "https://tradingeconomics.com/united-states/interest-rate"
   },
@@ -309,7 +309,7 @@ const GLOBAL_DATA = [
     indicator: "USD/HKD Exchange",
     current: "7.838",
     currentClass: "",
-    previous: "7.839",
+    previous: "7.838",
     trend: "~ STABLE",
     trendClass: "neutral",
     implication: "Stable USD/HKD rate supports predictable payroll for HK firms with US operations, aiding hiring in multinational roles.",
@@ -374,6 +374,42 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Lai, cohorts make bones in running space station tests",
+    date: "2026-07-13",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1862032-20260713.htm",
+    category: "TECHNOLOGY & AI",
+    impact: "Space station testing collaborations signal growth in Hong Kong's aerospace and advanced engineering sectors, potentially creating niche roles for R&D engineers and data specialists.",
+    sentiment: "positive"
+  },
+  {
+    headline: "T1 issuance in the air from tonight to early tomorrow",
+    date: "2026-07-13",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1862022-20260713.htm",
+    category: "LOCAL EMPLOYMENT",
+    impact: "T1 issuance (likely a transport or utility notice) has no direct bearing on job market dynamics, though it may reflect ongoing infrastructure operations requiring maintenance staff.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Hong Kong ramps up autonomous vehicle tests as Baidu expands trials in city",
+    date: "2026-07-13",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3360345/hong-kong-ramps-autonomous-vehicle-tests-baidu-expands-trials-city?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "Baidu's expanded autonomous vehicle trials in Hong Kong accelerates demand for AI engineers, robotics specialists, and data analysts, aligning with the city's strong talent demand in AI and automation[3][4][5].",
+    sentiment: "positive"
+  },
+  {
+    headline: "Some ‘responsible’ restaurants pull out from dog-friendly scheme amid complaints",
+    date: "2026-07-13",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/society/article/3360327/restaurant-pullouts-dog-friendly-scheme-responsible-20-complaints-recorded?utm_source=rss_feed",
+    category: "LOCAL EMPLOYMENT",
+    impact: "Restaurants withdrawing from a dog-friendly scheme reflects consumer sentiment shifts but has negligible impact on overall job market trends in the hospitality sector.",
+    sentiment: "neutral"
+  },
   {
     headline: "Train fault caused train disruption on TKO line",
     date: "2026-07-13",
@@ -1057,86 +1093,10 @@ const NEWS_DATA = [
     category: "CORPORATE",
     impact: "Concerns about Hong Kong cinema's survival signal challenges in the creative industry, likely reducing job opportunities for filmmakers, actors, and production staff.",
     sentiment: "negative"
-  },
-  {
-    headline: "AI ‘central plank’ in Hong Kong’s economic development, John Lee says",
-    date: "2026-07-07",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359667/ai-central-plank-hong-kongs-economic-development-john-lee-says?utm_source=rss_feed",
-    category: "TECHNOLOGY & AI",
-    impact: "AI as a central plank in Hong Kong's economic development will boost demand for AI specialists, data scientists, and related tech roles, creating new job opportunities.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Serious flooding risk in Hong Kong’s Yuen Long under amber rainstorm warning",
-    date: "2026-07-07",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/health-environment/article/3359652/serious-flooding-risk-hong-kongs-yuen-long-under-amber-rainstorm-signal?utm_source=rss_feed",
-    category: "REAL ESTATE & COST",
-    impact: "Serious flooding risks in Yuen Long may disrupt local businesses and infrastructure, temporarily affecting employment in affected areas and increasing costs for property-related jobs.",
-    sentiment: "negative"
-  },
-  {
-    headline: "Crushed it: AI and healthy habits help Hong Kong students ace IB",
-    date: "2026-07-07",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/education/article/3359626/crushed-it-ai-and-healthy-habits-help-hong-kong-students-ace-ib?utm_source=rss_feed",
-    category: "TECHNOLOGY & AI",
-    impact: "AI helping Hong Kong students ace IB exams indicates growing AI integration in education, which may create demand for AI tutors, educational tech developers, and related roles.",
-    sentiment: "positive"
-  },
-  {
-    headline: "China overtakes US in fintech patent filings to seize global lead",
-    date: "2026-07-06",
-    source: "Nikkei Asia",
-    url: "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWGdxRFZIYTBRcDRTSTJkRmFkanBrb1k1NDJqWUN6NWR2ZnYyYXBYLUx0RjdhR0p6T3VFX2paV1dBSk8yOFo0YWlLWXotUmF0ZTJXUFpFZDBzYXV1RVdYdG92YWJYT0VPaWR0SS03eW5pUHlVY1lCNVN4Yjhqc0w2M2lwN09WTzZXTENWOGlUMEEwTFpfbEc4dlAybkpyUkNMYllhbzJoZXRlZw?oc=5",
-    category: "FINTECH",
-    impact: "China's fintech patent lead boosts Hong Kong's position as a fintech hub, potentially increasing demand for AI-skilled fintech professionals in HK.",
-    sentiment: "positive"
   }
 ];
 
 const JOBS_DATA = [
-  {
-    title: "Associate Director, Data & Lifecycle Senior Engineer, EQD Quant, Equities Derivatives",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Associate Director, Data & Lifecycle Senior Engineer, EQD Quant, Equities Derivatives",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Associate_Director_Data__Lifecycle_Senior_Engineer_EQD_Quant_Equities_Derivatives.id24148989",
-    posted: "13 Jul 2026"
-  },
-  {
-    title: "Assistant Manager (Customer Service)",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Assistant Manager (Customer Service)",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Assistant_Manager_Customer_Service.id24515353",
-    posted: "13 Jul 2026"
-  },
-  {
-    title: "Assistant Manager, AML (Transaction Monitoring Operations & System Mgt)",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Assistant Manager, AML (Transaction Monitoring Operations & System Mgt)",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Assistant_Manager_AML_Transaction_Monitoring_Operations__System_Mgt.id24417372",
-    posted: "13 Jul 2026"
-  },
-  {
-    title: "AVP, Tech & Operations Internal Audit - Large Corporate Bank",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "AVP, Tech & Operations Internal Audit - Large Corporate Bank",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-AVP_Tech__Operations_Internal_Audit_-_Large_Corporate_Bank.id24398234",
-    posted: "13 Jul 2026"
-  },
   {
     title: "🔍 Browse all Data Governance jobs on JobsDB",
     company: "JobsDB Hong Kong",
@@ -1195,6 +1155,46 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
+    posted: "13 Jul 2026"
+  },
+  {
+    title: "Associate Director, Data & Lifecycle Senior Engineer, EQD Quant, Equities Derivatives",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Associate Director, Data & Lifecycle Senior Engineer, EQD Quant, Equities Derivatives",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Associate_Director_Data__Lifecycle_Senior_Engineer_EQD_Quant_Equities_Derivatives.id24148989",
+    posted: "13 Jul 2026"
+  },
+  {
+    title: "Assistant Manager (Customer Service)",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Assistant Manager (Customer Service)",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Assistant_Manager_Customer_Service.id24515353",
+    posted: "13 Jul 2026"
+  },
+  {
+    title: "Assistant Manager, AML (Transaction Monitoring Operations & System Mgt)",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Assistant Manager, AML (Transaction Monitoring Operations & System Mgt)",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Assistant_Manager_AML_Transaction_Monitoring_Operations__System_Mgt.id24417372",
+    posted: "13 Jul 2026"
+  },
+  {
+    title: "AVP, Tech & Operations Internal Audit - Large Corporate Bank",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "AVP, Tech & Operations Internal Audit - Large Corporate Bank",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-AVP_Tech__Operations_Internal_Audit_-_Large_Corporate_Bank.id24398234",
     posted: "13 Jul 2026"
   },
   {
