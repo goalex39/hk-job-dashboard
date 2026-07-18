@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "18 Jul 2026 10:48 HKT",
+  updated: "18 Jul 2026 15:02 HKT",
   version: "v2026.04"
 };
 
@@ -142,11 +142,11 @@ const HK_MACRO_DATA = [
     current: "5.9%",
     currentClass: "",
     previous: "3.1%",
-    trend: "▲ UP",
+    trend: "▲ STRONG",
     trendClass: "positive",
-    implication: "Robust Q1 2026 GDP growth signals strong external trade and domestic demand, supporting hiring in export, logistics, and retail sectors.",
+    implication: "Strong Q1 2026 GDP growth signals robust economic expansion, boosting confidence for hiring across export, trade, and domestic service sectors.",
     sourceLabel: "C&SD",
-    sourceUrl: "https://www.censtatd.gov.hk/en/press_release_detail.html?id=5755"
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
   {
     indicator: "Unemployment Rate",
@@ -155,7 +155,7 @@ const HK_MACRO_DATA = [
     previous: "3.7% (Feb-Apr 2026)",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Unemployment remains low and stable, indicating a tight labor market where job seekers face competitive conditions but employers may struggle to fill roles.",
+    implication: "Unemployment remains low and stable, indicating a tight labor market where job seekers have good opportunities but employers face competition for talent.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -164,9 +164,9 @@ const HK_MACRO_DATA = [
     current: "2.0%",
     currentClass: "",
     previous: "2.6%",
-    trend: "▲ UP",
+    trend: "~ SOFTENING",
     trendClass: "neutral",
-    implication: "Rising CPI to 2.0% in May reflects higher fuel and import costs, potentially pressuring real wage growth and increasing cost sensitivity in hiring budgets.",
+    implication: "Moderate CPI inflation in May suggests stable purchasing power, supporting consumer spending and sustaining demand in retail and hospitality hiring.",
     sourceLabel: "HKTDC",
     sourceUrl: "https://research.hktdc.com/en/article/MzIwNjkzNTY5"
   },
@@ -177,7 +177,7 @@ const HK_MACRO_DATA = [
     previous: "51.9 (May 2026)",
     trend: "~ STABLE",
     trendClass: "positive",
-    implication: "PMI above 50 confirms expanding private sector activity, particularly in AI-related electronics exports, boosting demand for tech and engineering talent.",
+    implication: "PMI above 50 confirms expanding private sector activity, particularly in AI-related electronics exports, driving demand for tech and manufacturing roles.",
     sourceLabel: "S&P Global",
     sourceUrl: "https://tradingeconomics.com/hong-kong/gdp-growth"
   },
@@ -188,7 +188,7 @@ const HK_MACRO_DATA = [
     previous: "24,562",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Stable Hang Seng levels suggest steady investor sentiment, supporting finance and wealth management hiring but limiting aggressive expansion in capital markets.",
+    implication: "Stable Hang Seng Index reflects steady market sentiment, supporting continued investment in finance and professional services hiring.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkex.com.hk"
   },
@@ -198,8 +198,8 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "8.9% (Central)",
     trend: "~ STABLE",
-    trendClass: "negative",
-    implication: "Persistent high office vacancy in Central indicates subdued corporate space demand, potentially slowing hiring in professional services and back-office functions.",
+    trendClass: "neutral",
+    implication: "Unchanged Central office vacancy suggests limited new corporate space demand, potentially slowing hiring in property and back-office functions.",
     sourceLabel: "JLL",
     sourceUrl: "https://www.jll.com"
   },
@@ -210,7 +210,7 @@ const HK_MACRO_DATA = [
     previous: "HK$21,800",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Declining median wage suggests wage pressure in lower-skilled sectors; job seekers should prioritize roles with upskilling or performance-based incentives.",
+    implication: "Decline in median wage may reflect sectoral shifts or increased lower-wage hiring, prompting job seekers to target higher-growth industries for better pay.",
     sourceLabel: "Labour Dept",
     sourceUrl: "https://www.labour.gov.hk"
   },
@@ -221,7 +221,7 @@ const HK_MACRO_DATA = [
     previous: "57,400",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Significant drop in job vacancies indicates reduced hiring momentum; candidates should broaden applications and consider contract or interim roles.",
+    implication: "Drop in job vacancies indicates cooling hiring demand, requiring job seekers to be more competitive and flexible in role selection.",
     sourceLabel: "Labour Dept",
     sourceUrl: "https://www.labour.gov.hk"
   },
@@ -231,8 +231,8 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "7.54M",
     trend: "▲ UP",
-    trendClass: "neutral",
-    implication: "Population growth reflects continued inflow of talent and residents, increasing labor supply competition but also expanding consumer-driven service sector demand.",
+    trendClass: "positive",
+    implication: "Population growth supports domestic demand expansion, creating opportunities in retail, healthcare, and education sectors.",
     sourceLabel: "C&SD",
     sourceUrl: "https://www.censtatd.gov.hk"
   },
@@ -242,8 +242,8 @@ const HK_MACRO_DATA = [
     currentClass: "",
     previous: "HK$136.4B (Q1 2026)",
     trend: "~ STABLE",
-    trendClass: "positive",
-    implication: "Stable IPO volume supports finance, legal, and advisory hiring in capital markets, though growth may be limited without new major listings.",
+    trendClass: "neutral",
+    implication: "Stable IPO market volume suggests steady capital formation, maintaining demand for finance, legal, and compliance professionals.",
     sourceLabel: "HKEX",
     sourceUrl: "https://www.hkex.com.hk"
   },
@@ -254,7 +254,7 @@ const HK_MACRO_DATA = [
     previous: "25.3%",
     trend: "▼ DOWN",
     trendClass: "neutral",
-    implication: "Slight decline in bank capital ratio remains well above regulatory minimums, indicating banking sector stability and continued hiring in risk and compliance roles.",
+    implication: "Slight decline in bank capital ratio remains well above regulatory minimums, indicating continued banking sector stability and steady finance hiring.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk"
   },
@@ -265,7 +265,7 @@ const HK_MACRO_DATA = [
     previous: "US$848M (2025)",
     trend: "~ STABLE",
     trendClass: "positive",
-    implication: "Steady fintech VC funding sustains demand for software engineers, data scientists, and product managers in Hong Kong’s digital economy sector.",
+    implication: "Stable fintech VC funding supports continued innovation investment, sustaining demand for tech, data, and product development roles.",
     sourceLabel: "InvestHK",
     sourceUrl: "https://www.investhk.gov.hk"
   }
@@ -307,9 +307,9 @@ const GLOBAL_DATA = [
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.839",
+    current: "7.840",
     currentClass: "",
-    previous: "7.840",
+    previous: "7.839",
     trend: "~ STABLE",
     trendClass: "neutral",
     implication: "Stable USD/HKD peg reduces currency risk for HK employers, supporting confidence in long-term hiring plans and wage stability.",
@@ -374,6 +374,24 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Ride-hailing permit grants 'to be fair, transparent'",
+    date: "2026-07-18",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1862715-20260718.htm",
+    category: "POLICY & REGULATION",
+    impact: "Fair and transparent ride-hailing permit grants will stabilize the sector, creating clearer career pathways for drivers and operations roles in platforms like Uber and local competitors.",
+    sentiment: "positive"
+  },
+  {
+    headline: "Hong Kong’s Lalamove, EY team up to shape ‘low-altitude economy’. What’s the plan?",
+    date: "2026-07-18",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3361016/hong-kongs-lalamove-ey-team-shape-low-altitude-economy-whats-plan?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "Lalamove and EY's low-altitude economy partnership signals growth in drone logistics and urban air mobility, creating new jobs in engineering, data analytics, and regulatory compliance in Hong Kong.",
+    sentiment: "positive"
+  },
   {
     headline: "Cathay pushes back Dubai and Riyadh flight resumptions",
     date: "2026-07-17",
@@ -1075,66 +1093,48 @@ const NEWS_DATA = [
     category: "LOCAL EMPLOYMENT",
     impact: "T1 issuance (likely a transport or utility notice) has no direct bearing on job market dynamics, though it may reflect ongoing infrastructure operations requiring maintenance staff.",
     sentiment: "neutral"
-  },
-  {
-    headline: "Hong Kong ramps up autonomous vehicle tests as Baidu expands trials in city",
-    date: "2026-07-13",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3360345/hong-kong-ramps-autonomous-vehicle-tests-baidu-expands-trials-city?utm_source=rss_feed",
-    category: "TECHNOLOGY & AI",
-    impact: "Baidu's expanded autonomous vehicle trials in Hong Kong accelerates demand for AI engineers, robotics specialists, and data analysts, aligning with the city's strong talent demand in AI and automation[3][4][5].",
-    sentiment: "positive"
-  },
-  {
-    headline: "Some ‘responsible’ restaurants pull out from dog-friendly scheme amid complaints",
-    date: "2026-07-13",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/society/article/3360327/restaurant-pullouts-dog-friendly-scheme-responsible-20-complaints-recorded?utm_source=rss_feed",
-    category: "LOCAL EMPLOYMENT",
-    impact: "Restaurants withdrawing from a dog-friendly scheme reflects consumer sentiment shifts but has negligible impact on overall job market trends in the hospitality sector.",
-    sentiment: "neutral"
   }
 ];
 
 const JOBS_DATA = [
   {
-    title: "Vice President/Assistant Vice President, Strategic Project Team, Operations Planning Section",
+    title: "Data Product Owner - Banking",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Vice President/Assistant Vice President, Strategic Project Team, Operations Planning Section",
+    desc: "Data Product Owner - Banking",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Vice_PresidentAssistant_Vice_President_Strategic_Project_Team_Operations_Planning_Section.id24189115",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Data_Product_Owner_-_Banking.id24434534",
     posted: "18 Jul 2026"
   },
   {
-    title: "HR Analyst (1-year contract)",
+    title: "Capital & Investor Business Development (Capital & Investor BD)",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "HR Analyst (1-year contract)",
+    desc: "Capital & Investor Business Development (Capital & Investor BD)",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-HR_Analyst_1-year_contract.id24342194",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Capital__Investor_Business_Development_Capital__Investor_BD.id23458145",
     posted: "18 Jul 2026"
   },
   {
-    title: "Portfolio Manager",
+    title: "Analyst, Investment Team (Asia Tech)",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Portfolio Manager",
+    desc: "Analyst, Investment Team (Asia Tech)",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Portfolio_Manager.id24217101",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Analyst_Investment_Team_Asia_Tech.id24486685",
     posted: "18 Jul 2026"
   },
   {
-    title: "Business Analyst - Contract",
+    title: "Equity Trading Support Analyst (Front-Office)",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Business Analyst - Contract",
+    desc: "Equity Trading Support Analyst (Front-Office)",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Business_Analyst_-_Contract.id24434338",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Equity_Trading_Support_Analyst_Front-Office.id24247602",
     posted: "18 Jul 2026"
   },
   {
@@ -1195,6 +1195,46 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
+    posted: "18 Jul 2026"
+  },
+  {
+    title: "Vice President/Assistant Vice President, Strategic Project Team, Operations Planning Section",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Vice President/Assistant Vice President, Strategic Project Team, Operations Planning Section",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Vice_PresidentAssistant_Vice_President_Strategic_Project_Team_Operations_Planning_Section.id24189115",
+    posted: "18 Jul 2026"
+  },
+  {
+    title: "HR Analyst (1-year contract)",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "HR Analyst (1-year contract)",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-HR_Analyst_1-year_contract.id24342194",
+    posted: "18 Jul 2026"
+  },
+  {
+    title: "Portfolio Manager",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Portfolio Manager",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Portfolio_Manager.id24217101",
+    posted: "18 Jul 2026"
+  },
+  {
+    title: "Business Analyst - Contract",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Business Analyst - Contract",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Business_Analyst_-_Contract.id24434338",
     posted: "18 Jul 2026"
   },
   {
@@ -1675,16 +1715,6 @@ const JOBS_DATA = [
     desc: "Java Software Engineer",
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Java_Software_Engineer.id24161887",
-    posted: "12 Jul 2026"
-  },
-  {
-    title: "Data Product Owner - Banking",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Data Product Owner - Banking",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Data_Product_Owner_-_Banking.id24434534",
     posted: "12 Jul 2026"
   },
   {
@@ -2375,16 +2405,6 @@ const JOBS_DATA = [
     desc: "Data Engineer (AI), contract",
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Data_Engineer_AI_contract.id24460860",
-    posted: "30 Jun 2026"
-  },
-  {
-    title: "Equity Trading Support Analyst (Front-Office)",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Equity Trading Support Analyst (Front-Office)",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Equity_Trading_Support_Analyst_Front-Office.id24247602",
     posted: "30 Jun 2026"
   },
   {
@@ -3686,16 +3706,6 @@ const JOBS_DATA = [
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Portfolio_Manager_-_Key_Personnel_for_ETF.id24276606",
     posted: "07 Jun 2026"
-  },
-  {
-    title: "Capital & Investor Business Development (Capital & Investor BD)",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Capital & Investor Business Development (Capital & Investor BD)",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Capital__Investor_Business_Development_Capital__Investor_BD.id23458145",
-    posted: "06 Jun 2026"
   },
   {
     title: "Client Value Management, Principal",
