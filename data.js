@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "19 Aug 2026 13:35 HKT",
+  updated: "19 Aug 2026 21:38 HKT",
   version: "v2026.04"
 };
 
@@ -41,9 +41,9 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "25,437",
-    delta: "▼ -0.06%",
-    deltaClass: "negative",
+    value: "25,495",
+    delta: "▲ +0.09%",
+    deltaClass: "positive",
     period: "19 Aug 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
@@ -183,9 +183,9 @@ const HK_MACRO_DATA = [
   },
   {
     indicator: "Hang Seng Index",
-    current: "25,437",
+    current: "25,495",
     currentClass: "",
-    previous: "25,453",
+    previous: "25,437",
     trend: "~ STABLE",
     trendClass: "neutral",
     implication: "Equities are broadly flat, so there is no strong new signal for hiring sentiment from the market. Financial-services recruitment should remain driven more by deal flow and bonus expectations than index levels.",
@@ -279,7 +279,7 @@ const GLOBAL_DATA = [
     previous: "3.50%–3.75%",
     trend: "— HOLD",
     trendClass: "neutral",
-    implication: "U.S. funding costs remain unchanged, so Hong Kong hiring sentiment should stay broadly steady rather than being pushed by a fresh Fed move. Rate-sensitive sectors may still wait for clearer easing before expanding headcount aggressively.",
+    implication: "U.S. rates are steady, so Hong Kong hiring costs and funding conditions should remain broadly unchanged in the near term. Job seekers should still expect selective hiring rather than a broad-based acceleration.",
     sourceLabel: "Federal Reserve H.15",
     sourceUrl: "https://www.federalreserve.gov/releases/h15/"
   },
@@ -290,7 +290,7 @@ const GLOBAL_DATA = [
     previous: "5.4%",
     trend: "~ SOFTENING",
     trendClass: "negative",
-    implication: "China growth remains positive but slower than before, which is likely to keep Hong Kong export, trade, and mainland-linked hiring cautious. Job seekers may still see opportunities, but employers may remain selective on new hires.",
+    implication: "China growth remains below prior momentum, which can weigh on Hong Kong’s export, trade, and Mainland-linked hiring demand. Job seekers in cyclical sectors may face slower recruitment, while defensive and services roles should hold up better.",
     sourceLabel: "NBS China",
     sourceUrl: "https://www.stats.gov.cn/english/PressRelease/202607/t20260715_1964120.html"
   },
@@ -301,18 +301,18 @@ const GLOBAL_DATA = [
     previous: "49.9",
     trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "Mainland manufacturing sentiment has moved back above 50, which supports a better outlook for Hong Kong logistics, trade, and industrial-facing roles. Hiring demand should improve modestly if this momentum holds.",
+    implication: "China’s PMI staying above 50 points to modest manufacturing expansion, which is supportive for Hong Kong logistics, trading, and supply-chain related hiring. The signal is positive but still mild, so broad labor-market improvement may be limited.",
     sourceLabel: "NBS China",
     sourceUrl: "https://www.stats.gov.cn/english/PressRelease/202607/t20260715_1964120.html"
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.843",
+    current: "7.838",
     currentClass: "",
     previous: "7.843",
     trend: "— HOLD",
     trendClass: "neutral",
-    implication: "The HKD remains tightly anchored, so exchange-rate volatility should not materially affect hiring plans or compensation settings. Job seekers in import-export and finance should see a stable currency backdrop.",
+    implication: "The HKD remains tightly anchored near the strong side of the convertibility band, so FX conditions are not adding major pressure to hiring. Salary and staffing decisions should continue to be driven more by business demand than by currency moves.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk/media/eng/publication-and-research/bulletin/202603/Chapter4.pdf"
   },
@@ -323,7 +323,7 @@ const GLOBAL_DATA = [
     previous: "10% baseline (Section 122)",
     trend: "— HOLD",
     trendClass: "neutral",
-    implication: "Tariff settings appear unchanged, limiting any immediate upside for trade-sensitive hiring in Hong Kong. Firms exposed to U.S.-China flows are likely to stay cautious on expansion.",
+    implication: "U.S.-China tariff settings appear unchanged, so trade uncertainty remains a background risk rather than a fresh shock. Hiring in trade-exposed sectors should stay cautious, with firms favoring flexible staffing and cost control.",
     sourceLabel: "U.S. tariff policy",
     sourceUrl: "https://ustr.gov/"
   },
@@ -332,9 +332,9 @@ const GLOBAL_DATA = [
     current: "Trump-Xi call Apr 2026",
     currentClass: "",
     previous: "Trump-Xi summit Apr 2026",
-    trend: "~ MIXED",
+    trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "Diplomatic engagement is still supporting market stability, but without a clear new breakthrough hiring sentiment will likely remain uneven. Hong Kong employers may continue to favor flexibility over aggressive recruitment.",
+    implication: "Diplomatic engagement remains active but not transformative, so it is unlikely to trigger an immediate hiring rebound. Companies may still wait for clearer policy follow-through before expanding headcount in cross-border businesses.",
     sourceLabel: "US-China diplomacy coverage",
     sourceUrl: "https://www.reuters.com/"
   },
@@ -345,7 +345,7 @@ const GLOBAL_DATA = [
     previous: "US$527B (2026)",
     trend: "▲ SURGING",
     trendClass: "positive",
-    implication: "Strong AI capex implies continued demand for cloud, chip, data center, and digital infrastructure talent. Hong Kong candidates with AI, fintech, and systems skills should remain well positioned for premium roles.",
+    implication: "Very large AI capex implies strong demand for data, cloud, semiconductor, and digital infrastructure talent. Hong Kong job seekers with AI, finance-technology, and enterprise transformation skills should see better opportunities.",
     sourceLabel: "Global AI capex estimates",
     sourceUrl: "https://www.ey.com/"
   },
@@ -354,9 +354,9 @@ const GLOBAL_DATA = [
     current: "Accelerating integration",
     currentClass: "",
     previous: "Accelerating",
-    trend: "▲ EXPANDING",
+    trend: "▲ UP",
     trendClass: "positive",
-    implication: "Deeper GBA integration should keep cross-border business activity and mobility supportive for Hong Kong employment. Roles tied to finance, professional services, and cross-border operations may benefit.",
+    implication: "Deeper GBA integration should improve cross-border mobility and expand opportunities tied to Shenzhen and the wider Mainland ecosystem. Job seekers with bilingual, regulatory, and cross-border operational skills are likely to benefit most.",
     sourceLabel: "Greater Bay Area policy",
     sourceUrl: "https://www.info.gov.hk/"
   },
@@ -365,15 +365,78 @@ const GLOBAL_DATA = [
     current: "TTPS expanded to 200+ universities",
     currentClass: "",
     previous: "TTPS expanded to 200 unis",
-    trend: "▲ EXPANDING",
+    trend: "▲ UP",
     trendClass: "positive",
-    implication: "A broader talent intake pipeline raises competition for some local applicants, but it also signals continued demand for skilled labor. Candidates with scarce skills may see more opportunities, especially in high-value sectors.",
+    implication: "A broader talent scheme supports labor supply in Hong Kong and may intensify competition for some entry-level roles. At the same time, it can also raise hiring demand in sectors needing international and specialized skills.",
     sourceLabel: "Hong Kong talent admission schemes",
     sourceUrl: "https://www.immd.gov.hk/eng/services/visas/TTPS.html"
   }
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Qatar Airways Cargo to boost presence in HK with MoU",
+    date: "2026-08-19",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1866747-20260819.htm",
+    category: "GLOBAL",
+    impact: "A larger Qatar Airways Cargo presence in Hong Kong supports air freight, logistics, and cargo handling jobs. It also strengthens Hong Kong’s role as a regional aviation hub, which can lift demand for related support services.",
+    sentiment: "positive"
+  },
+  {
+    headline: "'Redeveloped Kwai Chung Hospital better for patients'",
+    date: "2026-08-19",
+    source: "RTHK",
+    url: "https://news.rthk.hk/rthk/en/component/k2/1866742-20260819.htm",
+    category: "LOCAL EMPLOYMENT",
+    impact: "A hospital redevelopment mainly affects construction, facilities management, healthcare operations, and medical support roles in the local market. The headline suggests service improvement rather than broad hiring expansion, so the job impact is likely limited and project-specific.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "Israel opens criminal probes over killings of Palestinian girl Hind Rajab, aid workers",
+    date: "2026-08-19",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/middle-east/article/3364595/israel-opens-criminal-probes-over-killings-palestinian-girl-hind-rajab-aid-workers?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "Escalating conflict and war-crime investigations in the Middle East can raise uncertainty in global trade flows and airline cargo routes. For Hong Kong job seekers, that may create volatility in logistics, shipping, and aviation-linked roles.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Zelensky’s office faces corruption probe in Ukraine as fired minister demands elections",
+    date: "2026-08-19",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/russia-central-asia/article/3364583/zelenskys-office-faces-corruption-probe-ukraine-fired-minister-demands-elections?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "Corruption probes in Ukraine add to geopolitical instability and can weaken business confidence in adjacent markets. Hong Kong firms with exposure to Europe or commodity trade may become more cautious on hiring and expansion.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Iran warns Gulf nations against helping US as UAE halts trade ties",
+    date: "2026-08-19",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/middle-east/article/3364576/iran-warns-gulf-nations-against-helping-us-uae-halts-trade-ties?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "Rising tension between Iran and Gulf states can disrupt trade routes and increase freight costs, which is a concern for Hong Kong’s logistics and trading sectors. Job prospects in transport-linked industries could soften if regional supply chains become less predictable.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Will Putin’s Kuril Islands visit push Japan closer to Ukraine?",
+    date: "2026-08-19",
+    source: "SCMP",
+    url: "https://www.scmp.com/week-asia/politics/article/3364525/will-putins-kuril-islands-visit-push-japan-closer-ukraine?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "A worsening Russia-Japan standoff can further strain international trade and investment sentiment in Asia. Hong Kong professionals in trading, shipping, and finance may face weaker regional business activity if geopolitical risk rises.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Mable Chan uses Qatar Airways cargo office opening to drop Central Asia route reveal",
+    date: "2026-08-19",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3364580/mable-chan-uses-qatar-airways-cargo-office-opening-drop-central-asia-route-reveal?utm_source=rss_feed",
+    category: "GLOBAL",
+    impact: "A new Qatar Airways cargo office and route discussion signal more international connectivity for Hong Kong. That can support hiring in aviation, freight forwarding, customs, and trade-related business development.",
+    sentiment: "positive"
+  },
   {
     headline: "Hong Kong Gold Exchange taps tech strength in joint venture to power gold settlement",
     date: "2026-08-19",
@@ -1029,69 +1092,6 @@ const NEWS_DATA = [
     url: "https://www.scmp.com/news/world/russia-central-asia/article/3363864/russias-putin-makes-first-visit-kuril-islands-claimed-japan?utm_source=rss_feed",
     category: "TRADE & GEOPOLITICS",
     impact: "This is mainly a geopolitical headline with limited direct impact on Hong Kong hiring. Any effect would be indirect through risk sentiment, trade flows, and market volatility rather than immediate local job demand.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Employer sanctioned for violating requirements of local recruitment under Enhanced Supplementary Labour Scheme",
-    date: "2026-08-13",
-    source: "政府新聞公報 (info.gov.hk)",
-    url: "https://www.info.gov.hk/gia/general/202608/13/P2026081300245.htm",
-    category: "POLICY & REGULATION",
-    impact: "A sanctioned employer under the Enhanced Supplementary Labour Scheme indicates stricter enforcement of local recruitment rules. For Hong Kong job seekers, this is negative for employers relying on imported labour and potentially positive for local hiring opportunities if compliance is enforced more tightly.",
-    sentiment: "negative"
-  },
-  {
-    headline: "Russia warns of ‘chaos’ in global food market after Ukraine pummels grain terminals",
-    date: "2026-08-13",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/russia-central-asia/article/3363837/russia-warns-chaos-global-food-market-after-ukraine-pummels-grain-terminals?utm_source=rss_feed",
-    category: "TRADE & GEOPOLITICS",
-    impact: "A disruption in the global food market can raise input costs and add uncertainty for Hong Kong’s import-dependent economy. That may pressure employers in food retail, logistics, and hospitality, while also weighing on consumer spending and hiring confidence.",
-    sentiment: "negative"
-  },
-  {
-    headline: "Overseeing jury trials – the demanding job of a High Court judge",
-    date: "2026-08-13",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/law-and-crime/article/3363769/overseeing-jury-trials-demanding-job-high-court-judge?utm_source=rss_feed",
-    category: "LOCAL EMPLOYMENT",
-    impact: "The article highlights the demanding nature of High Court judge work, which may be relevant for legal career awareness but does not indicate a broader change in hiring conditions. It has limited direct impact on the Hong Kong job market overall.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Colombia quake death toll hits 265, as rescuers race against the clock",
-    date: "2026-08-12",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/americas/article/3363836/colombia-quake-death-toll-hits-265-rescuers-race-against-clock?utm_source=rss_feed",
-    category: "GLOBAL",
-    impact: "A major earthquake in Colombia is a humanitarian shock with limited direct impact on Hong Kong employment. Any job-market effect would be indirect, mainly through broader risk sentiment and potential disruptions in global trade or insurance markets.",
-    sentiment: "negative"
-  },
-  {
-    headline: "China offers Colombia quake relief as new president’s US pivot leaves Beijing waiting",
-    date: "2026-08-12",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/china/article/3363834/china-offers-colombia-quake-relief-new-presidents-us-pivot-leaves-beijing-waiting?utm_source=rss_feed",
-    category: "CHINA MAINLAND",
-    impact: "China’s relief offer to Colombia is primarily a geopolitical signal rather than a direct labor-market driver in Hong Kong. It may matter only indirectly if it reflects shifting China-Latin America ties that affect trade, logistics, or regional business opportunities.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Solar eclipse turns day to night in Spain, wows crowds across Europe",
-    date: "2026-08-12",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/world/europe/article/3363830/solar-eclipse-turns-day-night-spain-wows-crowds-across-europe?utm_source=rss_feed",
-    category: "GLOBAL",
-    impact: "The solar eclipse is a cultural and tourism event with little direct effect on Hong Kong hiring. Any impact on the local job market would be negligible.",
-    sentiment: "neutral"
-  },
-  {
-    headline: "Cyprus remains top online trading hiring hub despite global slowdown",
-    date: "2026-08-12",
-    source: "Cyprus Mail",
-    url: "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUnRnd1ZGUXpPbUoteFBKRDJZT05iQUJYREk0UUxZUnR4RlJ0YWRteEN2cHlvNEpCTC1GRGVQaXFZQXdvdE55eDNJYVpuU1hyYVo4RkZ0SW1DWEdRVVJlU0hHM1k4S0N0NFVFYk1CZktudHNwcEVlRml0OEJkalB4bENScWFkYzk1REtzZzl0S2t2WEdMZ2tiNzY5U1pDRHA4Ri1xUU13?oc=5",
-    category: "FINANCIAL SECTOR",
-    impact: "The headline indicates that hiring remains concentrated in another hub, which implies Hong Kong is still competing regionally for trading and fintech jobs. For Hong Kong job seekers, this is a reminder that offshore hubs can absorb roles if local firms do not expand fast enough.",
     sentiment: "neutral"
   }
 ];
