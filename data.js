@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "05 Sep 2026 16:54 HKT",
+  updated: "05 Sep 2026 23:44 HKT",
   version: "v2026.04"
 };
 
@@ -185,7 +185,7 @@ const HK_MACRO_DATA = [
     indicator: "Hang Seng Index",
     current: "25,651",
     currentClass: "",
-    previous: "25,777",
+    previous: "25,651",
     trend: "▼ DOWN",
     trendClass: "negative",
     implication: "A softer Hang Seng can weigh on hiring sentiment in finance and brokerage-related roles. Broader labour-market impact should be limited unless weakness deepens.",
@@ -279,9 +279,9 @@ const GLOBAL_DATA = [
     previous: "3.50%–3.75%",
     trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "US funding conditions are steady, so external rate pressure on Hong Kong hiring remains limited. That supports a stable cost-of-capital backdrop for employers, with job seekers seeing little immediate impact from this channel.",
+    implication: "US monetary policy remains broadly unchanged, so Hong Kong hiring conditions tied to global financing costs should stay steady rather than improve sharply. Job seekers in rate-sensitive sectors may still face cautious recruiting, but there is no new tightening shock in the near term.",
     sourceLabel: "Federal Reserve H.15",
-    sourceUrl: "https://www.federalreserve.gov/releases/h15/"
+    sourceUrl: "https://www.federalreserve.gov/releases/H15/default.htm"
   },
   {
     indicator: "China GDP Growth",
@@ -307,9 +307,9 @@ const GLOBAL_DATA = [
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.84",
+    current: "7.841",
     currentClass: "",
-    previous: "7.841",
+    previous: "7.84",
     trend: "~ STABLE",
     trendClass: "neutral",
     implication: "The Hong Kong dollar remains tightly anchored near the weak side of the convertibility band, so FX conditions are not a major new signal for hiring. This is broadly neutral for job seekers, with no strong boost or drag from currency moves.",
@@ -374,6 +374,33 @@ const GLOBAL_DATA = [
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Ukraine war: how escalating attacks are upending lives in Kyiv",
+    date: "2026-09-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/russia-central-asia/article/3366478/ukraine-war-how-escalating-attacks-are-upending-lives-kyiv?utm_source=rss_feed",
+    category: "GLOBAL",
+    impact: "Escalating war conditions in Kyiv can add uncertainty to global markets, tourism, and business sentiment, which may weigh on hiring in Hong Kong’s externally exposed sectors. It does not directly affect local labor demand, but it can weaken risk appetite among employers.",
+    sentiment: "negative"
+  },
+  {
+    headline: "Hong Kong’s first astronaut Lai Ka-ying to give live lecture from space",
+    date: "2026-09-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/education/article/3366497/hong-kongs-first-astronaut-lai-ka-ying-give-live-lecture-space?utm_source=rss_feed",
+    category: "LOCAL EMPLOYMENT",
+    impact: "A high-profile space lecture by a Hong Kong astronaut can boost STEM interest, science outreach, education events, and media attention. That may create small but positive spillovers for science communication, education, and event-related jobs.",
+    sentiment: "positive"
+  },
+  {
+    headline: "How can future doctors blend clinical rigour with AI fluency and empathy?",
+    date: "2026-09-05",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/hong-kong/education/article/3366492/how-can-future-doctors-blend-clinical-rigour-ai-fluency-and-empathy?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "This suggests growing emphasis on AI skills in healthcare, which should support demand for doctors and allied professionals who can use digital tools effectively. In Hong Kong, it also strengthens hiring prospects in medtech, health innovation, and AI-enabled training roles.",
+    sentiment: "positive"
+  },
   {
     headline: "Three held, 1,600 vials seized in fake-vaccine raids",
     date: "2026-09-05",
@@ -553,6 +580,15 @@ const NEWS_DATA = [
     category: "TRADE & GEOPOLITICS",
     impact: "A Pacific Islands sovereignty dispute is geographically remote from Hong Kong, so direct hiring effects are limited. The main relevance is broader geopolitical uncertainty, which can indirectly affect trade, shipping sentiment, and regional risk management work in Hong Kong.",
     sentiment: "neutral"
+  },
+  {
+    headline: "2026 Inclusion Conference on the Bund to Focus on Building the AI Economy Together",
+    date: "2026-09-03",
+    source: "StreetInsider",
+    url: "https://news.google.com/rss/articles/CBMizwFBVV95cUxQOHc4Z1NiT2tkQnItWURGU0RHTlZyRUNSeFBIUHVRdXdfbUowbUFOZVhac0JEc0JDc2xoU3Z6RVVKNW1CVy1vYmc1S0ctRzYzdUV1cjdxOTZrMUE0UDZ5UTMyMmthVHA0U0JpQkRTMjRVa0N3Qnladl9Tb1hObWxWNkYzQndyQXJLd3hVbk4ycllEV3hUaFVKYWNkYkg0ZklOR2FjVDNNNHgwT0VaME9VaG5udHZiUUlySVB0d3ZWLXhjV1JiRHoyZjctTFZTNms?oc=5",
+    category: "TECHNOLOGY & AI",
+    impact: "A stronger AI economy in the region should create more cross-border opportunities for Hong Kong workers in AI, product, and digital infrastructure roles. It also suggests more employer interest in AI-related skills, which can help job seekers with the right technical background.",
+    sentiment: "positive"
   },
   {
     headline: "2026 Inclusion Conference on the Bund to Focus on Building the AI Economy Together",
@@ -1057,84 +1093,48 @@ const NEWS_DATA = [
     category: "POLICY & REGULATION",
     impact: "A large bid-rigging crackdown points to tighter enforcement in building maintenance and related procurement work. Job seekers in property management, compliance, and construction services may face heavier oversight but also more demand for audit and governance roles.",
     sentiment: "negative"
-  },
-  {
-    headline: "Hot property: Big banks, fashion stores seek ‘cheaper’, eye-catching Hong Kong retail",
-    date: "2026-08-31",
-    source: "SCMP",
-    url: "https://www.scmp.com/business/article/3365813/hot-property-big-banks-fashion-stores-seek-cheaper-eye-catching-hong-kong-retail?utm_source=rss_feed",
-    category: "REAL ESTATE & COST",
-    impact: "Retail landlords benefiting from demand from banks and fashion tenants can improve leasing activity and revive retail-sector confidence. That supports jobs in retail operations, store fitting, brokerage, and property services, especially in prime shopping areas.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Hong Kong retail sales rise 4.5% in July, marking 15th straight month of growth",
-    date: "2026-08-31",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3365836/hong-kong-retail-sales-rise-45-july-marking-15th-straight-month-growth?utm_source=rss_feed",
-    category: "LOCAL EMPLOYMENT",
-    impact: "Sustained retail sales growth is a supportive sign for hiring in sales, merchandising, hospitality-adjacent retail, and warehouse/logistics roles. It also suggests consumer spending is holding up, which helps protect existing retail jobs.",
-    sentiment: "positive"
-  },
-  {
-    headline: "HK 'can become hub for embodied AI robot development'",
-    date: "2026-08-31",
-    source: "RTHK",
-    url: "https://news.rthk.hk/rthk/en/component/k2/1868210-20260831.htm",
-    category: "TECHNOLOGY & AI",
-    impact: "This suggests stronger demand in Hong Kong for robotics, AI engineering, automation integration, and related product roles. It may also create spillover hiring in research, testing, logistics automation, and technical sales as the city positions itself as a development hub.",
-    sentiment: "positive"
-  },
-  {
-    headline: "Brussels ETO promotes Hong Kong's wine industry, academic exchange and music talent in Sicily, Italy (with photos)",
-    date: "2026-08-31",
-    source: "政府新聞公報 (info.gov.hk)",
-    url: "https://www.info.gov.hk/gia/general/202608/31/P2026083000644.htm",
-    category: "GLOBAL",
-    impact: "Promotion of Hong Kong’s wine industry, academic exchange, and music talent supports service-sector, education, and cultural-industry opportunities. It can also help build international networks that benefit tourism, events, marketing, and creative-sector jobs in Hong Kong.",
-    sentiment: "positive"
   }
 ];
 
 const JOBS_DATA = [
   {
-    title: "DevOps Team Lead",
+    title: "Head of finance - Securities firm",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "DevOps Team Lead",
+    desc: "Head of finance - Securities firm",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-DevOps_Team_Lead.id24206722",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Head_of_finance_-_Securities_firm.id24683886",
     posted: "05 Sep 2026"
   },
   {
-    title: "Low Latency C++ Engineer",
+    title: "Principal Business Analyst, Algo and Machine Learning Systems, IT",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Low Latency C++ Engineer",
+    desc: "Principal Business Analyst, Algo and Machine Learning Systems, IT",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Low_Latency_C_Engineer.id23102475",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Principal_Business_Analyst_Algo_and_Machine_Learning_Systems_IT.id23201510",
     posted: "05 Sep 2026"
   },
   {
-    title: "Junior Trading Analyst - Delta One & ETF Trading",
+    title: "Senior Manager, Entrepreneur Office (Hong Kong), Wealth Management",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Junior Trading Analyst - Delta One & ETF Trading",
+    desc: "Senior Manager, Entrepreneur Office (Hong Kong), Wealth Management",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Junior_Trading_Analyst_-_Delta_One__ETF_Trading.id24548276",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Manager_Entrepreneur_Office_Hong_Kong_Wealth_Management.id23171102",
     posted: "05 Sep 2026"
   },
   {
-    title: "Data Systems Team Lead",
+    title: "Head of Risk",
     company: "See listing",
     location: "Hong Kong",
     salary: "Not disclosed",
-    desc: "Data Systems Team Lead",
+    desc: "Head of Risk",
     source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Data_Systems_Team_Lead.id24343238",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Head_of_Risk.id23201323",
     posted: "05 Sep 2026"
   },
   {
@@ -1195,6 +1195,46 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
+    posted: "05 Sep 2026"
+  },
+  {
+    title: "DevOps Team Lead",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "DevOps Team Lead",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-DevOps_Team_Lead.id24206722",
+    posted: "05 Sep 2026"
+  },
+  {
+    title: "Low Latency C++ Engineer",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Low Latency C++ Engineer",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Low_Latency_C_Engineer.id23102475",
+    posted: "05 Sep 2026"
+  },
+  {
+    title: "Junior Trading Analyst - Delta One & ETF Trading",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Junior Trading Analyst - Delta One & ETF Trading",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Junior_Trading_Analyst_-_Delta_One__ETF_Trading.id24548276",
+    posted: "05 Sep 2026"
+  },
+  {
+    title: "Data Systems Team Lead",
+    company: "See listing",
+    location: "Hong Kong",
+    salary: "Not disclosed",
+    desc: "Data Systems Team Lead",
+    source: "eFinancialCareers",
+    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Data_Systems_Team_Lead.id24343238",
     posted: "05 Sep 2026"
   },
   {
@@ -3426,36 +3466,6 @@ const JOBS_DATA = [
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Assistant_Manager_Liquidity_Risk_Management_Risk.id24152520",
     posted: "20 Jul 2026"
-  },
-  {
-    title: "Principal Business Analyst, Algo and Machine Learning Systems, IT",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Principal Business Analyst, Algo and Machine Learning Systems, IT",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Principal_Business_Analyst_Algo_and_Machine_Learning_Systems_IT.id23201510",
-    posted: "19 Jul 2026"
-  },
-  {
-    title: "Senior Manager, Entrepreneur Office (Hong Kong), Wealth Management",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Senior Manager, Entrepreneur Office (Hong Kong), Wealth Management",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Senior_Manager_Entrepreneur_Office_Hong_Kong_Wealth_Management.id23171102",
-    posted: "19 Jul 2026"
-  },
-  {
-    title: "Head of Risk",
-    company: "See listing",
-    location: "Hong Kong",
-    salary: "Not disclosed",
-    desc: "Head of Risk",
-    source: "eFinancialCareers",
-    url: "https://www.efinancialcareers.com/jobs-Hong_Kong-Hong_Kong-Head_of_Risk.id23201323",
-    posted: "19 Jul 2026"
   },
   {
     title: "Electronic trading Algo Quant researcher/Developer role with a top tier bank",
