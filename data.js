@@ -4,7 +4,7 @@
 // ============================================
 
 const META = {
-  updated: "09 Oct 2026 19:44 HKT",
+  updated: "10 Oct 2026 02:36 HKT",
   version: "v2026.04"
 };
 
@@ -41,10 +41,10 @@ const KPI_DATA = [
   },
   {
     label: "Hang Seng",
-    value: "24,211",
-    delta: "▲ +1.79%",
-    deltaClass: "positive",
-    period: "09 Oct 2026",
+    value: "23,786",
+    delta: "▼ -1.43%",
+    deltaClass: "negative",
+    period: "08 Oct 2026",
     source: "Yahoo Finance (^HSI)",
     sourceUrl: "https://finance.yahoo.com/quote/%5EHSI/",
     valueClass: ""
@@ -142,9 +142,9 @@ const HK_MACRO_DATA = [
     current: "4.3%",
     currentClass: "",
     previous: "5.9%",
-    trend: "▲ EXPANDING",
+    trend: "▲ UP",
     trendClass: "positive",
-    implication: "Stronger growth supports hiring across trade, logistics, finance and professional services, although employers may remain selective amid external risks.",
+    implication: "Faster growth should support hiring, especially in trade, finance, tourism and business services, though employers may remain selective.",
     sourceLabel: "Hong Kong Government",
     sourceUrl: "https://www.info.gov.hk/gia/general/202608/14/P2026081400308.htm"
   },
@@ -153,20 +153,20 @@ const HK_MACRO_DATA = [
     current: "3.8%",
     currentClass: "",
     previous: "3.7%",
-    trend: "▼ DOWN",
+    trend: "~ SOFTENING",
     trendClass: "negative",
-    implication: "A modest rise in unemployment suggests slightly softer competition for vacancies but a more cautious hiring environment for job seekers.",
-    sourceLabel: "C&SD",
-    sourceUrl: "https://www.censtatd.gov.hk/en./press_release_detail.html?id=5804"
+    implication: "The slight rise signals a modest easing in labour-market conditions, increasing competition for job seekers while limiting broad-based hiring gains.",
+    sourceLabel: "Hong Kong Economic Situation",
+    sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
   {
     indicator: "CPI Inflation",
     current: "1.9%",
     currentClass: "",
     previous: "1.7%",
-    trend: "⚠ ELEVATED",
+    trend: "▲ UP",
     trendClass: "negative",
-    implication: "Higher inflation may raise wage expectations and household costs, while employers may limit headcount growth if margins remain pressured.",
+    implication: "Higher inflation may lift wage demands and household costs, while employers face somewhat greater pressure on compensation budgets.",
     sourceLabel: "Hong Kong Economic Situation",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   },
@@ -177,18 +177,18 @@ const HK_MACRO_DATA = [
     previous: "51.9",
     trend: "▼ CONTRACTION",
     trendClass: "negative",
-    implication: "A move into contraction points to weaker private-sector activity, making manufacturing, trading and business-services hiring more cautious.",
+    implication: "A return to contraction points to weaker private-sector operating conditions, potentially slowing recruitment and extending hiring timelines.",
     sourceLabel: "Dim Sum Daily",
     sourceUrl: "https://www.dimsumdaily.hk/hong-kongs-september-pmi-falls-to-49-2/"
   },
   {
     indicator: "Hang Seng Index",
-    current: "24,211",
+    current: "23,786",
     currentClass: "",
-    previous: "24,117",
-    trend: "▲ UP",
-    trendClass: "positive",
-    implication: "A firmer equity market can improve confidence and support recruitment in securities, asset management, investment banking and related professional services.",
+    previous: "24,211",
+    trend: "▼ DOWN",
+    trendClass: "negative",
+    implication: "The lower index may temper sentiment and hiring in securities, asset management and related financial services, although market activity remains important for specialist roles.",
     sourceLabel: "HKMA Economic & Financial Data",
     sourceUrl: "https://www.hkma.gov.hk/eng/data-publications-and-research/data-and-statistics/economic-financial-data-for-hong-kong/"
   },
@@ -197,9 +197,9 @@ const HK_MACRO_DATA = [
     current: "9.9%",
     currentClass: "",
     previous: "12.5%",
-    trend: "▼ DOWN",
+    trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "Lower Central vacancy signals improving office demand, potentially supporting hiring in commercial property, facilities, corporate services and nearby professional sectors.",
+    implication: "Falling Central vacancy suggests improving office demand and may support hiring in finance, professional services, property and related support functions.",
     sourceLabel: "HKMA Half-Yearly Monetary and Financial Stability Report",
     sourceUrl: "https://www.hkma.gov.hk/media/eng/publication-and-research/bulletin/202603/E_Half-yearly_202603.pdf"
   },
@@ -208,9 +208,9 @@ const HK_MACRO_DATA = [
     current: "HK$21,000",
     currentClass: "",
     previous: "HK$21,200",
-    trend: "~ SOFTENING",
+    trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "A lower median wage indicates subdued pay momentum, so job seekers may need stronger negotiation leverage or in-demand skills to secure increases.",
+    implication: "The lower median wage indicates limited wage momentum, giving employers more bargaining power while job seekers may need to prioritize stability and progression.",
     sourceLabel: "C&SD Quarterly Report on General Household Survey",
     sourceUrl: "https://www.censtatd.gov.hk/en/wbr.html?ecode=B10500012026QQ01&scode=500."
   },
@@ -221,7 +221,7 @@ const HK_MACRO_DATA = [
     previous: "45,380",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Rising vacancies broaden opportunities across private-sector industries, although the increase remains moderate rather than a broad hiring surge.",
+    implication: "Higher vacancies indicate improving employer demand and more opportunities, particularly for candidates with in-demand technical and professional skills.",
     sourceLabel: "Hong Kong Half-Yearly Economic Report 2026",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/pdf/er_26q2.pdf"
   },
@@ -232,7 +232,7 @@ const HK_MACRO_DATA = [
     previous: "7.51M",
     trend: "▲ UP",
     trendClass: "positive",
-    implication: "Population growth expands the labour and consumer base, supporting demand in healthcare, education, retail, hospitality and public services.",
+    implication: "Population growth modestly expands the labour pool and consumer base, supporting demand in public-facing services while also increasing competition for entry-level roles.",
     sourceLabel: "C&SD Hong Kong in Figures 2026",
     sourceUrl: "https://www.censtatd.gov.hk/en/data/stat_report/product/B1010006/att/B10100062026AN26B0100.pdf"
   },
@@ -241,9 +241,9 @@ const HK_MACRO_DATA = [
     current: "HK$212.4B",
     currentClass: "",
     previous: "HK$388B",
-    trend: "▼ CONTRACTION",
-    trendClass: "negative",
-    implication: "Lower IPO proceeds suggest weaker capital-markets activity, reducing near-term demand for equity-issuance, legal, accounting and investment-banking talent.",
+    trend: "▲ SURGING",
+    trendClass: "positive",
+    implication: "Strong IPO fundraising can generate demand for investment banking, legal, accounting, compliance, technology and investor-relations talent.",
     sourceLabel: "Hong Kong Half-Yearly Economic Report 2026",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/pdf/er_26q2.pdf"
   },
@@ -252,9 +252,9 @@ const HK_MACRO_DATA = [
     current: "25.1%",
     currentClass: "",
     previous: "24.9%",
-    trend: "▲ UP",
-    trendClass: "positive",
-    implication: "Stronger bank capital buffers support financial stability and preserve capacity for lending, but banks may remain disciplined in expansion and hiring.",
+    trend: "~ STABLE",
+    trendClass: "neutral",
+    implication: "Strong bank capitalization supports financial-sector resilience and relatively stable hiring, though excess capital does not guarantee rapid headcount growth.",
     sourceLabel: "HKMA Banking Statistics",
     sourceUrl: "https://vpr.hkma.gov.hk/statics/assets/doc/100057/lac_qtrai/lac_qtrai_0326_eng.pdf"
   },
@@ -265,7 +265,7 @@ const HK_MACRO_DATA = [
     previous: "US$848M (2025)",
     trend: "— HOLD",
     trendClass: "neutral",
-    implication: "Flat fintech venture funding suggests stable but cautious startup hiring, favoring candidates with proven technology, compliance and revenue-generation skills.",
+    implication: "Flat fintech venture funding suggests stable but cautious recruitment, with stronger prospects for firms demonstrating clear revenue, risk-control and productivity benefits.",
     sourceLabel: "No newer official source found",
     sourceUrl: "https://www.hkeconomy.gov.hk/en/situation/development/index.htm"
   }
@@ -277,9 +277,9 @@ const GLOBAL_DATA = [
     current: "3.88%",
     currentClass: "",
     previous: "3.63%",
-    trend: "▲ UP",
-    trendClass: "negative",
-    implication: "Higher US rates can keep Hong Kong funding costs elevated and weigh on rate-sensitive sectors such as property and investment. Job seekers may see steadier demand in banking and risk roles but softer hiring in cyclical industries.",
+    trend: "— HOLD",
+    trendClass: "neutral",
+    implication: "Stable US rates keep Hong Kong’s interest-rate environment constrained by the currency peg, limiting near-term borrowing-cost relief for employers and job seekers.",
     sourceLabel: "Federal Reserve H.15",
     sourceUrl: "https://www.federalreserve.gov/releases/H15/default.htm"
   },
@@ -290,7 +290,7 @@ const GLOBAL_DATA = [
     previous: "4.7%",
     trend: "▼ DOWN",
     trendClass: "negative",
-    implication: "Slower mainland growth may restrain Hong Kong’s trade, logistics, finance and professional-services hiring. Candidates with China-market, cost-control and restructuring expertise should remain relatively resilient.",
+    implication: "Slower mainland growth may restrain Hong Kong’s trade, logistics and China-facing professional services hiring, while increasing competition for regional roles.",
     sourceLabel: "NBS China",
     sourceUrl: "https://www.stats.gov.cn/english/PressRelease/202607/t20260717_1964160.html"
   },
@@ -299,20 +299,20 @@ const GLOBAL_DATA = [
     current: "50.4",
     currentClass: "",
     previous: "50.7",
-    trend: "▲ EXPANDING",
-    trendClass: "positive",
-    implication: "China manufacturing has returned to expansion, supporting supply-chain, engineering, technology and logistics opportunities connected to Hong Kong. Hiring gains may remain selective because the improvement is modest.",
+    trend: "~ SOFTENING",
+    trendClass: "negative",
+    implication: "A PMI just above 50 signals continued but slower mainland manufacturing expansion, suggesting cautious hiring in Hong Kong’s industrial, trading and supply-chain sectors.",
     sourceLabel: "China NBS PMI",
     sourceUrl: "https://www.stats.gov.cn/english/PressRelease/202604/t20260401_1962920.html"
   },
   {
     indicator: "USD/HKD Exchange",
-    current: "7.847",
+    current: "7.848",
     currentClass: "",
     previous: "7.847",
-    trend: "— HOLD",
+    trend: "~ STABLE",
     trendClass: "neutral",
-    implication: "A stable exchange rate reduces near-term currency uncertainty for Hong Kong employers and cross-border businesses. It supports predictable hiring demand in treasury, trade finance, accounting and regional operations.",
+    implication: "The broadly stable exchange rate preserves currency certainty for Hong Kong employers and supports steady demand in banking, treasury, trade and risk roles.",
     sourceLabel: "HKMA",
     sourceUrl: "https://www.hkma.gov.hk/"
   },
@@ -321,9 +321,9 @@ const GLOBAL_DATA = [
     current: "10% baseline",
     currentClass: "caution",
     previous: "10% baseline (Section 122)",
-    trend: "~ STABLE",
+    trend: "— HOLD",
     trendClass: "neutral",
-    implication: "An unchanged tariff baseline preserves existing uncertainty for exporters and manufacturers rather than creating a new immediate shock. Hiring should favor trade-compliance, supply-chain diversification and China-plus-one expertise.",
+    implication: "An unchanged tariff baseline leaves trade-policy uncertainty elevated, encouraging employers to prioritize supply-chain resilience, customs, compliance and market-diversification skills.",
     sourceLabel: "US tariff policy",
     sourceUrl: "https://www.whitehouse.gov/"
   },
@@ -334,7 +334,7 @@ const GLOBAL_DATA = [
     previous: "Trump-Xi summit Apr 2026",
     trend: "~ MIXED",
     trendClass: "neutral",
-    implication: "Continued high-level contact can reduce the risk of abrupt policy deterioration, but it does not remove strategic uncertainty. Employers are likely to value geopolitical-risk, regulatory, compliance and public-affairs skills.",
+    implication: "High-level engagement may reduce escalation risk but does not remove policy uncertainty, so hiring is likely to favor candidates with China-US regulatory and geopolitical expertise.",
     sourceLabel: "US-China diplomacy coverage",
     sourceUrl: "https://www.whitehouse.gov/"
   },
@@ -345,7 +345,7 @@ const GLOBAL_DATA = [
     previous: "US$527B (2026)",
     trend: "— HOLD",
     trendClass: "neutral",
-    implication: "The unchanged estimate still points to substantial global demand for AI infrastructure, cloud, chips and data-centre capabilities. Hong Kong job seekers with AI engineering, cybersecurity, data and technology-commercialisation skills remain well positioned.",
+    implication: "Unchanged AI investment expectations continue to support Hong Kong opportunities in cloud infrastructure, data, cybersecurity, finance and AI implementation.",
     sourceLabel: "Global AI capex estimates",
     sourceUrl: "https://www.example.com/"
   },
@@ -356,9 +356,9 @@ const GLOBAL_DATA = [
     previous: "Accelerating",
     trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "Deeper GBA integration should support hiring in technology, advanced manufacturing, construction, professional services and cross-border operations. Candidates with mainland networks, bilingual skills and multi-jurisdiction experience may benefit most.",
+    implication: "Deeper GBA integration should broaden cross-border opportunities in technology, advanced manufacturing, logistics, education and professional services for candidates with Mainland experience.",
     sourceLabel: "Hong Kong 2026 Policy Address",
-    sourceUrl: "https://www.policyaddress.gov.hk/2026/public/pdf/supplement/supplement-06_en.pdf"
+    sourceUrl: "https://www.policyaddress.gov.hk/2026/en/chapter6.html"
   },
   {
     indicator: "HK Talent Schemes",
@@ -367,13 +367,40 @@ const GLOBAL_DATA = [
     previous: "TTPS expanded to 198 universities",
     trend: "▲ EXPANDING",
     trendClass: "positive",
-    implication: "Broader talent-scheme coverage increases competition for internationally mobile roles while enlarging Hong Kong’s skilled-labour pool. Local job seekers may need stronger specialised, bilingual and technology skills to stand out, while employers gain access to more global candidates.",
+    implication: "Broader talent-channel coverage and extended GBA graduate arrangements should enlarge Hong Kong’s skilled-talent pool, increasing competition while supporting hiring in AI, research, education and specialist services.",
     sourceLabel: "Hong Kong 2026 Policy Address",
-    sourceUrl: "https://www.policyaddress.gov.hk/2026/en/chapter3.html"
+    sourceUrl: "https://www.info.gov.hk/gia/general/202609/16/P2026091600269p.htm"
   }
 ];
 
 const NEWS_DATA = [
+  {
+    headline: "Omani Flydubai co-pilot planned to crash plane into Israeli airport, UAE says",
+    date: "2026-10-09",
+    source: "SCMP",
+    url: "https://www.scmp.com/news/world/middle-east/article/3370407/omani-flydubai-co-pilot-planned-crash-plane-israeli-airport-uae-says?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "An alleged aviation-security plot involving Israel and the Gulf could increase regional geopolitical risk and weaken travel, aviation, and related business confidence. Hong Kong employers with Middle East exposure may face higher security, insurance, and operational costs.",
+    sentiment: "negative"
+  },
+  {
+    headline: "With war project, US tech ecosystem is beginning to look a lot like China’s",
+    date: "2026-10-09",
+    source: "SCMP",
+    url: "https://www.scmp.com/opinion/world-opinion/article/3369824/war-project-us-tech-ecosystem-beginning-look-lot-chinas?utm_source=rss_feed",
+    category: "TECHNOLOGY & AI",
+    impact: "A closer alignment between the US technology ecosystem and China’s state-directed model could accelerate strategic technology investment while increasing geopolitical restrictions. Hong Kong technology professionals may see demand in AI, cybersecurity, defence-related technology, and compliance, alongside greater export-control uncertainty.",
+    sentiment: "neutral"
+  },
+  {
+    headline: "China agrees to slash EU hybrid car exports in half, putting brake on trade war",
+    date: "2026-10-09",
+    source: "SCMP",
+    url: "https://www.scmp.com/economy/china-economy/article/3370385/china-and-eu-reach-understanding-hybrid-vehicles-after-crunch-trade-talks?utm_source=rss_feed",
+    category: "TRADE & GEOPOLITICS",
+    impact: "A proposed reduction in China’s hybrid-vehicle exports to Europe could ease immediate trade tensions but constrain some automotive supply-chain activity. Hong Kong logistics, trading, and finance roles linked to mainland electric-vehicle exports may face adjustment, while trade-compliance and market-diversification work could expand.",
+    sentiment: "neutral"
+  },
   {
     headline: "Competition watchdog raids 11 premises",
     date: "2026-10-09",
@@ -1066,33 +1093,6 @@ const NEWS_DATA = [
     category: "GLOBAL",
     impact: "The renewed fighting in Ukraine adds to global geopolitical uncertainty, which can weigh on trade sentiment, shipping confidence, and risk appetite affecting Hong Kong-linked businesses. For job seekers, the main effect is indirect through slower hiring in exposed sectors if regional instability persists.",
     sentiment: "negative"
-  },
-  {
-    headline: "New AI laws should target data governance and safety to build confidence: experts",
-    date: "2026-10-04",
-    source: "South China Morning Post",
-    url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPRGVJeGZxWkF2VmltSzVEUHlpSjJZNjc5ajNMNWpfNUNRVklFTlZwRnV2RXpNME92QWsxMDdfRXBkb1ZfUFZxWm53ZVRKUThqVGVLQ2txejdGUlEzUGtzbXpsVk9wa2NGOEV1b0dpN3lQQnlwMXRmajN6STFYbEFXQ1RRSFBnNEpxb2JsRXRqRzBrbDZnQlh5UXNfWUpxY3JtbUh1ZzVfakZLWFdFaUhLcjN2NzBGbE1RQzc2RXFvdjBCeFRNbVFLX0RwN3ZsbkF5ZTQwZUw2YkQ2RTJOVFZR0gHfAUFVX3lxTE9hVV90TEk3UUJIUkNJbVhvR25tRUEwdGlMQ1kyRGxuMmVydHBVYTFzLVpaMUpDb2Y3RDc3Q08yeXdhbFk3R004OEZGNlYxZXl6M3o5YmNRdVFrLVEzUWhaMmxyZER0ZmhTUGM1SUEycFk3Q09ScGdUVU4yNkl3emh0OFl0UjNXQnplME5GWEpKeEdPWTFuQ2MwTlhoZzU3dEpLYVROVVRKOGlrZmo4MUFibldqWG9Wd2RSQzl3azZtUVJUNjVHaU1nc3otNWQ3eWZBbEo2NjU3cHdaWGRIeWs?oc=5",
-    category: "DATA GOVERNANCE & PRIVACY",
-    impact: "Stronger AI laws focused on data governance and safety should increase demand for privacy, compliance, cybersecurity, and AI risk professionals in Hong Kong. At the same time, tighter rules may slow some deployments and raise hiring barriers for firms without mature governance teams.",
-    sentiment: "mixed"
-  },
-  {
-    headline: "New AI laws should target data governance, safety to build public confidence: experts",
-    date: "2026-10-04",
-    source: "SCMP",
-    url: "https://www.scmp.com/news/hong-kong/law-and-crime/article/3369672/new-ai-laws-should-target-data-governance-safety-build-public-confidence-experts?utm_source=rss_feed",
-    category: "DATA GOVERNANCE & PRIVACY",
-    impact: "Stronger AI laws around data governance and safety should create more demand in Hong Kong for compliance, cybersecurity, legal, risk, and governance roles. It also supports confidence for firms hiring in AI-related product, policy, and assurance functions.",
-    sentiment: "positive"
-  },
-  {
-    headline: "‘Balanced and acceptable’: labour chief defends helper wage rise amid criticism",
-    date: "2026-10-03",
-    source: "South China Morning Post",
-    url: "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOYjE0U0xfU3lvQjZyVlBKemFUYWhnNzZISHJEQS1VOFkxdkdFckVpQ2dhLVJYWVBPRDlwZjh1bTFSaEIzVzdDX21xUTUySDVTLUlCcUV6aWp4QmRnb0tvRl9EUDEwVWVkYV9GZnZDLVFOWldRamVaa1VsTjE3WHZIVzVaMWczOGNvWkRVLWdwNk8wdFdwOVFMMEx2QlhGcEplRGhtR0JQbnJBaFlNa28yUVZNa0lKTVdBbUoxQjdRVWx1UzdkblNSdmdBQWg4T0RTZXUxeVI5Ukp0bHBOdmFj0gHfAUFVX3lxTFBReGd3Wk5MQXhiN3hCQ2VIRlRaaEYtczZzRDhxMGpzanZCQTd6ZTlxRWlYNnpFNDhtcks4MzdWUmVqR1ByOEY4VUl0M19sLTJEckI1Y0FZYi1XQml4cmdKdEFndWtWVjNWRDR3Mld6MlNaQklSVGs5WG5YdXZfTFI2eWtaN3NtN09LTGZIQ2hjV0lFS3lxUjV1V1VFdVlILXNlRHVKcl9mem9ySENkZ0x4R0Z2RTBtSjVKdDd6cE53eWxVY3kxWGU4MnA0OHYzUE1rWjR0ZWlCR3VTN2VFSFE?oc=5",
-    category: "LOCAL EMPLOYMENT",
-    impact: "A higher helper wage mainly affects the domestic work segment rather than white-collar hiring, but it raises household labor costs. For job seekers, it may slightly support wage expectations in low-skill service roles while increasing cost pressure on employers and families.",
-    sentiment: "neutral"
   }
 ];
 
@@ -1105,7 +1105,7 @@ const JOBS_DATA = [
     desc: "Search all data governance, AI governance, and data protection jobs currently listed on JobsDB Hong Kong.",
     source: "JobsDB",
     url: "https://hk.jobsdb.com/data-governance-jobs/in-Hong-Kong",
-    posted: "09 Oct 2026"
+    posted: "10 Oct 2026"
   },
   {
     title: "🔍 Browse all AI Governance jobs on JobsDB",
@@ -1115,7 +1115,7 @@ const JOBS_DATA = [
     desc: "Search all AI governance and AI risk management jobs currently listed on JobsDB Hong Kong.",
     source: "JobsDB",
     url: "https://hk.jobsdb.com/ai-governance-jobs/in-Hong-Kong",
-    posted: "09 Oct 2026"
+    posted: "10 Oct 2026"
   },
   {
     title: "🔍 Browse all Data Governance jobs on LinkedIn",
@@ -1125,7 +1125,7 @@ const JOBS_DATA = [
     desc: "Search all data governance and data management jobs in Hong Kong on LinkedIn.",
     source: "LinkedIn",
     url: "https://www.linkedin.com/jobs/search/?keywords=data+governance&location=Hong+Kong",
-    posted: "09 Oct 2026"
+    posted: "10 Oct 2026"
   },
   {
     title: "🔍 Browse all AI Governance jobs on LinkedIn",
@@ -1135,7 +1135,7 @@ const JOBS_DATA = [
     desc: "Search all AI governance, AI strategy, and responsible AI jobs in Hong Kong on LinkedIn.",
     source: "LinkedIn",
     url: "https://www.linkedin.com/jobs/search/?keywords=AI+governance&location=Hong+Kong",
-    posted: "09 Oct 2026"
+    posted: "10 Oct 2026"
   },
   {
     title: "🔍 Browse all Data Governance jobs on eFinancialCareers",
@@ -1145,7 +1145,7 @@ const JOBS_DATA = [
     desc: "Search all data governance jobs in Hong Kong's financial sector on eFinancialCareers.",
     source: "eFinancialCareers",
     url: "https://www.efinancialcareers.com/jobs?keywords=data+governance&location=Hong+Kong",
-    posted: "09 Oct 2026"
+    posted: "10 Oct 2026"
   },
   {
     title: "🔍 Browse all Data Governance jobs on Indeed",
@@ -1155,7 +1155,7 @@ const JOBS_DATA = [
     desc: "Search all data governance and data protection jobs in Hong Kong on Indeed.",
     source: "Indeed",
     url: "https://hk.indeed.com/jobs?q=data+governance&l=Hong+Kong",
-    posted: "09 Oct 2026"
+    posted: "10 Oct 2026"
   },
   {
     title: "Legal Counsel, Insurance",
